@@ -1,0 +1,46 @@
+.skills {
+  padding: $padding;
+  &__title {
+    margin-bottom: 45px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 40px;
+  }
+  &__item {
+    grid-column: 2 span;
+    text-align: center;
+    padding-top: 140px;
+    padding: 140px 0px 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+  &__item-descr {
+    color: $title;
+    @extend %open-700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  &__item--html {
+    background-image: url('../img/html.svg');
+  }
+  &__item--css {
+    background-image: url('../img/css.svg');
+
+  }
+  &__item--js {
+    background-image: url('../img/js.svg');
+
+  }
+  &__item--git {
+    background-image: url('../img/git.svg');
+
+  }
+  &__item--gulp {
+    background-image: url('../img/gulp.svg');
+
+  }
+}
+

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+  <title>Crope</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__navigation">
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="nav">
+          <button class="nav__btn">
+            <span class="nav__btn-line"></span>
+          </button>
+          <ul class="menu">
+            <li class="menu__item menu__item--home">
+              <a class="menu__item-link " href="index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="about.html">About us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link " href="services.html">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link menu__item-link--active" href="cases.html">Cases</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="blog.html">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link error-404" href="error-404.html">404</a>
+            </li>
+            <li class="menu__item menu__item--form">
+              <form class="error__form" action="#">
+                <input class="error__form-input input" type="text" placeholder="Search">
+                <button class="error__form-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#DD4242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.0004 21L16.6504 16.65" stroke="#DD4242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+              </form>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item--sociallink" href="#">Linkedin</a>
+                <span></span>
+                <a class="menu__item--sociallink" href="#">Behance</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a class="header__tel" href="tel:18456317849">+1 845 631 78 49</a>
+          <button class="header__btn ">Get a quote</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="cases.html">Cases</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">Case work</a>
+      </li>
+    </ul>
+  </div>
+  <section class="case-work page-section">
+    <span class="number top-number">01.</span>
+    <div class="container">
+      <div class="case-work__top">
+        <span class="case-work__subtitle subtitle">
+          portfolio
+        </span>
+        <h2 class="case-work__title title">
+          Website design for OP company<span></span>
+        </h2>
+      </div>
+
+      <div class="case-slider">
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img2.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img3.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img4.jpg" alt="photo" >
+        </div>
+      <!--   <article class="case-slider__item">
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__content-box">
+          <h3 class="case-slider__title">
+            About project
+          </h3>
+          <p class="case-slider__text">
+            The agency builds personal brands for entrepreneurs and corporates. We built a page with all kind of information about the service, examples of results, case studies, testimonials of old clients and pricing packages. We like to build new websites especially for any kind of marketing agencies. At this time we created a landing page for marketing agency.
+          </p>
+          <div class="case-slider__info">
+            <div class="case-slider__info-name">
+              <p>
+                Client: 
+                <span>
+                  OP Company
+              </span>
+              </p>
+              <p>
+                Category: 
+                <a class="case-slider__category" href="#">
+                  UI/UX Design
+              </a>
+              </p>
+            </div>
+            <div class="case-slider__date">
+              <p>
+                Start date:
+                <span>
+                  Mar 21, 2020
+              </span>
+              </p>
+              <p>
+                Finish date:
+                <span>
+                  Apr 21, 2020
+              </span>
+              </p>
+            </div>
+          </div>
+          <div class="case-slider__links">
+            <a  class="case-slider__link" href="#">
+              Visit website
+            </a>
+            <a  class="case-slider__share" href="#">
+              Share
+            </a>
+          </div>
+        </div>
+      </article>
+
+        <article class="case-slider__item">
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img2.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__content-box">
+          <h3 class="case-slider__title">
+            About project
+          </h3>
+          <p class="case-slider__text">
+            The agency builds personal brands for entrepreneurs and corporates. We built a page with all kind of information about the service, examples of results, case studies, testimonials of old clients and pricing packages. We like to build new websites especially for any kind of marketing agencies. At this time we created a landing page for marketing agency.
+          </p>
+          <div class="case-slider__info">
+            <div class="case-slider__info-name">
+              <p>
+                Client: 
+                <span>
+                  OP Company
+              </span>
+              </p>
+              <p>
+                Category: 
+                <a class="case-slider__category" href="#">
+                  UI/UX Design
+              </a>
+              </p>
+            </div>
+            <div class="case-slider__date">
+              <p>
+                Start date:
+                <span>
+                  Mar 21, 2020
+              </span>
+              </p>
+              <p>
+                Finish date:
+                <span>
+                  Apr 21, 2020
+              </span>
+              </p>
+            </div>
+          </div>
+          <div class="case-slider__links">
+            <a  class="case-slider__link" href="#">
+              Visit website
+            </a>
+            <a  class="case-slider__share" href="#">
+              Share
+            </a>
+          </div>
+        </div>
+      </article>
+
+        <article class="case-slider__item">
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img3.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__content-box">
+          <h3 class="case-slider__title">
+            About project
+          </h3>
+          <p class="case-slider__text">
+            The agency builds personal brands for entrepreneurs and corporates. We built a page with all kind of information about the service, examples of results, case studies, testimonials of old clients and pricing packages. We like to build new websites especially for any kind of marketing agencies. At this time we created a landing page for marketing agency.
+          </p>
+          <div class="case-slider__info">
+            <div class="case-slider__info-name">
+              <p>
+                Client: 
+                <span>
+                  OP Company
+              </span>
+              </p>
+              <p>
+                Category: 
+                <a class="case-slider__category" href="#">
+                  UI/UX Design
+              </a>
+              </p>
+            </div>
+            <div class="case-slider__date">
+              <p>
+                Start date:
+                <span>
+                  Mar 21, 2020
+              </span>
+              </p>
+              <p>
+                Finish date:
+                <span>
+                  Apr 21, 2020
+              </span>
+              </p>
+            </div>
+          </div>
+          <div class="case-slider__links">
+            <a  class="case-slider__link" href="#">
+              Visit website
+            </a>
+            <a  class="case-slider__share" href="#">
+              Share
+            </a>
+          </div>
+        </div>
+      </article>
+
+        <article class="case-slider__item">
+        <div class="case-slider__images">
+          <img class="case-slider__img" src="images/cases-img4.jpg" alt="photo" >
+        </div>
+        <div class="case-slider__content-box">
+          <h3 class="case-slider__title">
+            About project
+          </h3>
+          <p class="case-slider__text">
+            The agency builds personal brands for entrepreneurs and corporates. We built a page with all kind of information about the service, examples of results, case studies, testimonials of old clients and pricing packages. We like to build new websites especially for any kind of marketing agencies. At this time we created a landing page for marketing agency.
+          </p>
+          <div class="case-slider__info">
+            <div class="case-slider__info-name">
+              <p>
+                Client: 
+                <span>
+                  OP Company
+              </span>
+              </p>
+              <p>
+                Category: 
+                <a class="case-slider__category" href="#">
+                  UI/UX Design
+              </a>
+              </p>
+            </div>
+            <div class="case-slider__date">
+              <p>
+                Start date:
+                <span>
+                  Mar 21, 2020
+              </span>
+              </p>
+              <p>
+                Finish date:
+                <span>
+                  Apr 21, 2020
+              </span>
+              </p>
+            </div>
+          </div>
+          <div class="case-slider__links">
+            <a  class="case-slider__link" href="#">
+              Visit website
+            </a>
+            <a  class="case-slider__share" href="#">
+              Share
+            </a>
+          </div>
+        </div>
+      </article> -->
+      </div>
+        
+        <article class="case-content">
+          <h3 class="case-content__title">
+            About project
+          </h3>
+          <p class="case-content__text">
+            The agency builds personal brands for entrepreneurs and corporates. We built a page with all kind of information about the service, examples of results, case studies, testimonials of old clients and pricing packages. We like to build new websites especially for any kind of marketing agencies. At this time we created a landing page for marketing agency.
+          </p>
+          <div class="case-content__info">
+            <div class="case-content__info-name">
+              <p>
+                Client: 
+                <span>
+                  OP Company
+              </span>
+              </p>
+              <p>
+                Category: 
+                <a class="case-content__category" href="#">
+                  UI/UX Design
+              </a>
+              </p>
+            </div>
+            <div class="case-content__date">
+              <p>
+                Start date:
+                <span>
+                  Mar 21, 2020
+              </span>
+              </p>
+              <p>
+                Finish date:
+                <span>
+                  Apr 21, 2020
+              </span>
+              </p>
+            </div>
+          </div>
+          <div class="case-content__links">
+            <a  class="case-content__link" href="#">
+              Visit website
+            </a>
+            <a  class="case-content__share" href="#">
+              Share
+            </a>
+          </div>
+        </article>
+    </div>
+  </section>
+  <section class="cases page-section portfolio-cases">
+    <span class="number">02.</span>
+    <div class="container">
+      <div class="cases__inner">
+        <div class="cases__content">
+          <span class="cases__subtitle subtitle">
+            portfolio
+          </span>
+          <h2 class="cases__title title">
+            Related cases<span></span>
+          </h2>
+          <p class="cases__text">
+            We always try to implement our creative ideas at the highest level. You can see it by looking at our portfolio.
+          </p>
+        </div>
+        <div class="cases__link">
+          <a  class="read-more" href="cases.html">
+            View all cases
+          </a>
+        </div>
+    </div>
+  </div>
+  <ul class="cases__list">
+    <li class="cases__item">
+      <a class="cases__item-link" href="#">
+        <img class="cases__item-img" src="images/cases/cases-1.jpg" alt="cases" >
+          <a class="cases__item-boxlink" href="#">
+            Web site design for
+            curious company
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+      </a>
+    </li>
+    <li class="cases__item">
+      <a class="cases__item-link" href="#">
+        <img class="cases__item-img" src="images/cases/cases-2.jpg" alt="cases" >
+          <a class="cases__item-boxlink" href="#">
+            Web site design for
+            curious company
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+      </a>
+    </li>
+    <li class="cases__item">
+      <a class="cases__item-link" href="#">
+        <img class="cases__item-img" src="images/cases/cases-3.jpg" alt="cases" >
+          <a class="cases__item-boxlink" href="#">
+            Web site design for
+            curious company
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+      </a>
+    </li>
+    <li class="cases__item">
+      <a class="cases__item-link" href="#">
+        <img class="cases__item-img" src="images/cases/cases-4.jpg" alt="cases" >
+          <a class="cases__item-boxlink" href="#">
+            Web site design for
+            curious company
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+      </a>
+    </li>
+  </ul>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo footer__item">
+          <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <span class="footer__corp">
+            Copyright © 2020 Crope.
+          </span>
+        </div>
+
+        <div class="footer__working footer__item">
+          <h6 class="footer__subtitle">
+            Working hours:
+          </h6>
+          <p class="footer__text">
+            Mon - Fri: 9 am - 6 pm
+          </p>
+          <p class="footer__text">
+            Sat, Sun: Holiday
+          </p>
+        </div>
+
+        <address class="footer__address footer__item">
+          <h6 class="footer__subtitle">
+            Address:
+          </h6>
+          <p class="footer__text">
+            27 Division St, New York, NY 10002, USA
+          </p>
+        </address>
+
+        <div class="footer__contact footer__item">
+          <h6 class="footer__subtitle">
+            Hit us up:
+          </h6>
+          <a class="footer__contact-phone footer__link" href="tel:18456317849">+1 845 631 78 49</a>
+          <a class="footer__contact-email footer__link" href="mailto:info@sitename.com">info@sitename.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

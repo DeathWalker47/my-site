@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Cart</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__navigation">
+          <a class="logo header__logo" href="index.html">
+            <picture>
+              <source srcset="images/logo-mobile.svg" media="(max-width:992px)">
+              <img src="images/Logo.svg" alt="logo">
+            </picture>
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line">
+              </span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link " href="about.html">about us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="shop.html">shop</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="blog.html">blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="cart.html">cart</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="checkout.html">checkout</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="profile.html">profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__user-panel user-panel">
+          <a class=" user-panel__link user-panel__search" href="#">
+            <img class="user-panel__link-img" src="images/icon/search.svg" alt="search">
+          </a>
+          <a class="user-panel__link user-panel__user" href="profile.html">
+            <img class="user-panel__link-img" src="images/icon/user.svg" alt="user">
+          </a>
+          <a class="user-panel__link user-panel__heart" href="checkout.html">
+            <img class="user-panel__link-img" src="images/icon/heart.svg" alt="heart">
+          </a>
+          <a class="user-panel__link user-panel__cart" href="cart.html">
+            <img class="user-panel__link-img" src="images/icon/cart.svg" alt="cart">
+            <span class="user-panel__num">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="head">
+      <div class="container">
+        <div class="head__content head__content--cart">
+          <h1 class="title head__title">
+            Cart
+          </h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="cart.html" class="breadcrumbs__link breadcrumbs__link--active">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cart">
+      <div class="container">
+        <div class="cart__content">
+          <div class="cart__top">
+            <p class="cart__top-product">
+              product
+            </p>
+            <p class="cart__top-price">
+              Price
+            </p>
+            <p class="cart__top-quantity">
+              Quantity
+            </p>
+            <p class="cart__top-total">
+              total
+            </p>
+          </div>
+          
+          <div class="cart-item cart__item" id="item-1">
+            <div class="cart-item__product">
+              <picture>
+                <source class="cart-item__product-img" srcset="images/shop-7.webp" type="image/webp">
+                <img class="cart-item__product-img" src="images/shop-7.jpg" alt="product">
+              </picture>
+              <div class="cart-item__product-box">
+                <p class="cart-item__product-name">
+                  Sun milk
+                </p>
+                <p class="cart-item__product-descr">
+                  Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                </p>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              <p class="cart-item__sum">
+                <span class="bests-sellers__item-sum--sale">$140</span> $120
+              </p>
+            </div>
+            <div class="cart-item__quantity">
+              <div class="quantity">
+                <input type="number" min="1" max="99" step="1" value="1">
+              </div>
+            </div>
+            <div class="cart-item__total">
+              <p class="cart-item__total-sum">
+                $120
+              </p>
+            </div>
+            <a class="cart-item__deleted" href="#item-1">X</a>
+          </div>
+
+          <div class="cart-item cart__item" id="item-2">
+            <div class="cart-item__product">
+              <picture>
+                <source class="cart-item__product-img" srcset="images/shop-9.webp" type="image/webp">
+                <img class="cart-item__product-img" src="images/shop-9.jpg" alt="product">
+              </picture>
+              <div class="cart-item__product-box">
+                <p class="cart-item__product-name">
+                  Moisturizing oil
+                </p>
+                <p class="cart-item__product-descr">
+                  Lollipop lipid-reducing oil against irritation
+                </p>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              <p class="cart-item__sum">
+                $80
+              </p>
+            </div>
+            <div class="cart-item__quantity">
+              <div class="quantity">
+                <input type="number" min="1" max="99" step="1" value="1">
+              </div>
+            </div>
+            <div class="cart-item__total">
+              <p class="cart-item__total-sum">
+                $80
+              </p>
+            </div>
+            <a class="cart-item__deleted" href="#item-2">X</a>
+          </div>
+
+          <div class="cart-item cart__item" id="item-3">
+            <div class="cart-item__product">
+              <picture>
+                <source class="cart-item__product-img" srcset="images/shop-2.webp" type="image/webp">
+                <img class="cart-item__product-img" src="images/shop-2.jpg" alt="product">
+              </picture>
+              <div class="cart-item__product-box">
+                <p class="cart-item__product-name">
+                  Face cream
+                </p>
+                <p class="cart-item__product-descr">
+                  Lollipop nourishing face cream
+                </p>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              <p class="cart-item__sum">
+                $30
+              </p>
+            </div>
+            <div class="cart-item__quantity">
+              <div class="quantity">
+                <input type="number" min="1" max="99" step="1" value="2">
+              </div>
+            </div>
+            <div class="cart-item__total">
+              <p class="cart-item__total-sum">
+                $60
+              </p>
+            </div>
+            <a class="cart-item__deleted" href="#item-3">X</a>
+          </div>
+
+          <div class="cart-item cart__item" id="item-4">
+            <div class="cart-item__product">
+              <picture>
+                <source class="cart-item__product-img" srcset="images/shop-5.webp" type="image/webp">
+                <img class="cart-item__product-img" src="images/shop-5.jpg" alt="product">
+              </picture>
+              <div class="cart-item__product-box">
+                <p class="cart-item__product-name">
+                  Body milk
+                </p>
+                <p class="cart-item__product-descr">
+                  Lollipop Nourishing and moisturizing body milk
+                </p>
+              </div>
+            </div>
+            <div class="cart-item__price">
+              <p class="cart-item__sum">
+                <span class="bests-sellers__item-sum--sale">$160</span> $150
+              </p>
+            </div>
+            <div class="cart-item__quantity">
+              <div class="quantity">
+                <input type="number" min="1" max="99" step="1" value="1">
+              </div>
+            </div>
+            <div class="cart-item__total">
+              <p class="cart-item__total-sum">
+                $150
+              </p>
+            </div>
+            <a class="cart-item__deleted" href="#item-4">X</a>
+          </div>
+
+        </div>
+        <div class="cart__buy">
+          <form class="cart__buy-form" action="#">
+            <input class="cart__buy-input" type="text" placeholder="Coupon code">
+            <button class="cart__buy-btn" type="submit">
+              <img src="images/icon/tg.svg" alt="telegramm">
+            </button>
+          </form>
+          <div class="cart__buy-box">
+            <p class="cart__buy-descr">
+              <span class="cart__buy-subtotal">Subtotal</span>
+              <span class="cart__buy-sum">$410</span>
+            </p>
+            <p class="cart__buy-descr">
+              <span class="cart__buy-delivery">Delivery</span>
+              <span class="cart__buy-sum">$0</span>
+            </p>
+          </div>
+          <p class="cart__buy-descr">
+            <span class="cart__buy-total">Total</span>
+            <span class="cart__buy-totalsum">$410</span>
+          </p>
+          <a class="cart__buy-link" href="checkout.html">checkout</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contact">
+            <h4 class="footer__contact-title title">
+              Contact us
+            </h4>
+            <a class="footer__link footer__link--tel" href="tel:+18669962000">+1-866-996-2000</a>
+            <a class="footer__link footer__link--email" href="mailto:lolli@example.com">lolli@example.com</a>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/fb.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/tw.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/inst.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/youtube.svg" alt="social link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              help
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Information
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Privacy Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Shipping Details</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Support
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="about.html" class="footer__list-link">About us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Careers
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Deliveries
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Refund Requests
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="contact.html" class="footer__list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Information
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search Terms</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Advanced Search
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">FAQ & Help Docs
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Orders & Returns
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Store Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            Copyright © 2021 Lolli.  All Rights Reserved
+          </p>
+          <ul class="footer__cart-list">
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-1.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-2.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-3.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-4.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-5.svg" alt="cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=261b9a65-edba-49ff-845d-999d0e37f0bf&lang=ru_RU"
+    type="text/javascript">
+  </script>
+  <link rel="icon" href="./favicon.svg" type="image/svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Contact Us</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <picture >
+        <source srcset="./images/logo-footer.png" media="(max-width:1200px)">
+        <img src="./images/logo.png" alt="logo">
+      </picture>
+    </a>
+    <nav class="menu header__menu">
+      <button class="burger">
+        <span class="burger__list"></span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="index.html" class="menu__list-link ">
+            Home+
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="about-us.html" class="menu__list-link">
+            About Us
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="services.html" class="menu__list-link">
+            Services
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="services-single.html" class="menu__list-link">
+            Pages+
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="blog-news.html" class="menu__list-link">
+            News+
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="contact.html" class="menu__list-link menu__list-link--active">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__right">
+      <div class="header__cup cup">
+          <button class="cup__search-btn cup__item">
+            <svg class="cup__search-img cup__img">
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg>
+            <svg class="cup__search-close cup__img">
+              <use xlink:href="./images/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+          <a href="#" class="cup__basket-link cup__item">
+            <svg class="cup__basket-img cup__img">
+              <use xlink:href="./images/sprite.svg#basket"></use>
+            </svg>
+            <span class="cup__basket-num">0</span>
+          </a>
+      </div>
+      <button class="header__btn btn btn--fill">
+        Get A Quote
+      </button>
+    </div>
+  </div>
+    <div class="search-container">
+      <audio controls class="audio-search visually-hidden">
+        <source src="./images/alert.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls class="audio-search audio-active visually-hidden">
+        <source src="./images/alert2.mp3" type="audio/mpeg">
+      </audio>
+      <form action="#" class="search">
+        <input type="text" class="search__input form__input form__input--fill " placeholder="Search">
+        <button class="btn btn--fill search__btn">
+          <svg class="search__btn-img">
+            <use xlink:href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+</header>
+    <section class="top-page">
+  <div class="container">
+      <h2 class="top-page__title title">
+        Contact Us
+      </h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="contact.html" class="breadcrumbs__link breadcrumbs__link--active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</section>
+    <main class="main pages">
+    <section class="contact-us">
+  <div class="container contact-us__container">
+    <div class="contact-us__inner">
+      <div class="contact-us__content">
+        <h2 class="contact-us__title title title--dark">
+          Contact Us
+        </h2>
+        <p class="contact-us__address contact-us__item">
+          650 E Pine St, Colby, KS 67701,
+      United States
+        </p>
+        <div class="contact-us__tel contact-us__item">
+          <a href="+12122664122">+1 212-266-4122</a>
+          <a href="+12122664122">+1 212-266-4122</a>
+        </div>
+        <a href="mailto:transport.info@example.com" class="contact-us__email contact-us__item">transport.info@example.com</a>
+      </div>
+      <div class="contact-us__map map" id="map">
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contac-form">
+  <div class="container">
+    <form action="#" class="form-contact form form--fill">
+      <h2 class="form-contact__title title">
+        Get In Touch
+      </h2>
+      <input type="text" class="form-contact__input form__input" placeholder="Name">
+      <input type="email" class="form-contact__input form__input" placeholder="Email">
+      <input type="tel" class="form-contact__input form__input" placeholder="Phome Number">
+      <input type="tel" class="form-contact__input form__input" placeholder="Subject">
+      <textarea class="form-contact__textarea form__input" name="Message" placeholder="Text Your Massage"></textarea>
+      <button type="submit" class="form-contact__btn btn btn--fill">Submit Now</button>
+    </form>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="footer__inner">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__address address">
+          <address class="address__item">
+            <p class="address__title">
+              United States - Head Office
+            </p>
+            <p class="address__text">
+              650 E Pine St, Colby, KS 67701,
+              United States
+            </p>
+            <a href="tel:+12122664122" class="address__tel">
+              +1 212-266-4122
+            </a>
+          </address>
+          <address class="address__item">
+            <p class="address__title">
+              United Kingdom - 2nd Office
+            </p>
+            <p class="address__text">
+              3 Maxwell Rd, Glasgow G41 1QP, United Kingdom
+            </p>
+            <a href="tel:+441414234245" class="address__tel">
+              +4 414-1423-4245
+            </a>
+          </address>
+          <address class="address__item">
+            <p class="address__title">
+              Canada - 3rd Office
+            </p>
+            <p class="address__text">
+              520 B 8th Ave, Regina, SK S4N
+0C1, Canada
+            </p>
+            <a href="tel:+13065392759" class="address__tel">
+              +1 306-539-2759
+            </a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="footer__iter">
+      <div class="container">
+        <div class="footer__content footer-content">
+          <div class="footer-content__item footer-content__left">
+            <a href="#" class="logo footer-content__logo">
+              <img src="./images/logo-footer.png" alt="logo">
+            </a>
+            <p class="footer-content__text">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/fb.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/tw.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/in.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/g.svg" alt="#">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content__item footer-content__nav">
+            <h3 class="footer-content__title">
+              Usefull Link
+            </h3>
+            <ul class="footer-content__menu">
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link footer-content__menu-link--active">
+                  Home
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  About Us
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  Services
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  News
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content__item footer-content__works">
+            <h3 class="footer-content__title">
+              Working Hours
+            </h3>
+            <p class="footer-content__text footer-content__text--work">
+              We work 7 days a week, every day including major holidays. Contact us for any info.
+            </p>
+            <p class="footer-content__work">
+              <span class="footer-content__day">
+                Monday - Friday:
+              </span>
+              <span class="footer-content__time">
+                8:00-18:00
+              </span>
+            </p>
+            <p class="footer-content__work">
+              <span class="footer-content__day">
+                Saturday:
+              </span>
+              <span class="footer-content__time">
+                8:00-18:00
+              </span>
+            </p>
+            <p class="footer-content__work">
+              <span class="footer-content__day">
+                Sunday and holidays:
+              </span>
+              <span class="footer-content__time">
+                8:00-09:00
+              </span>
+            </p>
+          </div>
+          <div class="footer-content__item footer-content__news">
+            <h3 class="footer-content__title">
+              News Letter
+            </h3>
+            <form action="#" class="footer-content__form">
+              <label class="footer-content__text footer-content__form-label">
+                Your email address:
+                <div class="footer-content__input-box">
+                  <input class="footer-content__input" type="text" placeholder="email.info@example.com">
+                  <button class="footer-content__form-btn btn btn--fill">
+                    <img src="./images/icons/tg.svg" alt="tg">
+                  </button>
+                </div>
+              </label>
+              <p class="footer-content__form-text">
+                Lorem ipsum dolor sit amet,
+consectetur adipiscing elit, sed do
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <div class="container footer-copy__container">
+      <p class="footer-copy__text">
+        Copyright © 2021. All Rights Reserved
+      </p>
+      <div class="footer-copy__links">
+        <a href="" class="footer-copy__link">
+          Privace & Policy.
+        </a>
+        <a href="" class="footer-copy__link">
+          Faq.
+        </a>
+        <a href="" class="footer-copy__link">
+          Terms.
+        </a>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-top">
+    <svg class="to-up">
+      <use xlink:href="./images/sprite.svg#up-arrow"></use>
+    </svg>
+  </button>
+</footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

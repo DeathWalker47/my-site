@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+
+  &__subtitle {
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    z-index: -1;
+    pointer-events: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @extend %oswald-700;
+    font-size: 150px;
+    line-height: 222px;
+    letter-spacing: 0.05em;
+    color: #242424;
+
+    transform: translateX(-50%);
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 400px;
+    padding-bottom: 80px;
+
+    // background-image: url('../img/me.png');
+    // background-size: auto;
+    // background-position: right bottom;
+    background-image: url('../img/i-am-dark.png');
+    background-repeat: no-repeat;
+    background-position: 102% bottom;
+    background-size: 600px;
+  }
+
+  &__info {
+    max-width: 700px;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    @extend %oswald-400;
+    font-size: 110px;
+    line-height: 125px;
+    color: $default;
+  }
+
+  &__title-name {
+    display: block;
+    margin-top: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 34px;
+    color: $dark-gray;
+  }
+
+  &__btns {
+    order: -1;
+    margin-left: auto;
+  }
+
+  &__social {
+    margin-left: auto;
+  }
+}
+
+.hero-themes {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 30px;
+  background-color: $bg-fill;
+  transform: rotate(90deg) translateY(-40px);
+
+  &__btn {
+    border-radius: 30px;
+    padding: 5px 12px 6px 23px;
+
+    @extend %open-300;
+    font-size: 10px;
+    line-height: 14px;
+    color: $title;
+    user-select: none;
+
+    background-repeat: no-repeat;
+    background-position: 16% center;
+    background-size: 11px 10px;
+
+    transition: background-color .3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    &:focus {
+      outline: 1px solid $accent;
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      background-color: #212121;
+    }
+  }
+
+  &__btn--light {
+    background-image: url('../img/light.svg');
+  }
+
+  &__btn--dark {
+    background-image: url('../img/dark.svg');
+  }
+
+  &__btn--active {
+    background-color: #1c1c1c;
+    pointer-events: none;
+  }
+
+}

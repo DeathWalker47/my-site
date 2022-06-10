@@ -1,0 +1,76 @@
+.priorities {
+  @include bg-cover;
+  padding: $padding;
+  background-image: url('../img/bg-img.jpg');
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__img-box {
+    grid-column: 5 span;
+    width: 354px;
+    height: 713px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    grid-column: 7 span;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: $gap;
+    margin-left: 58px;
+  }
+}
+
+.priorities-list {
+
+  &__item {
+    padding-left: 141px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+
+    &--speed {
+      background-image: url('../img/speed.svg');
+    }
+
+    &--mobile {
+      background-image: url('../img/adaptive.svg');
+    }
+
+    &--browser {
+      background-image: url('../img/browser.svg');
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 7px;
+    color: $title;
+    @extend %open-600;
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  &__descr {
+    max-width: 480px;
+    @extend %open-400;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}

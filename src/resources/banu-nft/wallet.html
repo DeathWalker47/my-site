@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="images/favicon.png" sizes="30x32" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Wallet</title>
+  <script defer src="js/main.min.js"></script>
+</head>
+<body>
+  <div class="search fixed-block">
+  <div class="container">
+    <div class="search__top">
+      <a href="index.html" class="logo search__logo" aria-hidden="true">
+        <img loading="lazy" src="./images/logo.png" alt="logo" aria-hidden="true">
+      </a>
+      <button class="search__close btn-reset" aria-label="Close search form">
+        <svg>
+          <use xlink:href="./images/sprite.svg#close-btn"></use>
+        </svg>
+      </button>
+    </div>
+    <form action="#" class="search__form form">
+      <input class="search__input form__input" type="search" placeholder="Search">
+    </form>
+  </div>
+</div>
+  <div class="wrapper">
+    <header class="header fixed-block">
+  <div class="container-content">
+    <div class="header__inner">
+      <a href="index.html" class="logo" aria-label="logo">
+        <img loading="lazy" src="./images/logo.png" alt="logo" aria-hidden="true">
+      </a>
+      <nav class="menu">
+        <button class="burger" aria-label="Open menu">
+          <span class="burger__line"></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html" class="menu__item-link menu__item-link--active">
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="explore.html" class="menu__item-link">
+              Explore
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="authors.html" class="menu__item-link">
+              Authors
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="blog.html" class="menu__item-link">
+              Blog
+            </a>
+          </li>
+          <li class="menu__item menu__item--dropdown">
+            <a href="#" class="menu__item-link menu__item-link--drop">
+              Pages
+              <svg class="menu__item-arrow">
+              <use xlink:href="./images/sprite.svg#menu-arrow-down"></use>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu__item">
+                <a href="login.html" class="dropdown-menu__link  menu__item-link">
+                  Login
+              </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="create.html" class="dropdown-menu__link menu__item-link">
+                  Create
+              </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a href="item-detals.html" class="dropdown-menu__link menu__item-link">
+                Item Details
+              </a>
+              </li>
+              <li class="dropdown-menu__item dropdown-menu__item--hidden">
+                <a href="wallet.html" class="dropdown-menu__link menu__item-link">
+                Connect Wallet
+              </a>
+              </li>
+              <li class="dropdown-menu__item dropdown-menu__item--hidden">
+                <a href="profile.html" class="dropdown-menu__link menu__item-link">
+                My profile
+              </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="contact.html" class="menu__item-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-panel">
+        <button class="user-panel__search btn-reset" aria-label="Search">
+          <svg>
+            <use xlink:href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <a href="#" class="user-panel__notific" aria-label="Open basket">
+          <svg class="user-panel__notific-img">
+            <use xlink:href="./images/sprite.svg#bell"></use>
+          </svg>
+          <span class="user-panel__notific-num">9+</span>
+        </a>
+        <a href="wallet.html" class="user-panel__wallet link-fill">
+          <img loading="lazy" class="user-panel__cash" src="./images/cash.png" alt="cash" aria-hidden="true">
+          <span class="user-panel__wallet-text">
+            Connect Wallet
+          </span>
+        </a>
+        <a href="profile.html" class="user-panel__account img-border img-border--accent" aria-label="Open my page">
+          <img loading="lazy" class="user-panel__account-img" src="./images/humans/author-img.jpg" alt="My photo">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="head">
+  <div class="container">
+    <div class="head__content">
+      <h1 class="head__title">Wallet</h1>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active">Wallet</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="wallet">
+  <div class="container">
+    <div class="heading heading--top">
+      <span class="heading__subtitle">Connect Wallet</span>
+      <h2 class="heading__title title">Connect Yout Wallet</h2>
+    </div>
+    <ul class="wallet-list">
+      <li class="wallet-list__item">
+        <article class="connect-wallet">
+          <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-1.svg" alt="img" aria-hidden="true">
+          <h3 class="connect-wallet__title">
+            MetaMask
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+      <li class="wallet-list__item">
+        <article class="connect-wallet connect-wallet--img">
+          <!-- <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-2.svg" alt="img" aria-hidden="true"> -->
+          <h3 class="connect-wallet__title">
+            Coibase
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+      <li class="wallet-list__item">
+        <article class="connect-wallet">
+          <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-3.svg" alt="img" aria-hidden="true">
+          <h3 class="connect-wallet__title">
+            fortmatic
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+      <li class="wallet-list__item">
+        <article class="connect-wallet">
+          <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-4.svg" alt="img" aria-hidden="true">
+          <h3 class="connect-wallet__title">
+            autherum
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+      <li class="wallet-list__item">
+        <article class="connect-wallet">
+          <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-5.svg" alt="img" aria-hidden="true">
+          <h3 class="connect-wallet__title">
+            wallet connect
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+      <li class="wallet-list__item">
+        <article class="connect-wallet">
+          <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-6.svg" alt="img" aria-hidden="true">
+          <h3 class="connect-wallet__title">
+            bit ski
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+      <li class="wallet-list__item">
+        <article class="connect-wallet">
+          <img loading="lazy" class="connect-wallet__img" src="./images/wallet/icon-7.svg" alt="img" aria-hidden="true">
+          <h3 class="connect-wallet__title">
+            torus
+          </h3>
+          <p class="connect-wallet__descr">
+            A browser extension with great flexibility. The web's popular wallet.
+          </p>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="modals">
+  <div class="modal-overlay">
+    <div class="modal fixed-block">
+      <div class="container modal-content">
+        <button class="modal-content__btn" aria-label="Close button">
+          <svg class="modal-content__btn-close">
+            <use xlink:href="./images/sprite.svg#close-btn"></use>
+          </svg>
+        </button>
+        <div class="modal-content__inner">
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-6.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-9.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-4.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-1.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-8.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-3.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-11.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-7.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+          <article class="card-item">
+            <div class="card-item__top">
+              <a class="card-item__link" href="#">
+                <img loading="lazy" src="./images/explore/img-10.jpg" alt="img" class="card-item__img">
+              </a>
+              <div class="card-item__likes">
+                <button class="card-item__likes-btn" aria-label="delete like">
+                  <svg class="card-item__likes-img">
+                    <use xlink:href="./images/sprite.svg#heart-fill"></use>
+                  </svg>
+                </button>
+                <span class="card-item__likes-num">127</span>
+              </div>
+            </div>
+            <div class="card-item__content">
+              <div class="card-item__content-top">
+                <h2 class="card-item__content-title">
+                  <a class="card-item__content-title-link" href="#">
+                    Music
+                  </a>
+                </h2>
+                <div class="card-item__drop">
+                  <button class="card-item__content-dots" aria-label="open dropdown menu">
+                    <svg class="card-item__content-dots-img">
+                      <use xlink:href="./images/sprite.svg#dots"></use>
+                    </svg>
+                  </button>
+                  <ul class="card-item__drop-list">
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Similar products</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Go to page</a>
+                    </li>
+                    <li class="card-item__drop__drop-item">
+                      <a href="#" class="card-item__drop-link">Share</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-item__peoples">
+                <div class="card-item__peoples-links">
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-1.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-two.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                  <a href="#" class="card-item__peoples-link">
+                    <img loading="lazy" src="./images/humans/avatar-min/avatar-min-three.jpg" alt="avatar"
+                      class="card-item__people-img">
+                  </a>
+                </div>
+                <a href="#" class="card-item__people-text">
+                  9+ People place bit
+                </a>
+              </div>
+              <div class="card-item__owned">
+                <p class="card-item__owned-text">
+                  Owned By <a href="#">Charley </a>
+                </p>
+                <p class="card-item__owned-eth">
+                  68.4 ETH
+                </p>
+              </div>
+            </div>
+            <a href="#" class="card-item__bid btn-fill"> Place a bid </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <a href="index.html" class="logo footer__logo">
+          <img loading="lazy" src="./images/logo.png" alt="logo" />
+        </a>
+        <p class="footer__descr">
+          Lorem ipsum dolor sitamet,consectetuer Adipiscing elit, sed diam
+          nonummy Nibh Tincidunt ut laoreet dolore magna.
+        </p>
+        <ul class="social" aria-label="social">
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="facebook">
+              <svg  xmlns="http://www.w3.org/2000/svg">
+                <path  class="social__link-fill" d="M41.5 20.5C41.5 31.5344 32.3333 40.5 21 40.5C9.66674 40.5 0.5 31.5344 0.5 20.5C0.5 9.4656 9.66674 0.5 21 0.5C32.3333 0.5 41.5 9.4656 41.5 20.5Z" stroke="#a1a1a1"/>
+                <path class="social__link-stroke" d="M26.0833 10.7373H23.3333C22.1178 10.7373 20.952 11.2301 20.0924 12.1073C19.2329 12.9846 18.75 14.1743 18.75 15.4149V18.2214H16V21.9635H18.75V29.4476H22.4167V21.9635H25.1667L26.0833 18.2214H22.4167V15.4149C22.4167 15.1668 22.5132 14.9288 22.6852 14.7534C22.8571 14.5779 23.0902 14.4794 23.3333 14.4794H26.0833V10.7373Z" stroke="#a1a1a1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="twitter">
+              <svg  xmlns="http://www.w3.org/2000/svg">
+                <path class="social__link-fill" d="M41.5 20.5C41.5 31.5344 32.3333 40.5 21 40.5C9.66674 40.5 0.5 31.5344 0.5 20.5C0.5 9.4656 9.66674 0.5 21 0.5C32.3333 0.5 41.5 9.4656 41.5 20.5Z" stroke="#A1A1A1"/>
+                <g clip-path="url(#clip0_322_10611)">
+                <path class="social__link-stroke" d="M31.1667 12.6991C30.2889 13.2978 29.3169 13.7557 28.2883 14.0552C27.7363 13.4414 27.0026 13.0064 26.1864 12.8089C25.3703 12.6115 24.5112 12.6612 23.7252 12.9512C22.9393 13.2413 22.2644 13.7577 21.7919 14.4307C21.3194 15.1037 21.0721 15.9008 21.0833 16.7141V17.6004C19.4724 17.6408 17.8762 17.2954 16.4368 16.5949C14.9973 15.8943 13.7595 14.8605 12.8333 13.5854C12.8333 13.5854 9.16667 21.5623 17.4167 25.1075C15.5288 26.3466 13.2799 26.9678 11 26.8802C19.25 31.3117 29.3333 26.8802 29.3333 16.6875C29.3325 16.4406 29.3079 16.1944 29.26 15.9519C30.1956 15.0598 30.8558 13.9335 31.1667 12.6991V12.6991Z" stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_322_10611">
+                <rect width="22" height="17.5714" fill="white" transform="translate(10 11.7141)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="instagram">
+              <svg  xmlns="http://www.w3.org/2000/svg">
+                <path class="social__link-fill" d="M41.5 20.5C41.5 31.5344 32.3333 40.5 21 40.5C9.66674 40.5 0.5 31.5344 0.5 20.5C0.5 9.4656 9.66674 0.5 21 0.5C32.3333 0.5 41.5 9.4656 41.5 20.5Z" stroke="#A1A1A1"/>
+                <path class="social__link-stroke" d="M25.5835 11.5513H16.4168C13.8855 11.5513 11.8335 13.5544 11.8335 16.0255V24.9739C11.8335 27.4449 13.8855 29.4481 16.4168 29.4481H25.5835C28.1148 29.4481 30.1668 27.4449 30.1668 24.9739V16.0255C30.1668 13.5544 28.1148 11.5513 25.5835 11.5513Z" stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="social__link-stroke" d="M24.6667 19.9359C24.7799 20.6807 24.6495 21.4412 24.2943 22.1095C23.9391 22.7778 23.3771 23.3197 22.6882 23.6582C21.9993 23.9967 21.2186 24.1145 20.4572 23.9949C19.6958 23.8753 18.9923 23.5243 18.447 22.992C17.9016 22.4596 17.5421 21.7729 17.4196 21.0296C17.2971 20.2863 17.4178 19.5242 17.7645 18.8517C18.1113 18.1792 18.6664 17.6306 19.351 17.2838C20.0355 16.9371 20.8147 16.8099 21.5776 16.9203C22.3557 17.033 23.0762 17.3869 23.6324 17.93C24.1887 18.473 24.5513 19.1763 24.6667 19.9359Z" stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="social__link-stroke" d="M26.0415 15.5779H26.0515" stroke="#A1A1A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="linkedin">
+              <svg  xmlns="http://www.w3.org/2000/svg">
+                <path class="social__link-fill" d="M41.5 20.5C41.5 31.5344 32.3333 40.5 21 40.5C9.66674 40.5 0.5 31.5344 0.5 20.5C0.5 9.4656 9.66674 0.5 21 0.5C32.3333 0.5 41.5 9.4656 41.5 20.5Z" stroke="#A1A1A1"/>
+                <path class="social__link-stroke" d="M24.6665 17.2456C26.1252 17.2456 27.5241 17.837 28.5556 18.8896C29.587 19.9423 30.1665 21.37 30.1665 22.8587V29.4073H26.4998V22.8587C26.4998 22.3625 26.3067 21.8866 25.9629 21.5357C25.6191 21.1848 25.1527 20.9877 24.6665 20.9877C24.1803 20.9877 23.714 21.1848 23.3701 21.5357C23.0263 21.8866 22.8332 22.3625 22.8332 22.8587V29.4073H19.1665V22.8587C19.1665 21.37 19.746 19.9423 20.7774 18.8896C21.8089 17.837 23.2078 17.2456 24.6665 17.2456V17.2456Z" stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="social__link-stroke" d="M15.5002 18.1812H11.8335V29.4073H15.5002V18.1812Z" stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="social__link-stroke" d="M13.6668 15.3746C14.6794 15.3746 15.5002 14.5369 15.5002 13.5036C15.5002 12.4703 14.6794 11.6326 13.6668 11.6326C12.6543 11.6326 11.8335 12.4703 11.8335 13.5036C11.8335 14.5369 12.6543 15.3746 13.6668 15.3746Z" stroke="#A1A1A1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h2 class="footer__item-title">Marketplace</h2>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> All NFTs </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> How it works </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Create </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Explore </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Privacy & terms </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h2 class="footer__item-title">Community</h2>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Help center </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Newsletter </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Partners </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Suggestions </a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <h2 class="footer__item-title">
+          Join Newsletter
+        </h2>
+        <p class="footer__descr">
+          Signup for our newsletter to get the latest news in your inbox.
+        </p>
+        <form action="#" class="footer-form">
+          <input type="text" class="footer-form__input" placeholder="Email Address">
+          <button class="footer-form__btn" type="submit" aria-label="Submit"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-copy">
+        Copyright © 2021 ib-Themes. All Rights Reserved.
+      </p>
+    </div>
+</footer>
+
+  </div>
+</body>
+</html>

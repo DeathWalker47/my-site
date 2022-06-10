@@ -1,0 +1,57 @@
+@mixin burder {
+  position: relative;
+  border: none;
+  padding: 0;
+  @extend %burger-width;
+  @extend %burger-height;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: currentColor;
+    @extend %burger-line-height;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    @extend %burger-line-height;
+    background-color: currentColor;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &--active {
+    &::before {
+      top: 50%;
+      transform: rotate(-45deg);
+      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, width .3s ease-in-out;
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease-in-out, bottom 0.3s ease-in-out, top 0.3s ease-in-out, width .3s ease-in-out;
+    }
+
+    .burger__line {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}

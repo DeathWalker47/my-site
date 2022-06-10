@@ -1,0 +1,22 @@
+body,
+html {
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  //ширина и высота скролла
+  ::-webkit-scrollbar-track-piece {
+    background-color: $dark-gray;
+  }
+
+  //цвет полосы
+  ::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: $accent;
+    border-radius: 10px;
+  }
+
+  /* ползунок скроллбара */
+}

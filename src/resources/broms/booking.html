@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Broms</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <header class="header" data-aos="fade-down"
+                           data-aos-easing="linear"
+                           data-aos-duration="1500">
+      <div class="header__inner">
+        <div class="header__logo">
+          <button class="header__menu-btn">
+            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+              <rect y="0.21582" width="22" height="2" rx="1" fill="white"/>
+              <rect y="6.21582" width="22" height="2" rx="1" fill="white"/>
+              <rect y="12.2158" width="22" height="2" rx="1" fill="white"/>
+              </g>
+              </svg>
+          </button>
+          <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="header__navigation">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class=" menu__list-home" href="index.html">Главная</a>
+              </li>
+              <li class="menu__list-item menu__dropdawn">
+                <a class=" menu__dropdawn-link" href="#">Еще</a>
+                <ul class="dropdawn">
+                  <li class="menu__dropdawn-item">
+                    <a href="reviews.html" class="menu__dropdawn-link">Отзывы</a>
+                  </li>
+                  <li class="menu__dropdawn-item">
+                    <a href="gallery.html" class="menu__dropdawn-link ">Галерея</a>
+                  </li>
+                  <li class="menu__dropdawn-item">
+                    <a href="#" class="menu__dropdawn-link menu__dropdawn-link--active menu__dropdawn-booking">Бронирование</a>
+                  </li>
+                  <li class="menu__dropdawn-item ">
+                    <a href="error.html" class="menu__dropdawn-link menu__dropdawn-link--active menu__dropdawn-error">Бронирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#about-me">Обо мне</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#about-us">О нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#price">Услуги</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn-contact">
+            Контакты
+          </button>
+        </div>
+      </div>
+    </header>
+   
+    <main class="main">
+      <section class="top-section">
+        <div class="top-section__container">
+          <div class="container">
+            <h1 class="top-section__title title">
+              Бронирование
+            </h1>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="index.html" class="breadcrumbs__lin">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="booking.html" class="breadcrumbs__lin">Бронирование</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="booking">
+        <div class="container">
+          <div class="booking__top">
+            <h4 class="booking__title title">
+              Выберите подходящую дату
+            </h4>
+            <p class="booking__text">
+              Чтобы забронировтаь фотосъемку, необходимо выбрать свободную дату, подходящее для Вас время, и оставить свою заявку.
+            </p>
+          </div>
+          <div class="booking-calendar">
+            <div class="booking-calendar__month">
+              <p>Декабрь 2020</p>
+            </div>
+            <div class="booking-calendar__week">
+              <span class="booking-calendar__day">
+                Пн
+              </span>
+              <span class="booking-calendar__day">
+                Вт
+              </span>
+              <span class="booking-calendar__day">
+                Ср
+              </span>
+              <span class="booking-calendar__day">
+                Чт
+              </span>
+              <span class="booking-calendar__day">
+                Пт
+              </span>
+              <span class="booking-calendar__day">
+                Сб
+              </span>
+              <span class="booking-calendar__day">
+                Вс
+              </span>
+            </div>
+            <form class="booking-calendar__date" action="#">
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">30</span>
+                <span class="date-day date-day--md">Пн</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">1</span>
+                <span class="date-day date-day--td">Вт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">2</span>
+                <span class="date-day date-day--wd">Ср</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">3</span>
+                <span class="date-day date-day--thd">Чт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">4</span>
+                <span class="date-day date-day--fd">Пт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">5</span>
+                <span class="date-day date-day--std">Сб</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">6</span>
+                <span class="date-day date-day--sd">Вс</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">7</span>
+                <span class="date-day date-day--mn">Пн</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">8</span>
+                <span class="date-day date-day--td">Вт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">9</span>
+                <span class="date-day date-day--wd">Ср</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">10</span>
+                <span class="date-day date-day--thd">Чт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">11</span>
+                <span class="date-day date-day--fd">Пт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">12</span>
+                <span class="date-day date-day--std">Сб</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">13</span>
+                <span class="date-day date-day--sd">Вс</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" >
+                <span class="booking-calendar__checkbox">14</span>
+                <span class="date-day date-day--md">Пн</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">15</span>
+                <span class="date-day date-day--td">Вт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" >
+                <span class="booking-calendar__checkbox">16</span>
+                <span class="date-day date-day--wd">Ср</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">17</span>
+                <span class="date-day date-day--thd">Чт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" >
+                <span class="booking-calendar__checkbox">18</span>
+                <span class="date-day date-day--fd">Пт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">19</span>
+                <span class="date-day date-day--std">Сб</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">20</span>
+                <span class="date-day date-day--sd">Вс</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">21</span>
+                <span class="date-day date-day--md">Пн</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">22</span>
+                <span class="date-day date-day--td">Вт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">23</span>
+                <span class="date-day date-day--wd">Ср</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" >
+                <span class="booking-calendar__checkbox">24</span>
+                <span class="date-day date-day--shd">Чт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">25</span>
+                <span class="date-day date-day--wd">Пт</span>
+                
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">26</span>
+                <span class="date-day date-day--std">Сб</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">27</span>
+                <span class="date-day date-day--sd">Вс</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" >
+                <span class="booking-calendar__checkbox">28</span>
+                <span class="date-day date-day--md">Пн</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">29</span>
+                <span class="date-day date-day--td">Вт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">30</span>
+                <span class="date-day date-day--wd">Ср</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date">
+                <span class="booking-calendar__checkbox">31</span>
+                <span class="date-day date-day--td">Чт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" >
+                <span class="booking-calendar__checkbox">1</span>
+                <span class="date-day date-day--fd">Пт</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">2</span>
+                <span class="date-day date-day--std">Сб</span>
+              </label>
+              <label class="booking-calendar__label">
+                <input class="booking-calendar__input" type="radio" name="date" disabled>
+                <span class="booking-calendar__checkbox">3</span>
+                <span class="date-day date-day--sd">Вс</span>
+              </label>
+              <div class="popup-overlay"></div>
+              <div class="booking-box">
+                <p class="booking-box__close">&times;</p>
+                <div class="booking-box__item">
+                  <div class="booking-box__box-time">
+                    <span class="booking-box__time">
+                      7:00 – 9:00 
+                    </span>
+                    <span class="booking-box__place">
+                      Доступно 3 места
+                    </span>
+                  </div>
+                  <div class="booking-box__btn-box">
+                    <button class="booking-box__btn">Записаться</button>
+                  </div>
+                </div>
+
+                <div class="booking-box__item">
+                  <div class="booking-box__box-time">
+                    <span class="booking-box__time">
+                      10:00 AM – 11:00 AM
+                    </span>
+                    <span class="booking-box__place">
+                      Доступно 4 места
+                    </span>
+                  </div>
+                  <div class="booking-box__btn-box">
+                    <button class="booking-box__btn">Записаться</button>
+                  </div>
+                </div>
+
+                <div class="booking-box__item">
+                  <div class="booking-box__box-time">
+                    <span class="booking-box__time">
+                      2:00 PM – 4:00 PM 
+                    </span>
+                    <span class="booking-box__place">
+                      Доступно 2 места
+                    </span>
+                  </div>
+                  <div class="booking-box__btn-box">
+                    <button class="booking-box__btn">Записаться</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <div class="footer__item-title">
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <p class="footer__text">
+            Подписывайтесь  и следите за нашими соц-сетями, чтобы не пропустить интересный контент, а также скидки и акции.
+          </p>
+          <ul class="top__social-list">
+            <li class="top__social-item">
+              <a class="top__social-link" href="#">Fb</a>
+            </li>
+            <li class="top__social-item">
+              <a class="top__social-link" href="#">Tw</a>
+            </li>
+            <li class="top__social-item">
+              <a class="top__social-link" href="#">In</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title title">
+            Новостная рассылка
+          </h3>
+          <p class="footer__text">
+            Подпишитесь, чтобы получать еженедельную рассылку.
+          </p>
+          <form class="footer__form" action="#">
+            <input class="footer__form-input" type="email" placeholder="Введите Email">
+            <button class="footer__form-btn">Подписаться</button>
+          </form>
+        </div>
+
+        <div class="footer__item">
+            <h3 class="footer__item-title title">
+              Конакты
+            </h3>
+          <p class="footer__text">
+            Наши контактные данные.
+          </p>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <a class="footer__contact-link" href="mailto: Info@broms.com">Info@broms.com</a>
+              <a class="footer__contact-link" href="tel: +13547896452">+1 (354) 78 96 452</a>
+            </div>
+            
+            <div class="footer__contact-item">
+              <p class="footer__contact-address">
+                Проспект мира, 21 <br>
+                Москва, Россия
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+          <p class="footer__bottom-copy">
+            © Все права защищены. Broms 2020.
+          </p>
+          <div class="footer__bottom-links">
+            <a class="footer__bottom-link" href="#">
+              Условия и положения
+            </a>
+            <a class="footer__bottom-link" href="#">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+// bg-color
+  $bg-main: var(--bg-main);
+  $bg-second: var(--bg-second);
+  $bg-img: var(--bg-img);
+  $bg-fill: var(--bg-fill);
+
+  // Color
+  $default: var(--default);
+  $title: var(--title);
+  $accent: var(--accent);
+  $dark-gray: var(--dark-gray);
+  $gap: 20px;
+  $padding: 80px 0 80px;
+
+%burger-width {
+  width: 35px;
+}
+
+%burger-height {
+  height: 20px;
+}
+
+%burger-line-height {
+  height: 1px;
+}
+
+
+%open-300 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%open-400 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+%open-500 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+%open-600 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%open-700 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%oswald-700 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%oswald-400 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

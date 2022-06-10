@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Product</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__navigation">
+          <a class="logo header__logo" href="index.html">
+            <picture>
+              <source srcset="images/logo-mobile.svg" media="(max-width:992px)">
+              <img src="images/Logo.svg" alt="logo">
+            </picture>
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line">
+              </span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">about us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link  menu__link--active" href="shop.html">shop</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="blog.html">blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="cart.html">cart</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="checkout.html">checkout</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="profile.html">profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__user-panel user-panel">
+          <a class=" user-panel__link user-panel__search" href="#">
+            <img class="user-panel__link-img" src="images/icon/search.svg" alt="search">
+          </a>
+          <a class="user-panel__link user-panel__user" href="profile.html">
+            <img class="user-panel__link-img" src="images/icon/user.svg" alt="user">
+          </a>
+          <a class="user-panel__link user-panel__heart" href="checkout.html">
+            <img class="user-panel__link-img" src="images/icon/heart.svg" alt="heart">
+          </a>
+          <a class="user-panel__link user-panel__cart" href="cart.html">
+            <img class="user-panel__link-img" src="images/icon/cart.svg" alt="cart">
+            <span class="user-panel__num">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="head">
+      <div class="container">
+        <div class="head__content head__content--product">
+          <h1 class="title head__title">
+            product
+          </h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="shop.html" class="breadcrumbs__link">Shop</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="product.html" class="breadcrumbs__link breadcrumbs__link--active">Product</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <div class="product__images product-slider">
+
+            <div  class="product-slider__big big-swiper">
+              
+              <div class="swiper-wrapper">
+                <div class="swiper-slide product-slider__big-item">
+                  <button class="bests-sellers__item-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40pt" height="40pt" viewBox="0 0 40 40"><path style="stroke:none;fill-rule:nonzero;fill:#868c96;fill-opacity:1" d="M36.727 4.91a10.965 10.965 0 0 0-8.004-3.496 10.97 10.97 0 0 0-8.012 3.492L20 5.652l-.707-.746a10.937 10.937 0 0 0-8.012-3.488c-3.039 0-5.941 1.262-8.011 3.488a12.276 12.276 0 0 0 0 16.684l15.695 16.547a1.427 1.427 0 0 0 2.074 0L36.727 21.59a12.268 12.268 0 0 0 0-16.684zM34.66 19.621 20.004 35.078l-14.66-15.46a9.37 9.37 0 0 1 0-12.743 8.084 8.084 0 0 1 11.879 0l1.742 1.84c.574.57 1.5.57 2.074 0l1.746-1.84a8.087 8.087 0 0 1 11.875 0c3.36 3.602 3.387 9.168 0 12.746zm0 0"/></svg>
+                </button>
+                  <picture>
+                    <source class="product-slider__big-img" srcset="images/shop-slider/big-1.webp" type="image/webp">
+                    <img class="product-slider__big-img" src="images/shop-slider/big-1.jpg" alt="photo">
+                  </picture>
+                </div>
+                
+                <div class="swiper-slide product-slider__big-item">
+                  <button class="bests-sellers__item-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40pt" height="40pt" viewBox="0 0 40 40"><path style="stroke:none;fill-rule:nonzero;fill:#868c96;fill-opacity:1" d="M36.727 4.91a10.965 10.965 0 0 0-8.004-3.496 10.97 10.97 0 0 0-8.012 3.492L20 5.652l-.707-.746a10.937 10.937 0 0 0-8.012-3.488c-3.039 0-5.941 1.262-8.011 3.488a12.276 12.276 0 0 0 0 16.684l15.695 16.547a1.427 1.427 0 0 0 2.074 0L36.727 21.59a12.268 12.268 0 0 0 0-16.684zM34.66 19.621 20.004 35.078l-14.66-15.46a9.37 9.37 0 0 1 0-12.743 8.084 8.084 0 0 1 11.879 0l1.742 1.84c.574.57 1.5.57 2.074 0l1.746-1.84a8.087 8.087 0 0 1 11.875 0c3.36 3.602 3.387 9.168 0 12.746zm0 0"/></svg>
+                </button>
+                  <picture>
+                    <source class="product-slider__big-img" srcset="images/shop-slider/big-2.webp" type="image/webp">
+                    <img class="product-slider__big-img" src="images/shop-slider/big-2.jpg" alt="photo">
+                  </picture>
+                </div>
+                
+                <div class="swiper-slide product-slider__big-item">
+                  <button class="bests-sellers__item-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40pt" height="40pt" viewBox="0 0 40 40"><path style="stroke:none;fill-rule:nonzero;fill:#868c96;fill-opacity:1" d="M36.727 4.91a10.965 10.965 0 0 0-8.004-3.496 10.97 10.97 0 0 0-8.012 3.492L20 5.652l-.707-.746a10.937 10.937 0 0 0-8.012-3.488c-3.039 0-5.941 1.262-8.011 3.488a12.276 12.276 0 0 0 0 16.684l15.695 16.547a1.427 1.427 0 0 0 2.074 0L36.727 21.59a12.268 12.268 0 0 0 0-16.684zM34.66 19.621 20.004 35.078l-14.66-15.46a9.37 9.37 0 0 1 0-12.743 8.084 8.084 0 0 1 11.879 0l1.742 1.84c.574.57 1.5.57 2.074 0l1.746-1.84a8.087 8.087 0 0 1 11.875 0c3.36 3.602 3.387 9.168 0 12.746zm0 0"/></svg>
+                </button>
+                  <picture>
+                    <source class="product-slider__big-img" srcset="images/shop-slider/big-3.webp" type="image/webp">
+                    <img class="product-slider__big-img" src="images/shop-slider/big-3.jpg" alt="photo">
+                  </picture>
+                </div>
+                
+                <div class="swiper-slide product-slider__big-item">
+                  <button class="bests-sellers__item-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40pt" height="40pt" viewBox="0 0 40 40"><path style="stroke:none;fill-rule:nonzero;fill:#868c96;fill-opacity:1" d="M36.727 4.91a10.965 10.965 0 0 0-8.004-3.496 10.97 10.97 0 0 0-8.012 3.492L20 5.652l-.707-.746a10.937 10.937 0 0 0-8.012-3.488c-3.039 0-5.941 1.262-8.011 3.488a12.276 12.276 0 0 0 0 16.684l15.695 16.547a1.427 1.427 0 0 0 2.074 0L36.727 21.59a12.268 12.268 0 0 0 0-16.684zM34.66 19.621 20.004 35.078l-14.66-15.46a9.37 9.37 0 0 1 0-12.743 8.084 8.084 0 0 1 11.879 0l1.742 1.84c.574.57 1.5.57 2.074 0l1.746-1.84a8.087 8.087 0 0 1 11.875 0c3.36 3.602 3.387 9.168 0 12.746zm0 0"/></svg>
+                </button>
+                  <picture>
+                    <source class="product-slider__big-img" srcset="images/shop-slider/big-4.webp" type="image/webp">
+                    <img class="product-slider__big-img" src="images/shop-slider/big-4.jpg" alt="photo">
+                  </picture>
+                </div>
+                
+                <div class="swiper-slide product-slider__big-item">
+                  <button class="bests-sellers__item-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40pt" height="40pt" viewBox="0 0 40 40"><path style="stroke:none;fill-rule:nonzero;fill:#868c96;fill-opacity:1" d="M36.727 4.91a10.965 10.965 0 0 0-8.004-3.496 10.97 10.97 0 0 0-8.012 3.492L20 5.652l-.707-.746a10.937 10.937 0 0 0-8.012-3.488c-3.039 0-5.941 1.262-8.011 3.488a12.276 12.276 0 0 0 0 16.684l15.695 16.547a1.427 1.427 0 0 0 2.074 0L36.727 21.59a12.268 12.268 0 0 0 0-16.684zM34.66 19.621 20.004 35.078l-14.66-15.46a9.37 9.37 0 0 1 0-12.743 8.084 8.084 0 0 1 11.879 0l1.742 1.84c.574.57 1.5.57 2.074 0l1.746-1.84a8.087 8.087 0 0 1 11.875 0c3.36 3.602 3.387 9.168 0 12.746zm0 0"/></svg>
+                </button>
+                  <picture>
+                    <source class="product-slider__big-img" srcset="images/shop-slider/big-5.webp" type="image/webp">
+                    <img class="product-slider__big-img" src="images/shop-slider/big-5.jpg" alt="photo">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <!-- big -->
+
+            <div class="product-slider__small small-swiper">
+
+              <div class="swiper-wrapper">
+                <div class="swiper-slide product-slider__small-item">
+                  <picture>
+                    <source class="product-slider__small-img" srcset="images/shop-slider/small-1.webp" type="image/webp">
+                    <img class="product-slider__small-img" src="images/shop-slider/small-1.jpg" alt="photo">
+                  </picture>
+                </div>
+
+                <div class="swiper-slide product-slider__small-item">
+                  <picture>
+                    <source class="product-slider__small-img" srcset="images/shop-slider/small-2.webp" type="image/webp">
+                    <img class="product-slider__small-img" src="images/shop-slider/small-2.jpg" alt="photo">
+                  </picture>
+                </div>
+
+                <div class="swiper-slide product-slider__small-item">
+                  <picture>
+                    <source class="product-slider__small-img" srcset="images/shop-slider/small-3.webp" type="image/webp">
+                    <img class="product-slider__small-img" src="images/shop-slider/small-3.jpg" alt="photo">
+                  </picture>
+                </div>
+
+                <div class="swiper-slide product-slider__small-item">
+                  <picture>
+                    <source class="product-slider__small-img" srcset="images/shop-slider/small-4.webp" type="image/webp">
+                    <img class="product-slider__small-img" src="images/shop-slider/small-4.jpg" alt="photo">
+                  </picture>
+                </div>
+
+                <div class="swiper-slide product-slider__small-item">
+                  <picture>
+                    <source class="product-slider__small-img" srcset="images/shop-slider/small-5.webp" type="image/webp">
+                    <img class="product-slider__small-img" src="images/shop-slider/small-5.jpg" alt="photo">
+                  </picture>
+                </div>
+              </div>
+              
+            </div>
+            <!-- small -->
+
+          </div>
+
+          <div class="product__content">
+          <h2 class="product__title title">
+            Moisturizing oil
+          </h2>
+          <div class="bests-sellers__item-rate">
+            <div class="star"
+            data-rateyo-rating="3.5"
+            ></div>
+            <span class="bests-sellers__item-num">
+              Reviews (15)
+            </span>
+          </div>
+          <p class="product__id-product">
+            ID: 477719
+            <span class="product__are-available">
+              Are available
+            </span>
+          </p>
+          <div class="product__sum-box">
+            <p class="product__sum product__sum--active" id="ml-250">
+              <span class="bests-sellers__item-sum--sale">$150</span> $120
+            </p>
+            <p class="product__sum" id="ml-350">
+              <span class="bests-sellers__item-sum--sale">$200</span> $160
+            </p>
+            <p class="product__sum" id="ml-500">
+              <span class="bests-sellers__item-sum--sale">$350</span> $290
+            </p>
+          </div>
+          <p class="product__text">
+            Aloe Vera Seawater Moisturizing and Soothing Gel is a multifunctional product, which means it can be applied to the face, body, hair and even around the eyes. Aloe Vera Seawater Moisturizing and Soothing Gel is a multifunctional product, which means it can be applied to the face, body, hair and even around the eyes. 
+          </p>
+          <div class="product__variant">
+            <h4 class="product__variant-title">
+              Product variant
+            </h4>
+            <div class="product__variant-box">
+              <a class="product__variant-link product__variant-link--active" href="#ml-250">
+                250 ml
+              </a>
+              <a class="product__variant-link" href="#ml-350">
+                350 ml
+              </a>
+              <a class="product__variant-link" href="#ml-500">
+                500 ml
+              </a>
+            </div>
+          </div>
+          <form class="product__form" action="#">
+            <div class="quantity">
+              <input type="number" min="1" max="99" step="1" value="1">
+            </div>
+            <button class="product__form-btn" type="submit">add to cart</button>
+          </form>
+        </div>
+        </div>
+        <!-- inner -->
+        <div class="product-bottom">
+          <div class="product-bottom__tabs product-tabs">
+            <div class="product-tabs__top">
+              <a class="product-tabs__link" href="#tab-1">Description</a>
+              <a class="product-tabs__link" href="#tab-2">Instructions</a>
+              <a class="product-tabs__link product-tabs__link--active" href="#tab-3">Reviews (15)</a>
+            </div>
+            <div class="product-tabs__content">
+              <div class="product-tabs__content-item" id="tab-1">
+                <p class="product-tabs__content-text">
+                  Moisturizing oil relaxing Lolly provides the necessary level and time of sliding, and also intensively cares for the skin of the body. A unique recipe based on natural and essential oils will make the massage procedure unforgettable. Natural essential oils of verbena and lavender have a wonderful soothing and relaxing effect. They relieve fatigue, anxiety, are an excellent immunomodulator and antidepressant. Olive oil contains essential fatty acids: Omega-3, Omega-6, Omega-9, antioxidants and vitamin E, which retain moisture and even out skin tone. It is used for all types of massage: cupping, anti-cellulite, spontaneous and others. 
+                </p>
+              </div>
+              <div class="product-tabs__content-item" id="tab-2">
+                <p class="product-tabs__content-text">
+                  <b>How to use:</b> Apply oil to clean, dry palms of hands, distribute evenly over the massage area. Enjoy the treatment and the aroma of essential oils. Absorbs quickly. Does not require rinsing.
+                </p>
+              </div>
+              <div id="tab-3" class="product-tabs__content-item product-tabs__content-item--active" >
+
+                <div class="shop-comments">
+                    <div class="comment__info">
+                      <a class="comment__name" href="#">
+                        Evangeline Stewart
+                      </a>
+                      <p class="comment__data">
+                        July 23, 2021
+                      </p>
+                      <div class="star" data-rateyo-rating="4.5"></div>
+                    </div>
+                    <p class="shop-comments__text">
+                      I like it so far. There was just a lack of such a thin, light milk with an unobtrusive aroma, well absorbed, so that it could be used on different occasions. And my hands really liked it, it was absorbed easily and quickly, creating a feeling of hydration. And my hands really liked it, it was absorbed easily and quickly.
+                    </p>
+                  </div>
+                  
+                <div class="shop-comments">
+                    <div class="comment__info">
+                      <a class="comment__name" href="#">
+                        Fiona Cooper
+                      </a>
+                      <p class="comment__data">
+                        July 17, 2021
+                      </p>
+                      <div class="star" data-rateyo-rating="4.5"></div>
+                    </div>
+                    <p class="shop-comments__text">
+                      My hands really liked it, it was absorbed easily and quickly, creating a feeling of hydration. And my hands really liked it, it was absorbed easily and quickly, creating a feeling of hydration.
+                    </p>
+                  </div>
+                  
+                <div class="shop-comments">
+                    <div class="comment__info">
+                      <a class="comment__name" href="#">
+                        Hanna Edwards
+                      </a>
+                      <p class="comment__data">
+                        July 3, 2021
+                      </p>
+                      <div class="star" data-rateyo-rating="3.5"></div>
+                    </div>
+                    <p class="shop-comments__text">
+                      I like it so far. There was just a lack of such a thin, light milk with an unobtrusive aroma, well absorbed, so that it could be used on different occasions. And my hands really liked it, it was absorbed easily and quickly, creating a feeling of hydration. And my hands really liked it.
+                    </p>
+                  </div>
+                  
+                <div class="shop-comments">
+                    <div class="comment__info">
+                      <a class="comment__name" href="#">
+                        Josephine Henderson
+                      </a>
+                      <p class="comment__data">
+                        July 1, 2021
+                      </p>
+                      <div class="star" data-rateyo-rating="3.5"></div>
+                    </div>
+                    <p class="shop-comments__text">
+                      My hands really liked it, it was absorbed easily and quickly, creating a feeling of hydration. And my hands really liked it, it was absorbed easily and quickly, creating a feeling of hydration.
+                    </p>
+                  </div>
+
+                  <a class="product-tabs__show-more" href="#">show more</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-bottom__images">
+              <div class="product-bottom__reviews">
+                <p class="product-bottom__reviews-num">5.0</p>
+                <div class="star"
+                  data-rateyo-rating="5"
+              ></div>
+              <a class="product-bottom__reviews-link" href="#">Leave a Reviews</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="related-product">
+      <div class="container">
+        <span class="subtitle">
+          Only better
+        </span>
+        <h2 class="title related-product__title">
+          related products
+        </h2>
+        <div class="bests-sellers__inner">
+          
+          <div class="bests-sellers__item bests-sellers__item--hit bests-sellers__item--new">
+            <button class="bests-sellers__item-like">
+              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+            </button>
+            <a class="bests-sellers__item-box" href="#">
+              <picture>
+                <source class="bests-sellers__item-img" srcset="images/shop-6.webp" type="image/webp">
+                <img class="bests-sellers__item-img" src="images/shop-6.jpg" alt="shop">
+              </picture>
+            </a>
+            <div class="bests-sellers__item-rate">
+              <div class="star"
+              data-rateyo-rating="3.5"
+              ></div>
+              <span class="bests-sellers__item-num">
+                (6)
+              </span>
+            </div>
+            <div class="bests-sellers__item-content">
+              <a class="bests-sellers__item-link" href="#">
+                <h3 class="title bests-sellers__item-title">
+                  Shampoo
+                </h3>
+              </a>
+              <p class="bests-sellers__item-text">
+                Lollipop shampoo for normal hair oil against irritation
+              </p>
+              <p class="bests-sellers__item-sum">
+                $99
+              </p>
+            </div>
+          </div>
+
+          <div class="bests-sellers__item bests-sellers__item--new">
+            <button class="bests-sellers__item-like">
+              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+            </button>
+            <a class="bests-sellers__item-box" href="#">
+              <picture>
+                <source class="bests-sellers__item-img" srcset="images/shop-5.webp" type="image/webp">
+                <img class="bests-sellers__item-img" src="images/shop-5.jpg" alt="shop">
+              </picture>
+            </a>
+            <div class="bests-sellers__item-rate">
+              <div class="star"
+              data-rateyo-rating="3.5"
+              ></div>
+              <span class="bests-sellers__item-num">
+                (85)
+              </span>
+            </div>
+            <div class="bests-sellers__item-content">
+              <a class="bests-sellers__item-link" href="#">
+                <h3 class="title bests-sellers__item-title">
+                  body milk
+                </h3>
+              </a>
+              <p class="bests-sellers__item-text">
+                Lollipop nourishing face cream nourishing face cream
+              </p>
+              <p class="bests-sellers__item-sum">
+                $130
+              </p>
+            </div>
+          </div>
+
+          <div class="bests-sellers__item bests-sellers__item--new">
+            <button class="bests-sellers__item-like">
+              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+            </button>
+            <a class="bests-sellers__item-box" href="#">
+              <picture>
+                <source class="bests-sellers__item-img" srcset="images/shop-1.webp" type="image/webp">
+                <img class="bests-sellers__item-img" src="images/shop-1.jpg" alt="shop">
+              </picture>
+            </a>
+            <div class="bests-sellers__item-rate">
+              <div class="star" 
+              data-rateyo-rating="4.5"
+              ></div>
+              <span class="bests-sellers__item-num">
+                (15)
+              </span>
+            </div>
+            <div class="bests-sellers__item-content">
+              <a class="bests-sellers__item-link" href="#">
+                <h3 class="title bests-sellers__item-title">
+                  Moisturizing oil
+                </h3>
+              </a>
+              <p class="bests-sellers__item-text">
+                Lollipop lipid-reducing oil against irritation
+              </p>
+              <p class="bests-sellers__item-sum">
+                $120
+              </p>
+            </div>
+          </div>
+
+          <div class="bests-sellers__item bests-sellers__item--sale bests-sellers__item--hit">
+            <button class="bests-sellers__item-like">
+              <svg  width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+            </button>
+            <a class="bests-sellers__item-box" href="#">
+              <picture>
+                <source class="bests-sellers__item-img" srcset="images/shop-4.webp" type="image/webp">
+                <img class="bests-sellers__item-img" src="images/shop-4.jpg" alt="shop">
+              </picture>
+            </a>
+            <div class="bests-sellers__item-rate">
+              <div class="star"
+              data-rateyo-rating="5"
+              ></div>
+              <span class="bests-sellers__item-num">
+                (24)
+              </span>
+            </div>
+            <div class="bests-sellers__item-content">
+              <a class="bests-sellers__item-link" href="#">
+                <h3 class="title bests-sellers__item-title">
+                  Sunscreen milk
+                </h3>
+              </a>
+              <p class="bests-sellers__item-text">
+                Lollipop sun milk for sensitive skin 
+                SPF 50
+              </p>
+              <p class="bests-sellers__item-sum">
+                <span class="bests-sellers__item-sum--sale">$69</span> $36
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contact">
+            <h4 class="footer__contact-title title">
+              Contact us
+            </h4>
+            <a class="footer__link footer__link--tel" href="tel:+18669962000">+1-866-996-2000</a>
+            <a class="footer__link footer__link--email" href="mailto:lolli@example.com">lolli@example.com</a>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/fb.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/tw.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/inst.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/youtube.svg" alt="social link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              help
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Information
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Privacy Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Shipping Details</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Support
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="about.html" class="footer__list-link">About us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Careers
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Deliveries
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Refund Requests
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="contact.html" class="footer__list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Information
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search Terms</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Advanced Search
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">FAQ & Help Docs
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Orders & Returns
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Store Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            Copyright © 2021 Lolli.  All Rights Reserved
+          </p>
+          <ul class="footer__cart-list">
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-1.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-2.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-3.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-4.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-5.svg" alt="cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

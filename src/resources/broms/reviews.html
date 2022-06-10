@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Broms</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <header class="header" data-aos="fade-down"
+                           data-aos-easing="linear"
+                           data-aos-duration="1500">
+      <div class="header__inner">
+        <div class="header__logo">
+          <button class="header__menu-btn">
+            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+              <rect y="0.21582" width="22" height="2" rx="1" fill="white"/>
+              <rect y="6.21582" width="22" height="2" rx="1" fill="white"/>
+              <rect y="12.2158" width="22" height="2" rx="1" fill="white"/>
+              </g>
+              </svg>
+          </button>
+          <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="header__navigation">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class=" menu__list-home" href="index.html">Главная</a>
+              </li>
+              <li class="menu__list-item menu__dropdawn">
+                <a class=" menu__dropdawn-link" href="#">Еще</a>
+                <ul class="dropdawn">
+                  <li class="menu__dropdawn-item">
+                    <a href="reviews.html" class="menu__dropdawn-link menu__dropdawn-link--active">Отзывы</a>
+                  </li>
+                  <li class="menu__dropdawn-item">
+                    <a href="gallery.html" class="menu__dropdawn-link">Галерея</a>
+                  </li>
+                  <li class="menu__dropdawn-item menu__dropdawn-item--none">
+                    <a href="booking.html" class="menu__dropdawn-link">Бронирование</a>
+                  </li>
+                  <li class="menu__dropdawn-item menu__dropdawn-error">
+                    <a href="error.html" class="menu__dropdawn-link ">Бронирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#about-me">Обо мне</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#about-us">О нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#price">Услуги</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link-block" href="index.html#contact">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__btn-contact">
+            Контакты
+          </button>
+        </div>
+      </div>
+    </header>
+   
+    <main class="main">
+      <section class="top-section">
+        <div class="top-section__container">
+          <div class="container">
+            <h1 class="top-section__title title">
+              Отзывы
+            </h1>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="index.html" class="breadcrumbs__lin">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="reviews.html" class="breadcrumbs__lin">Отзывы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+     <section class="reviews">
+       <div class="container">
+         <div class="reviews__items">
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-6.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-6.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Дмитрий  Николаев
+              </span>
+            </div>
+            <p class="reviews__text">
+              Заказ был выполнен в срок и на высоком уровне. Было легко работать с профессионалами. Спасибо за проделанную работу, буду дальше сотрудничать.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-3.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-3.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Алина Мамедова
+              </span>
+            </div>
+            <p class="reviews__text">
+              Я до сих пор с любовью вспоминаю день моей фотосессии. Все было замечательно. Спокойная атмосфера, позитивное общение, помощь в постановке.  Было очень приятно и легко работать! Желаю Вам всего хорошего.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-8.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-8.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Ирина Мотвеева
+              </span>
+            </div>
+            <p class="reviews__text">
+              Спасибо большое. Хочу выразить огромную благодарность за отличную работу и за позитивный настрой, который чувствуется во время фотосъемки.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-2.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-2.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Михаил Швец
+              </span>
+            </div>
+            <p class="reviews__text">
+              Большое спасибо за теплые моменты того дня. Хочу пожелать вам такого же неутолимого заряда позитива и настроения как на работе, так и вне ее.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-4.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-4.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Мария Иванова
+              </span>
+            </div>
+            <p class="reviews__text">
+              Благодарим за отличную работу. Наша свадьба была 05.09.2020. Мы очень довольны. С вами было очень легко и  приятно работать. Вы такие искренние и общительные. Фотографии просто супер. Качество отличное.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-9.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-9.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Алиса Кравцова
+              </span>
+            </div>
+            <p class="reviews__text">
+              Вы помогли запечатлеть один из самых важных дней в нашей жизни и сделали это профессионально. Работа понравилась абсолютно всем; найти общее было легко.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-1.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-1.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Иван Латухин
+              </span>
+            </div>
+            <p class="reviews__text">
+              Мне посчастливилось попасть к вам на фотосессию. Большое спасибо за проделанную работу, вы профессионалы своего дела.  1,5 часа прошли незаметно. Благодаря вашему профессионализму все прошло на высшем уровне.
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-5.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-5.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Инесса Стоцкая
+              </span>
+            </div>
+            <p class="reviews__text">
+              Фотографии яркие, запечатлены все трогательные моменты. Благодаря Вам память о дне крещения нашей дочери останется с нами. Спасибо!
+            </p>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <picture>
+                <source class="reviews__item-img lazyload" srcset="images/avatar-7.webp" type="image/webp">
+                <img class="reviews__item-img lazyload" src="images/avatar-7.jpg" alt="avatar">
+              </picture>
+              <span class="reviews__item-name">
+                Тимофей Тимофеев
+              </span>
+            </div>
+            <p class="reviews__text">
+              Результат на фотографиях очень естественный и вызывает у нас улыбку. Выбором фотографа остались очень довольны.
+            </p>
+          </div>
+
+         </div>
+
+         <div class="reviews__bottom">
+           <form class="reviews-form" action="#">
+             <h3 class="reviews-form__title title">
+              Оставьте свой отзыв
+             </h3>
+             <div class="reviews-form__input-box">
+               <input class="reviews-form__input input" type="text" placeholder="Имя" required>
+               <input class="reviews-form__input input" type="text" placeholder="Email" required>
+               <input class="reviews-form__input input" type="text" placeholder="Телефон">
+             </div>
+             <textarea class="reviews-form__textarea textarea" placeholder="Комментарий"></textarea>
+             <button class="reviews-form__btn">Отправить</button>
+           </form>
+           <div class="reviews-sale">
+             <picture>
+               <source class="reviews-sale__img lazyload" srcset="images/sale-20.webp" type="image/webp">
+               <img class="reviews-sale__img lazyload" src="images/sale-20.jpg" alt="sale">
+             </picture>
+             <div class="reviews-sale__box">
+              <p class="reviews-sale__text">
+                Фотосъемка
+                <span>
+                  Студия
+                </span>
+              </p>
+              <p class="reviews-sale__num">
+                -20%
+              </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <div class="footer__item-title">
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <p class="footer__text">
+            Подписывайтесь  и следите за нашими соц-сетями, чтобы не пропустить интересный контент, а также скидки и акции.
+          </p>
+          <ul class="top__social-list">
+            <li class="top__social-item">
+              <a class="top__social-link" href="#">Fb</a>
+            </li>
+            <li class="top__social-item">
+              <a class="top__social-link" href="#">Tw</a>
+            </li>
+            <li class="top__social-item">
+              <a class="top__social-link" href="#">In</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title title">
+            Новостная рассылка
+          </h3>
+          <p class="footer__text">
+            Подпишитесь, чтобы получать еженедельную рассылку.
+          </p>
+          <form class="footer__form" action="#">
+            <input class="footer__form-input" type="email" placeholder="Введите Email">
+            <button class="footer__form-btn">Подписаться</button>
+          </form>
+        </div>
+
+        <div class="footer__item">
+            <h3 class="footer__item-title title">
+              Конакты
+            </h3>
+          <p class="footer__text">
+            Наши контактные данные.
+          </p>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <a class="footer__contact-link" href="mailto: Info@broms.com">Info@broms.com</a>
+              <a class="footer__contact-link" href="tel: +13547896452">+1 (354) 78 96 452</a>
+            </div>
+            
+            <div class="footer__contact-item">
+              <p class="footer__contact-address">
+                Проспект мира, 21 <br>
+                Москва, Россия
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+          <p class="footer__bottom-copy">
+            © Все права защищены. Broms 2020.
+          </p>
+          <div class="footer__bottom-links">
+            <a class="footer__bottom-link" href="#">
+              Условия и положения
+            </a>
+            <a class="footer__bottom-link" href="#">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

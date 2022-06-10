@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Shop</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__navigation">
+          <a class="logo header__logo" href="index.html">
+            <picture>
+              <source srcset="images/logo-mobile.svg" media="(max-width:992px)">
+              <img src="images/Logo.svg" alt="logo">
+            </picture>
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line">
+              </span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">about us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="shop.html">shop</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="blog.html">blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="cart.html">cart</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="checkout.html">checkout</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="profile.html">profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__user-panel user-panel">
+          <a class=" user-panel__link user-panel__search" href="#">
+            <img class="user-panel__link-img" src="images/icon/search.svg" alt="search">
+          </a>
+          <a class="user-panel__link user-panel__user" href="profile.html">
+            <img class="user-panel__link-img" src="images/icon/user.svg" alt="user">
+          </a>
+          <a class="user-panel__link user-panel__heart" href="checkout.html">
+            <img class="user-panel__link-img" src="images/icon/heart.svg" alt="heart">
+          </a>
+          <a class="user-panel__link user-panel__cart" href="cart.html">
+            <img class="user-panel__link-img" src="images/icon/cart.svg" alt="cart">
+            <span class="user-panel__num">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="head">
+      <div class="container">
+        <div class="head__content head__content--shop">
+          <h1 class="title head__title">
+            Shop
+          </h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="shop.html" class="breadcrumbs__link breadcrumbs__link--active">Shop</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+          <button class="shop__filter-btn" type="button">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20pt" height="20pt" viewBox="0 0 20 20" version="1.1">
+            <g id="surface1">
+            <path style=" stroke:#868C96;fill:#000;fill-opacity:1;" d="M 18.933594 0 L 1.09375 0 C 0.78125 0 0.492188 0.175781 0.347656 0.457031 C 0.203125 0.738281 0.226562 1.082031 0.414062 1.339844 L 6.949219 10.546875 C 6.953125 10.550781 6.953125 10.550781 6.957031 10.554688 C 7.195312 10.875 7.320312 11.265625 7.324219 11.664062 L 7.324219 19.171875 C 7.320312 19.394531 7.410156 19.605469 7.566406 19.765625 C 7.722656 19.921875 7.933594 20.011719 8.15625 20.011719 C 8.269531 20.011719 8.382812 19.988281 8.488281 19.945312 L 12.160156 18.542969 C 12.488281 18.445312 12.707031 18.132812 12.707031 17.757812 L 12.707031 11.664062 C 12.707031 11.265625 12.835938 10.875 13.074219 10.554688 C 13.074219 10.550781 13.078125 10.550781 13.078125 10.546875 L 19.617188 1.339844 C 19.800781 1.082031 19.828125 0.738281 19.679688 0.457031 C 19.539062 0.175781 19.25 0 18.933594 0 Z M 12.253906 9.953125 C 11.890625 10.449219 11.691406 11.046875 11.691406 11.664062 L 11.691406 17.636719 L 8.339844 18.914062 L 8.339844 11.664062 C 8.335938 11.046875 8.140625 10.449219 7.773438 9.953125 L 1.429688 1.015625 L 18.597656 1.015625 Z M 12.253906 9.953125 "/>
+            </g>
+            </svg>
+            
+          </button>
+          <div class="shop__filter filter">
+
+            <div class="shop__filter-item filter__search">
+              <form class="filter__search-form" action="#">
+                <input class="filter__search-input" type="text" placeholder="Search">
+                <button class="filter__search-btn">
+                  <img src="images/icon/search-btn.svg" alt="search btn">
+                </button>
+              </form>
+            </div>
+
+            <div class="shop__filter-item filter__categories">
+              <h3 class="filter__title">
+                Categories
+              </h3>
+              <form class="filter__categories-form" action="#">
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Body oil (23)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Masks (15)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Creams (2)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Lotions (9)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Organic (42)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Masks (15)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Organic (42)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Anti-cellulite (8)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    Lotions (9)
+                  </span>
+                </label>
+              </form>
+            </div>
+
+            <div class="shop__filter-item filter__categories">
+              <h3 class="filter__title">
+                Age Categories
+              </h3>
+              <form class="filter__categories-form" action="#">
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    18+ (5)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    30+ (2)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    35+ (19)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    40+ (19)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    45+ (9)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    50+ (5)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    55+ (13)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    60+ (8)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    65+ (9)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    70+ (2)
+                  </span>
+                </label>
+
+                <label class="filter__categories-label">
+                  <input class="filter__categories-input" type="checkbox">
+                  <span class="filter__categories-checkbox">
+                  </span>
+                  <span class="filter__categories-text">
+                    75+ (1)
+                  </span>
+                </label>
+              </form>
+            </div>
+
+            <div class="shop__filter-item filter__gender">
+              <h3 class="filter__title">
+                Human gender
+              </h3>
+              <form class="filter__gender-form" action="#">
+                <label class="filter__gender-label">
+                  <input class="filter__gender-input" type="radio" name="gender">
+                  <span class="filter__gender-checkbox">
+                  </span>
+                  <span class="filter__gender-text">
+                    Women
+                  </span>
+                </label>
+
+                <label class="filter__gender-label">
+                  <input class="filter__gender-input" type="radio" name="gender">
+                  <span class="filter__gender-checkbox">
+                  </span>
+                  <span class="filter__gender-text">
+                    Men
+                  </span>
+                </label>
+
+                <label class="filter__gender-label">
+                  <input class="filter__gender-input" type="radio" name="gender">
+                  <span class="filter__gender-checkbox">
+                  </span>
+                  <span class="filter__gender-text">
+                    Children
+                  </span>
+                </label>
+
+                <label class="filter__gender-label">
+                  <input class="filter__gender-input" type="radio" name="gender">
+                  <span class="filter__gender-checkbox">
+                  </span>
+                  <span class="filter__gender-text">
+                    Unisex
+                  </span>
+                </label>
+              </form>
+            </div>
+            
+            <div class="shop__filter-item">
+              <h3 class="filter__title">
+                Price
+              </h3>
+              <form class="filter__pric" action="#">
+                <input class="filter__price-input" type="text"
+                data-min='00'
+                data-max='300'
+                data-from='60'
+                data-to='150'
+                data-type="double"
+                >
+                <label class="filter__price-label">
+                  Price:
+                  $<span class="filter__price-from"></span> -
+                  $<span class="filter__price-to"></span>
+                </label>
+              </form>
+            </div>
+
+          </div>
+
+          <div class="shop__content shop-content">
+            <div class="shop-content__top">
+              <p class="shop-content__top-showing">
+                Showing 1 - 12 of results
+              </p>
+              <div class="shop-content__top-select">
+                <form class="shop-content__form" action="#">
+                  <select class="shop-content__form-select">
+                    <option>Default sorting</option>
+                    <option>Default sorting</option>
+                    <option>Default sorting</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+
+            <div class="shop-content__inner">
+
+              <div class="bests-sellers__item bests-sellers__item--hit bests-sellers__item--new">
+                <button class="bests-sellers__item-like">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-1.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-1.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="3.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    (15)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Moisturizing oil
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop lipid-reducing oil against irritation
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan">$18</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+    
+              <div class="bests-sellers__item bests-sellers__item--hit">
+                <button class="bests-sellers__item-like">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-2.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-2.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="3.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    Reviews (8)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      face cream
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop nourishing face cream nourishing face cream
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan">$119</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+    
+              <div class="bests-sellers__item bests-sellers__item--sale">
+                <button class="bests-sellers__item-like">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-3.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-3.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star" 
+                  data-rateyo-rating="4.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    Reviews (137)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Body lotion
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Rose water and vitamin E water and vitamin E
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan"><span class="bests-sellers__item-sum--sale">$150</span> $18</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+    
+              <div class="bests-sellers__item bests-sellers__item--sale">
+                <button class="bests-sellers__item-like">
+                  <svg  width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-4.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-4.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    (8)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Sunscreen milk
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop sun milk for sensitive skin 
+                    SPF 50
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan"><span class="bests-sellers__item-sum--sale">$150</span> $120</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="swiper-slide bests-sellers__item bests-sellers__item--hit">
+                <button class="bests-sellers__item-like">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-5.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-5.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="2.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    Reviews (8)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      body milk
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop nourishing face cream nourishing face cream
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan">$130</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide bests-sellers__item bests-sellers__item--hit">
+                <button class="bests-sellers__item-like">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-6.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-6.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="4.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    Reviews (137)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Shampoo
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop shampoo for normal hair oil against irritation
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan">$99</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide bests-sellers__item bests-sellers__item--new">
+                <button class="bests-sellers__item-like">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-7.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-7.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    (17)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Sunscreen milk
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop sun milk for sensitive skin SPF 50
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan">$39</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide bests-sellers__item bests-sellers__item--sale">
+                <button class="bests-sellers__item-like">
+                  <svg  width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-8.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-8.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="3.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    (15)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Moisturizing oil
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop lipid-reducing oil against irritation
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan"><span class="bests-sellers__item-sum--sale">$149</span> $120</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              
+              
+              </div>
+
+              <div class="swiper-slide bests-sellers__item bests-sellers__item--hit bests-sellers__item--new">
+                <button class="bests-sellers__item-like">
+                  <svg  width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.364 2.455A5.478 5.478 0 0 0 14.362.708a5.485 5.485 0 0 0-4.007 1.746L10 2.827l-.353-.373a5.469 5.469 0 0 0-8.012 0 6.134 6.134 0 0 0 0 8.34l7.847 8.275a.715.715 0 0 0 1.037 0l7.845-8.275a6.133 6.133 0 0 0 0-8.34zM17.33 9.81l-7.328 7.729-7.33-7.73a4.687 4.687 0 0 1 0-6.371 4.04 4.04 0 0 1 5.94 0l.87.919a.736.736 0 0 0 1.038 0l.872-.919a4.04 4.04 0 0 1 5.938 0c1.68 1.8 1.693 4.583 0 6.372z" fill="#868C96"/></svg>
+                </button>
+                <a class="bests-sellers__item-box" href="product.html">
+                  <picture>
+                    <source class="bests-sellers__item-img" srcset="images/shop-9.webp" type="image/webp">
+                    <img class="bests-sellers__item-img" src="images/shop-9.jpg" alt="shop">
+                  </picture>
+                </a>
+                <div class="bests-sellers__item-rate">
+                  <div class="star"
+                  data-rateyo-rating="4.5"
+                  ></div>
+                  <span class="bests-sellers__item-num">
+                    Reviews (130)
+                  </span>
+                </div>
+                <div class="bests-sellers__item-content">
+                  <a class="bests-sellers__item-link" href="product.html">
+                    <h3 class="title bests-sellers__item-title">
+                      Moisturizing oil
+                    </h3>
+                  </a>
+                  <p class="bests-sellers__item-text">
+                    Lollipop lipid-reducing oil against irritation
+                  </p>
+                  <p class="bests-sellers__item-sum">
+                    <span class="bests-sellers__item-sumspan">$25</span>
+                    <button class="bests-sellers__item-button" type="submit">
+                      ADD +
+                    </button>
+                  </p>
+                </div>
+              
+              
+              </div>
+
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link pagination__link--active">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">17</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contact">
+            <h4 class="footer__contact-title title">
+              Contact us
+            </h4>
+            <a class="footer__link footer__link--tel" href="tel:+18669962000">+1-866-996-2000</a>
+            <a class="footer__link footer__link--email" href="mailto:lolli@example.com">lolli@example.com</a>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/fb.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/tw.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/inst.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/youtube.svg" alt="social link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              help
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Information
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Privacy Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Shipping Details</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Support
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="about.html" class="footer__list-link">About us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Careers
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Deliveries
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Refund Requests
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="contact.html" class="footer__list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Information
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search Terms</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Advanced Search
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">FAQ & Help Docs
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Orders & Returns
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Store Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            Copyright © 2021 Lolli.  All Rights Reserved
+          </p>
+          <ul class="footer__cart-list">
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-1.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-2.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-3.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-4.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-5.svg" alt="cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

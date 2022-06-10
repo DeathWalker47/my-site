@@ -1,0 +1,106 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  background-color: $bg-main;
+  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__text {
+    font-size: 25px;
+    line-height: 36px;
+    color: $title;
+    text-align: center;
+    animation: preloader-text 3.5s linear infinite;
+  }
+}
+
+@keyframes preloader-text {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0.7;
+  }
+
+  40% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 0.5;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $accent;
+  animation: loading-spin 3s linear infinite;
+}
+
+.loading:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #ff7d95;
+  animation: loading-spin 4s linear infinite;
+}
+
+.loading:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $accent;
+  animation: loading-spin 2.5s linear infinite;
+}
+
+@keyframes loading-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__navigation">
+          <a class="logo header__logo" href="index.html">
+            <picture>
+              <source srcset="images/logo-mobile.svg" media="(max-width:992px)">
+              <img src="images/Logo.svg" alt="logo">
+            </picture>
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line">
+              </span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">about us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="shop.html">shop</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="blog.html">blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="cart.html">cart</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="checkout.html">checkout</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="profile.html">profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__user-panel user-panel">
+          <a class=" user-panel__link user-panel__search" href="#">
+            <img class="user-panel__link-img" src="images/icon/search.svg" alt="search">
+          </a>
+          <a class="user-panel__link user-panel__user" href="profile.html">
+            <img class="user-panel__link-img" src="images/icon/user.svg" alt="user">
+          </a>
+          <a class="user-panel__link user-panel__heart" href="checkout.html">
+            <img class="user-panel__link-img" src="images/icon/heart.svg" alt="heart">
+          </a>
+          <a class="user-panel__link user-panel__cart" href="cart.html">
+            <img class="user-panel__link-img" src="images/icon/cart.svg" alt="cart">
+            <span class="user-panel__num">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="head">
+      <div class="container">
+        <div class="head__content head__content--profile">
+          <h1 class="title head__title">
+            Profile
+          </h1>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="profile.html" class="breadcrumbs__link breadcrumbs__link--active">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="profile">
+      <div class="container">
+        <div class="profile-tabs">
+          <div class="profile-tabs__top">
+            <a class="profile-tabs__link profile-tabs__link--active" href="#order">My orders</a>
+            <a class="profile-tabs__link" href="#wishlist">Wishlist</a>
+            <a class="profile-tabs__link" href="#info">My info</a>
+          </div>
+          <div class="profile-tabs__content">
+            <div class="profile-tabs__item profile-tabs__item--active order" id="order">
+              <div class="order__items">
+                <div class="order__top">
+                  <div class="order__box">
+                    <p class="order__awaiting order__top-status">
+                      Awaiting delivery
+                    </p>
+                    <p class="order__data">
+                      Order no.2635832, 06/10/2021 in 02:00 pm
+                    </p>
+                  </div>
+                  <div class="order__view">
+                    <p class="order__detals">
+                      view details
+                    </p>
+                    <p class="order__close">
+                      close
+                    </p>
+                  </div>
+                </div>
+                <div class="order__items-box">
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Sun milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x </span> $120
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Moisturizing oil
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop lipid-reducing oil against irritation
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $60
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Body milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop Nourishing and moisturizing body milk
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $80
+                    </p>
+                  </div>
+                  <div class="order__info">
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Information
+                        </h4>
+                        <p class="order__info-name">
+                          Annabelle Johnson
+                        </p>
+                        <p class="order__info-fact order__info-tel">
+                          +1.866.434.1515
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Delivery method
+                        </h4>
+                        <p class="order__info-name">
+                          Deliver America
+                        </p>
+                        <p class="order__info-fact order__info-sity">
+                          101 E 75th St, New York, NY 10021
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Payment method
+                        </h4>
+                        <p class="order__info-name">
+                          PayService
+                        </p>
+                        <p class="order__info-fact order__info-numbercart">
+                          Card: **** **** **** 1628
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="order__link" href="#">Order again</a>
+                </div>
+              </div>
+              <div class="order__items">
+                <div class="order__top">
+                  <div class="order__box">
+                    <p class="order__failed order__top-status">
+                      Payment failed
+                    </p>
+                    <p class="order__data">
+                      Order no.2635832, 06/10/2021 in 02:00 pm
+                    </p>
+                  </div>
+                  <div class="order__view">
+                    <p class="order__detals">
+                      view details
+                    </p>
+                    <p class="order__close">
+                      close
+                    </p>
+                  </div>
+                </div>
+                <div class="order__items-box">
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Sun milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x </span> $120
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Moisturizing oil
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop lipid-reducing oil against irritation
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $60
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Body milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop Nourishing and moisturizing body milk
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $80
+                    </p>
+                  </div>
+                  <div class="order__info">
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Information
+                        </h4>
+                        <p class="order__info-name">
+                          Annabelle Johnson
+                        </p>
+                        <p class="order__info-fact order__info-tel">
+                          +1.866.434.1515
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Delivery method
+                        </h4>
+                        <p class="order__info-name">
+                          Deliver America
+                        </p>
+                        <p class="order__info-fact order__info-sity">
+                          101 E 75th St, New York, NY 10021
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Payment method
+                        </h4>
+                        <p class="order__info-name">
+                          PayService
+                        </p>
+                        <p class="order__info-fact order__info-numbercart">
+                          Card: **** **** **** 1628
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="order__link" href="#">Order again</a>
+                </div>
+              </div>
+                <div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div>
+                <div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div>
+                <div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div>
+                <div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="profile-tabs__item order wishlist" id="wishlist">
+                <div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__failed order__top-status">
+                        Payment failed
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div><div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__failed order__top-status">
+                        Payment failed
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div><div class="order__items">
+                <div class="order__top">
+                  <div class="order__box">
+                    <p class="order__failed order__top-status">
+                      Payment failed
+                    </p>
+                    <p class="order__data">
+                      Order no.2635832, 06/10/2021 in 02:00 pm
+                    </p>
+                  </div>
+                  <div class="order__view">
+                    <p class="order__detals">
+                      view details
+                    </p>
+                    <p class="order__close">
+                      close
+                    </p>
+                  </div>
+                </div>
+                <div class="order__items-box">
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Sun milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x </span> $120
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Moisturizing oil
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop lipid-reducing oil against irritation
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $60
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Body milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop Nourishing and moisturizing body milk
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $80
+                    </p>
+                  </div>
+                  <div class="order__info">
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Information
+                        </h4>
+                        <p class="order__info-name">
+                          Annabelle Johnson
+                        </p>
+                        <p class="order__info-fact order__info-tel">
+                          +1.866.434.1515
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Delivery method
+                        </h4>
+                        <p class="order__info-name">
+                          Deliver America
+                        </p>
+                        <p class="order__info-fact order__info-sity">
+                          101 E 75th St, New York, NY 10021
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Payment method
+                        </h4>
+                        <p class="order__info-name">
+                          PayService
+                        </p>
+                        <p class="order__info-fact order__info-numbercart">
+                          Card: **** **** **** 1628
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="order__link" href="#">Order again</a>
+                </div>
+              </div><div class="order__items">
+                <div class="order__top">
+                  <div class="order__box">
+                    <p class="order__failed order__top-status">
+                      Payment failed
+                    </p>
+                    <p class="order__data">
+                      Order no.2635832, 06/10/2021 in 02:00 pm
+                    </p>
+                  </div>
+                  <div class="order__view">
+                    <p class="order__detals">
+                      view details
+                    </p>
+                    <p class="order__close">
+                      close
+                    </p>
+                  </div>
+                </div>
+                <div class="order__items-box">
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Sun milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x </span> $120
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Moisturizing oil
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop lipid-reducing oil against irritation
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $60
+                    </p>
+                  </div>
+                  <div class="order__item">
+                    <div class="order__item-box">
+                      <picture>
+                        <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                        <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                      </picture>
+                      <div class="order__item-text">
+                        <h6 class="order__item-title">
+                          Body milk
+                        </h6>
+                        <p class="order__item-descr">
+                          Lollipop Nourishing and moisturizing body milk
+                        </p>
+                      </div>
+                    </div>
+                    <p class="checkout__order-sum">
+                      <span class="checkout__order-amt">1 x</span> $80
+                    </p>
+                  </div>
+                  <div class="order__info">
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Information
+                        </h4>
+                        <p class="order__info-name">
+                          Annabelle Johnson
+                        </p>
+                        <p class="order__info-fact order__info-tel">
+                          +1.866.434.1515
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Delivery method
+                        </h4>
+                        <p class="order__info-name">
+                          Deliver America
+                        </p>
+                        <p class="order__info-fact order__info-sity">
+                          101 E 75th St, New York, NY 10021
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order__info-item">
+                      <div class="order__info-box">
+                        <h4 class="order__info-title">
+                          Payment method
+                        </h4>
+                        <p class="order__info-name">
+                          PayService
+                        </p>
+                        <p class="order__info-fact order__info-numbercart">
+                          Card: **** **** **** 1628
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="order__link" href="#">Order again</a>
+                </div>
+              </div>
+              </div>
+
+              <div class="profile-tabs__item order info" id="info">
+                <div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div><div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div><div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div><div class="order__items">
+                  <div class="order__top">
+                    <div class="order__box">
+                      <p class="order__delivered order__top-status">
+                        Order delivered
+                      </p>
+                      <p class="order__data">
+                        Order no.2635832, 06/10/2021 in 02:00 pm
+                      </p>
+                    </div>
+                    <div class="order__view">
+                      <p class="order__detals">
+                        view details
+                      </p>
+                      <p class="order__close">
+                        close
+                      </p>
+                    </div>
+                  </div>
+                  <div class="order__items-box">
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-4.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-4.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Sun milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop sun milk for sensitive and atopic-prone skin of babies SPF 50
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x </span> $120
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-9.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-9.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Moisturizing oil
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop lipid-reducing oil against irritation
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $60
+                      </p>
+                    </div>
+                    <div class="order__item">
+                      <div class="order__item-box">
+                        <picture>
+                          <source class="order__item-img" srcset="images/shop-5.webp" type="image/webp">
+                          <img class="order__item-img" src="images/shop-5.jpg" alt="product">
+                        </picture>
+                        <div class="order__item-text">
+                          <h6 class="order__item-title">
+                            Body milk
+                          </h6>
+                          <p class="order__item-descr">
+                            Lollipop Nourishing and moisturizing body milk
+                          </p>
+                        </div>
+                      </div>
+                      <p class="checkout__order-sum">
+                        <span class="checkout__order-amt">1 x</span> $80
+                      </p>
+                    </div>
+                    <div class="order__info">
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Information
+                          </h4>
+                          <p class="order__info-name">
+                            Annabelle Johnson
+                          </p>
+                          <p class="order__info-fact order__info-tel">
+                            +1.866.434.1515
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Delivery method
+                          </h4>
+                          <p class="order__info-name">
+                            Deliver America
+                          </p>
+                          <p class="order__info-fact order__info-sity">
+                            101 E 75th St, New York, NY 10021
+                          </p>
+                        </div>
+                      </div>
+                      <div class="order__info-item">
+                        <div class="order__info-box">
+                          <h4 class="order__info-title">
+                            Payment method
+                          </h4>
+                          <p class="order__info-name">
+                            PayService
+                          </p>
+                          <p class="order__info-fact order__info-numbercart">
+                            Card: **** **** **** 1628
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="order__link" href="#">Order again</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contact">
+            <h4 class="footer__contact-title title">
+              Contact us
+            </h4>
+            <a class="footer__link footer__link--tel" href="tel:+18669962000">+1-866-996-2000</a>
+            <a class="footer__link footer__link--email" href="mailto:lolli@example.com">lolli@example.com</a>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/fb.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/tw.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/inst.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/youtube.svg" alt="social link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              help
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Information
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Privacy Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Shipping Details</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Support
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="about.html" class="footer__list-link">About us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Careers
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Deliveries
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Refund Requests
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="contact.html" class="footer__list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Information
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search Terms</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Advanced Search
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">FAQ & Help Docs
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Orders & Returns
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Store Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            Copyright © 2021 Lolli. All Rights Reserved
+          </p>
+          <ul class="footer__cart-list">
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-1.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-2.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-3.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-4.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-5.svg" alt="cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

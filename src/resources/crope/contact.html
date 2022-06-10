@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+  <title>Crope</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__navigation">
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="nav">
+          <button class="nav__btn">
+            <span class="nav__btn-line"></span>
+          </button>
+          <ul class="menu">
+            <li class="menu__item menu__item--home">
+              <a class="menu__item-link " href="index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="about.html">About us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="services.html">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="cases.html">Cases</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="blog.html">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link menu__item-link--active" href="contact.html">Contact us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link error-404" href="error-404.html">404</a>
+            </li>
+            <li class="menu__item menu__item--form">
+              <form class="error__form" action="#">
+                <input class="error__form-input input" type="text" placeholder="Search">
+                <button class="error__form-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#DD4242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21.0004 21L16.6504 16.65" stroke="#DD4242" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+              </form>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item--sociallink" href="#">Linkedin</a>
+                <span></span>
+                <a class="menu__item--sociallink" href="#">Behance</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a class="header__tel" href="tel:18456317849">+1 845 631 78 49</a>
+          <button class="header__btn ">Get a quote</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Home</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
+  </div>
+  <section class="contact page-section">
+    <span class="number top-number">01.</span>
+    <div class="container">
+      <div class="contact__inner">
+        <address class="contact-info contact__info">
+          <div class="contact-info__item contact-info__item--world">          
+            <address class="footer__address">
+              <h6 class="footer__subtitle">
+                Address:
+              </h6>
+              <p class="footer__text">
+                27 Division St, New York, NY 10002, USA
+              </p>
+            </address>
+          </div>
+
+          <div class="contact-info__item contact-info__item--message">
+            <div class="footer__contact">
+              <h6 class="footer__subtitle">
+                Hit us up:
+              </h6>
+              <a class="footer__contact-phone footer__link" href="tel:18456317849">+1 845 631 78 49</a>
+              <a class="footer__contact-email footer__link" href="mailto:info@sitename.com">info@sitename.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item contact-info__item--clock">
+            <div class="footer__working">
+              <h6 class="footer__subtitle">
+                Working Schedule:
+              </h6>
+              <p class="footer__text">
+                Mon - Fri: 9 am - 6 pm
+                Sat, Sun: Holiday
+              </p>
+            </div>
+          </div>
+
+        </address>
+        <div class="contact__content">
+          <span class="contact__subtitle subtitle">
+            contact us
+          </span>
+          <h2 class="contact__title title">
+            Send a message<span></span>
+          </h2>
+          <p class="contact__text">
+            We always try to implement our creative ideas at the highest level. Tell us about your project and we will make it work.
+          </p>
+          <form class="contact__form" action="#">
+            <div class="contact__box-input">
+              <input class="contact__input input" type="text" placeholder="Name">
+              <input class="contact__input input" type="email" placeholder="Email">
+            </div>
+            <textarea class="contact__textarea textarea" placeholder="Message"></textarea>
+            <button class="contact__btn" type="submit">
+              Send message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="map">
+
+    </div>
+  </section>
+
+  <section class="newsletter page-section">
+    <span class="number">02.</span>
+    <div class="container">
+      <div class="newsletter__inner">
+        <div class="newsletter__subscribe">
+          <span class="newsletter__subtitle subtitle">
+            newsletter
+          </span>
+          <h2 class="newsletter__title title">
+            Be always
+            In touch<span></span>
+          </h2>
+          <p class="newsletter__text">
+            We are grateful to know you are interested in our content and services. Subscribe
+          </p>
+          <form class="newsletter__form" action="#">
+            <input class="newsletter__form-input" type="text" placeholder="Email">
+            <button class="newsletter__form-btn btn" type="submit">
+              <img src="images/tg-icon.svg" alt="btn">
+            </button>
+          </form>
+        </div>
+        <div class="newsletter__quote quote">
+          <div class="quote__top">
+            <a class="quote__avatar" href="#">
+              <img class="quote__avatar-img" src="images/avatar.jpg" alt="avatar">
+            </a>
+            <div class="quote__top-box">
+              <a class="quote__name" href="#">
+                Katerina Wilson
+              </a>
+              <p class="quote__profession">
+                CEO at Crope Design Company
+              </p>
+            </div>
+          </div>
+          <blockquote class="blockquote">
+            We never give up. Сhallenges make us stronger and more professional. Keep in mind. Beware ;)
+          </blockquote>
+          <img class="quote__signa" src="images/signa.svg" alt="signa">
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo footer__item">
+            <a class="logo" href="index.html">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <span class="footer__corp">
+              Copyright © 2020 Crope.
+            </span>
+          </div>
+
+          <div class="footer__working footer__item">
+            <h6 class="footer__subtitle">
+              Working hours:
+            </h6>
+            <p class="footer__text">
+              Mon - Fri: 9 am - 6 pm
+            </p>
+            <p class="footer__text">
+              Sat, Sun: Holiday
+            </p>
+          </div>
+
+          <address class="footer__address footer__item">
+            <h6 class="footer__subtitle">
+              Address:
+            </h6>
+            <p class="footer__text">
+              27 Division St, New York, NY 10002, USA
+            </p>
+          </address>
+
+          <div class="footer__contact footer__item">
+            <h6 class="footer__subtitle">
+              Hit us up:
+            </h6>
+            <a class="footer__contact-phone footer__link" href="tel:18456317849">+1 845 631 78 49</a>
+            <a class="footer__contact-email footer__link" href="mailto:info@sitename.com">info@sitename.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script>
+    let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 40.71444594481075, lng: -73.99726398789704  },
+    zoom: 18,
+  });
+}
+  </script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

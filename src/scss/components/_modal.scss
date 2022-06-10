@@ -1,0 +1,106 @@
+.modals {
+  z-index: 100;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: $bg-fill, $alpha: 0.4);
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  * {
+  transition: all 0.5s ease-in-out;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  overflow-y: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: none;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal--visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: max-content;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: $bg-second;
+
+  &__inner {}
+
+  &__btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: $accent;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      fill: currentColor;
+      pointer-events: none;
+    }
+
+    &:focus {
+      outline: 1px solid $accent;
+      outline-offset: 2px;
+    }
+  }
+
+  &__btn-close {
+    width: inherit;
+    height: inherit;
+    fill: $default;
+    pointer-events: none;
+    transition: fill 0.3s ease-in-out;
+  }
+}
+
+// .graph-modal {
+//   background-color: $bg-fill;
+// }
+// .graph-modal.is-open {
+//   transition: opacity 0s;
+// }
+// .graph-modal__container {
+//   background-color: $bg-second;
+//   width: 500px;
+// }
+// .graph-modal__close {
+//   width: 30px;
+//   height: 30px;
+//   color: $accent;
+
+//   svg {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     fill: currentColor;
+//   }
+//  }

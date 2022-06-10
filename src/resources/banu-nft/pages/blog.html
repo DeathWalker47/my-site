@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.png" sizes="30x32" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Blog</title>
+    <script defer src="js/main.min.js"></script>
+  </head>
+  <body>
+    @include('parts/_search.html')
+    <div class="wrapper">
+      @include('parts/_header.html')
+      <main class="main">
+        @include('parts/_top-page-blog.html') @include('parts/_blog-page.html')
+        @include('parts/_modal.html')
+      </main>
+      @include('parts/_footer.html')
+    </div>
+  </body>
+</html>

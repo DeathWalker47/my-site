@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.svg" type="image/svg">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Transgo</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <picture >
+        <source srcset="./images/logo-footer.png" media="(max-width:1200px)">
+        <img src="./images/logo.png" alt="logo">
+      </picture>
+    </a>
+    <nav class="menu header__menu">
+      <button class="burger">
+        <span class="burger__list"></span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__list-item">
+          <a href="index.html" class="menu__list-link menu__list-link--active">
+            Home+
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="about-us.html" class="menu__list-link">
+            About Us
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="services.html" class="menu__list-link">
+            Services
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="services-single.html" class="menu__list-link">
+            Pages+
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="blog-news.html" class="menu__list-link">
+            News+
+          </a>
+        </li>
+        <li class="menu__list-item">
+          <a href="contact.html" class="menu__list-link">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__right">
+      <div class="header__cup cup">
+          <button class="cup__search-btn cup__item">
+            <svg class="cup__search-img cup__img">
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg>
+            <svg class="cup__search-close cup__img">
+              <use xlink:href="./images/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+          <a href="#" class="cup__basket-link cup__item">
+            <svg class="cup__basket-img cup__img">
+              <use xlink:href="./images/sprite.svg#basket"></use>
+            </svg>
+            <span class="cup__basket-num">0</span>
+          </a>
+      </div>
+      <button class="header__btn btn btn--fill">
+        Get A Quote
+      </button>
+    </div>
+  </div>
+    <div class="search-container">
+      <audio controls class="audio-search visually-hidden">
+        <source src="./images/alert.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls class="audio-search audio-active visually-hidden">
+        <source src="./images/alert2.mp3" type="audio/mpeg">
+      </audio>
+      <form action="#" class="search">
+        <input type="text" class="search__input form__input form__input--fill " placeholder="Search">
+        <button class="btn btn--fill search__btn">
+          <svg class="search__btn-img">
+            <use xlink:href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+</header>
+    <main class="main">
+      <section class="top">
+  <div class="container top__container">
+    <div class="top__content">
+      <h1 class="top__title">
+        World Class Transport Services
+      </h1>
+      <p class="top__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.
+      </p>
+      <div class="top__btns">
+        <button class="top__btn btn btn--fill">
+          Learn More
+        </button>
+        <button class="top__btn btn top__btn-contact contact-popup">
+          Contact Us
+        </button>
+      </div>
+      <div class="top__items">
+        <div class="top__item">
+          <svg class="top__item-img">
+          <use xlink:href="./images/sprite.svg#box"></use>
+          </svg>
+          <span class="top__number">
+            2.56M
+          </span>
+          <p class="top__descr">
+            Delivery Compleat
+          </p>
+        </div>
+        <div class="top__item">
+          <div class="top__stars">
+            <svg class="top__star">
+              <use xlink:href="./images/sprite.svg#star"></use>
+            </svg>
+            <svg class="top__star">
+              <use xlink:href="./images/sprite.svg#star"></use>
+            </svg>
+            <svg class="top__star">
+              <use xlink:href="./images/sprite.svg#star"></use>
+            </svg>
+            <svg class="top__star">
+              <use xlink:href="./images/sprite.svg#star"></use>
+            </svg>
+            <svg class="top__star">
+              <use xlink:href="./images/sprite.svg#star"></use>
+            </svg>
+          </div>
+          <span class="top__number">
+            1.25M
+          </span>
+          <p class="top__descr">
+            Clients Reviews
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="top__video">
+        <a  href="https://www.youtube.com/watch?v=q92DWs1MwRA" data-fancybox  class="play top__play">
+          <svg class="play__img">
+            <use xlink:href="./images/sprite.svg#play"></use>
+          </svg>
+        </a>
+    </div>
+  </div>
+</section>
+
+      <section class="mini-info">
+  <h2 class="mini-info__title visually-hidden" aria-hidden="true">Mini-info</h2>
+  <div class="container">
+    <ul class="mini-info__list list-grid">
+      <li class="mini-info__list-item">
+        <article class="descr-info descr-info--ship">
+          <svg class="descr-info__img">
+            <use xlink:href="./images/sprite.svg#ship"></use>
+          </svg>
+          <h3 class="descr-info__title title title--dark">
+            Cargo
+          </h3>
+          <p class="descr-info__text">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+          <button class="btn btn--dark descr-info__btn">
+            Read More
+          </button>
+        </article>
+      </li>
+      <li class="mini-info__list-item">
+        <article class="descr-info descr-info--plane">
+          <svg class="descr-info__img descr-info__img--plane">
+            <use xlink:href="./images/sprite.svg#plane"></use>
+          </svg>
+          <h3 class="descr-info__title title title--dark">
+            Logistic Service
+          </h3>
+          <p class="descr-info__text">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+          <button class="btn btn--dark descr-info__btn">
+            Read More
+          </button>
+        </article>
+      </li>
+      <li class="mini-info__list-item">
+        <article class="descr-info descr-info--storage">
+          <svg class="descr-info__img">
+            <use xlink:href="./images/sprite.svg#storage"></use>
+          </svg>
+          <h3 class="descr-info__title title title--dark">
+            Storage
+          </h3>
+          <p class="descr-info__text">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+          <button class="btn btn--dark descr-info__btn">
+            Read More
+          </button>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="about-us">
+  <div class="container about-us__container">
+    <div class="about-us__images">
+      <div class="about-us__link">
+        <img src="./images/about-img.png" alt="">
+      </div>
+      <a href="https://youtu.be/vSB4ezjAdX8?t=107" data-fancybox class="play about-us__play">
+        <svg class="play__img">
+          <use xlink:href="./images/sprite.svg#play"></use>
+        </svg>
+      </a>
+      <div class="about-us__years">
+        <span class="about-us__number">
+          22+
+        </span>
+        <p class="about-us__descr">
+          We have more than years of experience
+        </p>
+      </div>
+    </div>
+    <div class="about-us__content">
+      <p class="about-us__subtitle subtitle">
+        About Us
+        <span class="subtitle__right"></span>
+      </p>
+      <h2 class="title title--dark about-us__title">
+        Welcome to our  Transport
+company
+      </h2>
+      <p class="about-us__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam
+      </p>
+      <p class="about-us__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="about-us__author author">
+        <div class="author">
+          <img src="./images/human.jpg" alt="#" class="author__img">
+          <p class="author__name">
+            Anthony Thomas
+            <span class="author__profession">
+              CEO, Transport Company
+            </span>
+          </p>
+        </div>
+        <img src="./images/signa.png" alt="signa" class="author__signa">
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="services">
+  <div class="container services__container">
+    <div class="services__top">
+      <p class="subtitle services__subtitle title--center">
+        <span class="subtitle__left"></span>
+          Services
+        <span class="subtitle__right"></span>
+      </p>
+      <h2 class="services__title title title--center">
+        Provide us with reliable services
+      </h2>
+      <p class="services__descr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim ad&nbsp;minim veniam,
+      </p>
+    </div>
+    <ul class="services__list list-grid list-grid--gap">
+      <li class="services__list-item">
+        <article class="services-item">
+          <svg class="services-item__img">
+            <use xlink:href="./images/sprite.svg#icno-1"></use>
+          </svg>
+          <h3 class="descr-info__title title">
+            Air Freight
+          </h3>
+          <p class="descr-info__text services-item__descr">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+        </article>
+      </li>
+      <li class="services__list-item">
+        <article class="services-item">
+          <svg class="services-item__img">
+            <use xlink:href="./images/sprite.svg#icno-2"></use>
+          </svg>
+          <h3 class="descr-info__title title">
+            Road Freight
+          </h3>
+          <p class="descr-info__text services-item__descr">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+        </article>
+      </li>
+      <li class="services__list-item">
+        <article class="services-item">
+          <svg class="services-item__img">
+            <use xlink:href="./images/sprite.svg#icno-3"></use>
+          </svg>
+          <h3 class="descr-info__title title">
+            Ocean Cargo
+          </h3>
+          <p class="descr-info__text services-item__descr">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+        </article>
+      </li>
+      <li class="services__list-item">
+        <article class="services-item">
+          <svg class="services-item__img">
+            <use xlink:href="./images/sprite.svg#icno-4"></use>
+          </svg>
+          <h3 class="descr-info__title title">
+            Warehousing
+          </h3>
+          <p class="descr-info__text services-item__descr">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+        </article>
+      </li>
+      <li class="services__list-item">
+        <article class="services-item">
+          <svg class="services-item__img">
+            <use xlink:href="./images/sprite.svg#icno-5"></use>
+          </svg>
+          <h3 class="descr-info__title title">
+            Packaging And Storage
+          </h3>
+          <p class="descr-info__text services-item__descr">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+        </article>
+      </li>
+      <li class="services__list-item">
+        <article class="services-item">
+          <svg class="services-item__img">
+            <use xlink:href="./images/sprite.svg#icno-6"></use>
+          </svg>
+          <h3 class="descr-info__title title">
+            Train Freight
+          </h3>
+          <p class="descr-info__text services-item__descr">
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore
+          </p>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="request">
+  <h2 class="visually-hidden" aria-hidden="true">Request</h2>
+  <div class="container request__container">
+    <form action="#" class="form request__form">
+       <h3 class="form__title title title--dark">
+        Request a quick quote
+       </h3>
+       <input type="text" class="form__input form__input--fill" name="Name" placeholder="Name">
+       <input type="email" class="form__input form__input--fill" name="Email" placeholder="Email">
+       <input type="text" class="form__input form__input--fill" name="Subject" placeholder="Subject">
+       <input type="tel" class="form__input form__input--fill" name="Phome" placeholder="Phome">
+       <textarea class="form__textarea form__input form__input--fill" name="Massage" placeholder="Massage"></textarea>
+       <button class="btn btn--fill form__btn form__btn--block">Send Massage</button>
+      </form>
+      <article class="request__choosing choosing">
+        <h3 class="choosing__title title title--dark">
+          Why Choosing Us?
+        </h3>
+        <p class="choosing__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+        </p>
+        <ul class="choosing__list">
+          <li class="choosing__item">
+            <div class="choosing-item">
+              <div class="choosing-item__svg">
+                <svg class="choosing-item__img">
+                  <use xlink:href="./images/sprite.svg#delivery"></use>
+                </svg>
+              </div>
+              <div class="choosing-item__box">
+                <h4 class="choosing-item__title title--dark">
+                  On - Time Delivery
+                </h4>
+                <p class="choosing-item__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="choosing__item">
+            <div class="choosing-item">
+              <div class="choosing-item__svg">
+                <svg class="choosing-item__img">
+                  <use xlink:href="./images/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <div class="choosing-item__box">
+                <h4 class="choosing-item__title title--dark">
+                  Mobile Shipment Tracking
+                </h4>
+                <p class="choosing-item__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="choosing__item">
+            <div class="choosing-item">
+              <div class="choosing-item__svg">
+                <svg class="choosing-item__img">
+                  <use xlink:href="./images/sprite.svg#support"></use>
+                </svg>
+              </div>
+              <div class="choosing-item__box">
+                <h4 class="choosing-item__title title--dark">
+                  24/7 Online Support
+                </h4>
+                <p class="choosing-item__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="choosing__item">
+            <div class="choosing-item">
+              <div class="choosing-item__svg">
+                <svg class="choosing-item__img">
+                 <use xlink:href="./images/sprite.svg#package"></use>
+                </svg>
+              </div>
+              <div class="choosing-item__box">
+                <h4 class="choosing-item__title title--dark">
+                  Careful Handling of Goods
+                </h4>
+                <p class="choosing-item__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </article>
+  </div>
+</section>
+      <section class="delivery">
+  <div class="container delivery__container">
+    <div class="delivery__content">
+      <h2 class="delivery__title title">
+        We Deliver your goods Very
+        Fast & Secure
+      </h2>
+      <p class="delivery__descr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button class="delivery__btn btn btn--dark contact-popup">
+        Contact Us
+      </button>
+    </div>
+    <img src="./images/сourier.png" alt="сourier" class="delivery__img">
+  </div>
+</section>
+
+      <section class="info-numbers info-numbers--bg">
+  <div class="container">
+    <ul class="info-numbers__list">
+      <li class="info-numbers__item">
+        <p class="info-numbers__num info-numbers__num--one title title--center">
+          <!-- 12k+ -->
+        </p>
+        <p class="info-numbers__descr">
+          Parcel Delivered
+        </p>
+      </li>
+      <li class="info-numbers__item">
+        <p class="info-numbers__num info-numbers__num--two title title--center">
+          <!-- 654 -->
+        </p>
+        <p class="info-numbers__descr">
+          Expert Employee
+        </p>
+      </li>
+      <li class="info-numbers__item">
+        <p class="info-numbers__num info-numbers__num--three title title--center">
+          <!-- 8k+ -->
+        </p>
+        <p class="info-numbers__descr">
+          Statisfied Clients
+        </p>
+      </li>
+      <li class="info-numbers__item">
+        <p class="info-numbers__num info-numbers__num--four title title--center">
+          <!-- 300 -->
+        </p>
+        <p class="info-numbers__descr">
+          Branches Across
+        </p>
+      </li>
+      <li class="info-numbers__item">
+        <p class="info-numbers__num info-numbers__num--five title title--center">
+          <!-- 4k+ -->
+        </p>
+        <p class="info-numbers__descr">
+          Tons of Goods
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="pricing">
+  <div class="container pricing__container">
+    <div class="pricing__content">
+      <p class="subtitle pricing__subtitle">
+          Pricing
+        <span class="subtitle__right"></span>
+      </p>
+      <h2 class="title title--dark pricing__title">
+        Our pricing plan
+      </h2>
+      <p class="pricing__text">
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore
+        magna aliqua.
+      </p>
+    </div>
+    <ul class="pricing__list pricing-list ">
+      <li class="pricing-list__item">
+        <article class="pricing-item">
+          <div class="pricing-item__face">
+            <h3 class="pricing-item__titl title title--dark">
+              Basic Plan
+            </h3>
+            <p class="pricing-item__sum">
+              $132
+              <span class="pricing-item__month">/Per month</span>
+            </p>
+            <ul class="pricing-item__list">
+              <li class="pricing-item__item">
+                1 Warehouse
+              </li>
+              <li class="pricing-item__item">
+                3650 kg load
+              </li>
+              <li class="pricing-item__item">
+                125 kg / pallet load
+              </li>
+              <li class="pricing-item__item">
+                24/7 support
+              </li>
+            </ul>
+            <a href="#" class="pricing-item__link btn btn--dark">
+              Choose Plan
+            </a>
+          </div>
+          <div class="pricing-item__back">
+            <h3 class="pricing-item__titl title title--dark">
+              Basic Plan
+            </h3>
+            <p class="pricing-item__sum">
+              $132
+              <span class="pricing-item__month">/Per month</span>
+            </p>
+            <ul class="pricing-item__list">
+              <li class="pricing-item__item">
+                1 Warehouse
+              </li>
+              <li class="pricing-item__item">
+                3650 kg load
+              </li>
+              <li class="pricing-item__item">
+                125 kg / pallet load
+              </li>
+              <li class="pricing-item__item">
+                24/7 support
+              </li>
+            </ul>
+            <a href="#" class="pricing-item__link btn btn--dark">
+              Choose Plan
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="pricing-list__item">
+        <article class="pricing-item">
+          <div class="pricing-item__face">
+            <h3 class="pricing-item__titl title title--dark">
+              Standard Plan
+            </h3>
+            <p class="pricing-item__sum">
+              $232
+              <span class="pricing-item__month">/Per month</span>
+            </p>
+            <ul class="pricing-item__list">
+              <li class="pricing-item__item">
+                1 Warehouse
+              </li>
+              <li class="pricing-item__item">
+                3650 kg load
+              </li>
+              <li class="pricing-item__item">
+                125 kg / pallet load
+              </li>
+              <li class="pricing-item__item">
+                24/7 support
+              </li>
+            </ul>
+            <a href="#" class="pricing-item__link btn btn--dark">
+              Choose Plan
+            </a>
+          </div>
+          <div class="pricing-item__back">
+            <h3 class="pricing-item__titl title title--dark">
+              Standard Plan
+            </h3>
+            <p class="pricing-item__sum">
+              $232
+              <span class="pricing-item__month">/Per month</span>
+            </p>
+            <ul class="pricing-item__list">
+              <li class="pricing-item__item">
+                1 Warehouse
+              </li>
+              <li class="pricing-item__item">
+                3650 kg load
+              </li>
+              <li class="pricing-item__item">
+                125 kg / pallet load
+              </li>
+              <li class="pricing-item__item">
+                24/7 support
+              </li>
+            </ul>
+            <a href="#" class="pricing-item__link btn btn--dark">
+              Choose Plan
+            </a>
+          </div>
+        </article>
+      </li>
+      <li class="pricing-list__item">
+        <article class="pricing-item">
+          <div class="pricing-item__face">
+            <h3 class="pricing-item__titl title title--dark">
+              Advanced Plan
+            </h3>
+            <p class="pricing-item__sum">
+              $332
+              <span class="pricing-item__month">/Per month</span>
+            </p>
+            <ul class="pricing-item__list">
+              <li class="pricing-item__item">
+                1 Warehouse
+              </li>
+              <li class="pricing-item__item">
+                3650 kg load
+              </li>
+              <li class="pricing-item__item">
+                125 kg / pallet load
+              </li>
+              <li class="pricing-item__item">
+                24/7 support
+              </li>
+            </ul>
+            <a href="#" class="pricing-item__link btn btn--dark">
+              Choose Plan
+            </a>
+          </div>
+          <div class="pricing-item__back">
+            <h3 class="pricing-item__titl title title--dark">
+              Advanced Plan
+            </h3>
+            <p class="pricing-item__sum">
+              $332
+              <span class="pricing-item__month">/Per month</span>
+            </p>
+            <ul class="pricing-item__list">
+              <li class="pricing-item__item">
+                1 Warehouse
+              </li>
+              <li class="pricing-item__item">
+                3650 kg load
+              </li>
+              <li class="pricing-item__item">
+                125 kg / pallet load
+              </li>
+              <li class="pricing-item__item">
+                24/7 support
+              </li>
+            </ul>
+            <a href="#" class="pricing-item__link btn btn--dark">
+              Choose Plan
+            </a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="faq">
+  <div class="container faq__container">
+    <div class="faq__images">
+      <img src="./images/сourier-faq.png" alt="сourier-faq" class="faq__img">
+    </div>
+    <div class="faq__content">
+      <p class="subtitle">
+        FAQs
+        <span class="subtitle__right"></span>
+      </p>
+      <h2 class="faq__title title title--dark">
+        Get every able answer
+      </h2>
+      <p class="faq__descr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+
+      
+      <ul class="accardeon">
+        <li class="accardeon__item accardeon__item--open">
+          <button class="accardeon__control">
+            <h3 class="accardeon__title">
+              How many times do i have to tell you a few ways?
+            </h3>
+            <span class="accardeon__box"></span>
+          </button>
+          <p class="accardeon__content ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </li>
+        <li class="accardeon__item">
+          <button class="accardeon__control">
+            <h3 class="accardeon__title">
+              What is do i have to tell you a few lorem?
+            </h3>
+            <span class="accardeon__box"></span>
+          </button>
+          <p class="accardeon__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </li>
+        <li class="accardeon__item">
+          <button class="accardeon__control">
+            <h3 class="accardeon__title">
+              What other services are you compatible with?
+            </h3>
+            <span class="accardeon__box"></span>
+          </button>
+          <p class="accardeon__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </li>
+        <li class="accardeon__item">
+          <button class="accardeon__control">
+            <h3 class="accardeon__title">
+              Are you hiring?
+            </h3>
+            <span class="accardeon__box"></span>
+          </button>
+          <p class="accardeon__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="reviews">
+  <div class="reviews__inner">
+    <div class="reviews__images">
+      <img src="./images/reviews-author.jpg" alt="reviews" class="reviews__img">
+    </div>
+    <div class="reviews__slider">
+      <div class="reviews-swiper">
+      
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews__content reviews-content">
+              <div class="reviews-content__name-box">
+                <p class="reviews-content__name">
+                  Mark Smith
+                </p>
+                  <span class="reviews-content__profession">
+                    CEO Transport Ltd.
+                  </span>
+                <div class="reviews-content__stars">
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__content reviews-content">
+              <div class="reviews-content__name-box">
+                <p class="reviews-content__name">
+                  Mark Smith
+                </p>
+                  <span class="reviews-content__profession">
+                    CEO Transport Ltd.
+                  </span>
+                <div class="reviews-content__stars">
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__content reviews-content">
+              <div class="reviews-content__name-box">
+                <p class="reviews-content__name">
+                  Mark Smith
+                </p>
+                  <span class="reviews-content__profession">
+                    CEO Transport Ltd.
+                  </span>
+                <div class="reviews-content__stars">
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                  <svg class="reviews-content__star">
+                    <use xlink:href="./images/sprite.svg#reviews-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="reviews-content__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      
+      </div>
+    </div>
+    
+  </div>
+</section>
+      <section class="news">
+  <div class="container news__container">
+    <div class="news__top">
+      <p class="subtitle news__subtitle title--center">
+        <span class="subtitle__left"></span>
+          Services
+        <span class="subtitle__right"></span>
+      </p>
+      <h2 class="title title--center title--dark">
+        Our latest news
+      </h2>
+      <p class="news__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div class="news-slider">
+      <div class="swiper news-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide news-slider__item">
+            <div class="news-slider__left">
+              <a href="#" class="news-slider__link">
+                <p class="news-slider__title title--dark">
+                  Quality Attributes of the
+                  public Transport
+                </p>
+              </a>
+              <time class="news-slider__time" datetime="2021-05-24 16:00">
+                May 24, 2021
+              </time>
+              <a href="#" class="news-slider__btn btn btn--dark">
+                Read More
+              </a>
+            </div>
+            <img src="./images/car-1.jpg" alt="car" class="news-slider__img">
+          </div>
+          <div class="swiper-slide news-slider__item">
+            <div class="news-slider__left">
+              <a href="#" class="news-slider__link">
+                <p class="news-slider__title title--dark">
+                  Liberalisation of air cargo industry
+                </p>
+              </a>
+              <time class="news-slider__time" datetime="2021-05-24 16:00">
+                May 24, 2021
+              </time>
+              <a href="#" class="news-slider__btn btn btn--dark">
+                Read More
+              </a>
+            </div>
+            <img src="./images/container.jpg" alt="car" class="news-slider__img">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev">
+        <svg class="swiper-button-prev__img">
+        <use xlink:href="./images/sprite.svg#arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="swiper-button-next__img">
+        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+      <section class="portners">
+  <h2 class="visually-hidden" aria-hidden="true">
+    Portners
+  </h2>
+  <div class="container portners__container">
+    <ul class="portners__list">
+      <li class="portners__item">
+        <a href="#" class="portners__item-link">
+          <img src="./images/partners/img-1.png" alt="partners">
+        </a>
+      </li>
+      <li class="portners__item">
+        <a href="#" class="portners__item-link">
+          <img src="./images/partners/img-2.png" alt="partners">
+        </a>
+      </li>
+      <li class="portners__item">
+        <a href="#" class="portners__item-link">
+          <img src="./images/partners/img-3.png" alt="partners">
+        </a>
+      </li>
+      <li class="portners__item">
+        <a href="#" class="portners__item-link">
+          <img src="./images/partners/img-4.png" alt="partners">
+        </a>
+      </li>
+      <li class="portners__item">
+        <a href="#" class="portners__item-link">
+          <img src="./images/partners/img-5.png" alt="partners">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+      <section class="modals">
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="container modal__container">
+        <button class="modal__close">&#215;</button>
+        <form action="#" class="form-contact form form--fill">
+          <h2 class="form-contact__title title">
+            Get In Touch
+          </h2>
+          <input type="text" class="form-contact__input form__input" placeholder="Name">
+          <input type="email" class="form-contact__input form__input" placeholder="Email">
+          <input type="tel" class="form-contact__input form__input" placeholder="Phome Number">
+          <input type="tel" class="form-contact__input form__input" placeholder="Subject">
+          <textarea class="form-contact__textarea form__input" name="Message" placeholder="Text Your Massage"></textarea>
+          <button type="submit" class="form-contact__btn btn btn--fill">Submit Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section> 
+    </main>
+    <footer class="footer">
+  <div class="footer__inner">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__address address">
+          <address class="address__item">
+            <p class="address__title">
+              United States - Head Office
+            </p>
+            <p class="address__text">
+              650 E Pine St, Colby, KS 67701,
+              United States
+            </p>
+            <a href="tel:+12122664122" class="address__tel">
+              +1 212-266-4122
+            </a>
+          </address>
+          <address class="address__item">
+            <p class="address__title">
+              United Kingdom - 2nd Office
+            </p>
+            <p class="address__text">
+              3 Maxwell Rd, Glasgow G41 1QP, United Kingdom
+            </p>
+            <a href="tel:+441414234245" class="address__tel">
+              +4 414-1423-4245
+            </a>
+          </address>
+          <address class="address__item">
+            <p class="address__title">
+              Canada - 3rd Office
+            </p>
+            <p class="address__text">
+              520 B 8th Ave, Regina, SK S4N
+0C1, Canada
+            </p>
+            <a href="tel:+13065392759" class="address__tel">
+              +1 306-539-2759
+            </a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="footer__iter">
+      <div class="container">
+        <div class="footer__content footer-content">
+          <div class="footer-content__item footer-content__left">
+            <a href="#" class="logo footer-content__logo">
+              <img src="./images/logo-footer.png" alt="logo">
+            </a>
+            <p class="footer-content__text">
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/fb.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/tw.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/in.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/g.svg" alt="#">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content__item footer-content__nav">
+            <h3 class="footer-content__title">
+              Usefull Link
+            </h3>
+            <ul class="footer-content__menu">
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link footer-content__menu-link--active">
+                  Home
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  About Us
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  Services
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  News
+                </a>
+              </li>
+              <li class="footer-content__menu-item">
+                <a href="#" class="footer-content__menu-link">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content__item footer-content__works">
+            <h3 class="footer-content__title">
+              Working Hours
+            </h3>
+            <p class="footer-content__text footer-content__text--work">
+              We work 7 days a week, every day including major holidays. Contact us for any info.
+            </p>
+            <p class="footer-content__work">
+              <span class="footer-content__day">
+                Monday - Friday:
+              </span>
+              <span class="footer-content__time">
+                8:00-18:00
+              </span>
+            </p>
+            <p class="footer-content__work">
+              <span class="footer-content__day">
+                Saturday:
+              </span>
+              <span class="footer-content__time">
+                8:00-18:00
+              </span>
+            </p>
+            <p class="footer-content__work">
+              <span class="footer-content__day">
+                Sunday and holidays:
+              </span>
+              <span class="footer-content__time">
+                8:00-09:00
+              </span>
+            </p>
+          </div>
+          <div class="footer-content__item footer-content__news">
+            <h3 class="footer-content__title">
+              News Letter
+            </h3>
+            <form action="#" class="footer-content__form">
+              <label class="footer-content__text footer-content__form-label">
+                Your email address:
+                <div class="footer-content__input-box">
+                  <input class="footer-content__input" type="text" placeholder="email.info@example.com">
+                  <button class="footer-content__form-btn btn btn--fill">
+                    <img src="./images/icons/tg.svg" alt="tg">
+                  </button>
+                </div>
+              </label>
+              <p class="footer-content__form-text">
+                Lorem ipsum dolor sit amet,
+consectetur adipiscing elit, sed do
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <div class="container footer-copy__container">
+      <p class="footer-copy__text">
+        Copyright © 2021. All Rights Reserved
+      </p>
+      <div class="footer-copy__links">
+        <a href="" class="footer-copy__link">
+          Privace & Policy.
+        </a>
+        <a href="" class="footer-copy__link">
+          Faq.
+        </a>
+        <a href="" class="footer-copy__link">
+          Terms.
+        </a>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-top">
+    <svg class="to-up">
+      <use xlink:href="./images/sprite.svg#up-arrow"></use>
+    </svg>
+  </button>
+</footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

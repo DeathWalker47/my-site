@@ -1,0 +1,48 @@
+.social {
+  @include flex-v-center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 5px;
+    color: $dark-gray;
+    transition: color .3s ease-in-out;
+
+    &:focus {
+      outline: 1px solid $accent;
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: $accent;
+    }
+
+    svg {
+      fill: currentColor;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__link--vk {
+    width: 29px;
+  }
+
+  &__link--tg {
+    width: 26px;
+  }
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__navigation">
+          <a class="logo header__logo" href="index.html">
+            <picture>
+              <source srcset="images/logo-mobile.svg" media="(max-width:992px)">
+              <img src="images/Logo.svg" alt="logo">
+            </picture>
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span class="menu__btn-line">
+              </span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="about.html">about us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="shop.html">shop</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="blog.html">blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="cart.html">cart</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="checkout.html">checkout</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="profile.html">profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__user-panel user-panel">
+          <a class=" user-panel__link user-panel__search" href="#">
+            <img class="user-panel__link-img" src="images/icon/search.svg" alt="search">
+          </a>
+          <a class="user-panel__link user-panel__user" href="profile.html">
+            <img class="user-panel__link-img" src="images/icon/user.svg" alt="user">
+          </a>
+          <a class="user-panel__link user-panel__heart" href="checkout.html">
+            <img class="user-panel__link-img" src="images/icon/heart.svg" alt="heart">
+          </a>
+          <a class="user-panel__link user-panel__cart" href="cart.html">
+            <img class="user-panel__link-img" src="images/icon/cart.svg" alt="cart">
+            <span class="user-panel__num">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="head">
+        <div class="container">
+          <div class="head__content head__content--blog">
+            <h1 class="title head__title">
+              Blog
+            </h1>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="index.html" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="blog.html" class="breadcrumbs__link breadcrumbs__link--active">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog blog-page">
+        <div class="container">
+          <div class="blog__inner">
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-1.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-1.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">21</span>
+                  <span class="blog__img-month">May</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  How to choose and apply a self-tanner
+                </h3>
+              </a>
+                <p class="blog__text">
+                  Divorces, stripes, stains ... Almost every girl faced them when she first met self-tanning products. What are we doing wrong? It's time to get acquainted with the main points in this case.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+  
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-2.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-2.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">17</span>
+                  <span class="blog__img-month">May</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  the most spring novelties of perfumery at MakeUp
+                </h3>
+              </a>
+                <p class="blog__text">
+                  New fragrances on MAKEUP: 100% original, free shipping, best selection and low prices.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+  
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-3.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-3.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">03</span>
+                  <span class="blog__img-month">May</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  Spring-Summer 2021 beauty trends you should try
+                </h3>
+              </a>
+                <p class="blog__text">
+                  The 11 most important beauty trends of the spring-summer 2021 season are neon hair, smoky-eyes look, straight bangs and more. We have compiled for you a selection of the 11 most important beauty trends of the season.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-5.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-5.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">13</span>
+                  <span class="blog__img-month">June</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  How to choose a perfume and apply it to your body
+                </h3>
+              </a>
+                <p class="blog__text">
+                  Simple tips on how to choose a perfume, where, when and how to apply perfume. For these purposes, it is best to use a body lotion from the same line.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+  
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-6.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-6.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">02</span>
+                  <span class="blog__img-month">June</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  Bath salt and its uses
+                </h3>
+              </a>
+                <p class="blog__text">
+                  The benefits of salt baths: how to take a bath with salt. Why salt baths are useful. How to take a salt bath: fundamental rules. To get the most out of your salt baths.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+  
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-7.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-7.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">29</span>
+                  <span class="blog__img-month">June</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  the right choice of accessories for everyday activities
+                </h3>
+              </a>
+                <p class="blog__text">
+                  The correct choice of accessories is the key to a successful image, because in this case you get the opportunity to show your appearance in harmony and individuality. 
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-8.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-8.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">21</span>
+                  <span class="blog__img-month">July</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  How to choose the right clothes for style
+                </h3>
+              </a>
+                <p class="blog__text">
+                  How to find your style and choose your clothes intelligently. There is no right or wrong in the process: do you strictly choose a dress ripped jeans or hot pink trenchcoat.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+  
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-9.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-9.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">01</span>
+                  <span class="blog__img-month">Aug</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  Dry your hair properly. Top 20 best tips from experts
+                </h3>
+              </a>
+                <p class="blog__text">
+                  How to dry your hair properly. Most people try to dry their hair as soon as possible. If you have long braids, you can twist them with a tourniquet in a towel and then wring out.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+  
+            <div class="blog__item">
+              <a class="blog__img-link" href="post.html">
+                <picture>
+                  <source class="blog__img" srcset="images/blog-10.webp" type="image/webp">
+                  <img class="blog__img" src="images/blog-10.jpg" alt="blog">
+                </picture>
+                <div class="blog__img-date">
+                  <span class="blog__img-num">13</span>
+                  <span class="blog__img-month">Aug</span>
+                </div>
+              </a>
+              <a class="blog__title-link" href="post.html">
+                <h3 class="blog__item-title title">
+                  How to choose the right lipstick for your style
+                </h3>
+              </a>
+                <p class="blog__text">
+                  Lipstick is also easy to match by eye color. Let's analyze the selection of lipstick color for thin and plump lips.
+                </p>
+                <a class="blog__link" href="post.html">read more</a>
+            </div>
+            
+          </div>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--active">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__link">...</span>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">17</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contact">
+            <h4 class="footer__contact-title title">
+              Contact us
+            </h4>
+            <a class="footer__link footer__link--tel" href="tel:+18669962000">+1-866-996-2000</a>
+            <a class="footer__link footer__link--email" href="mailto:lolli@example.com">lolli@example.com</a>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/fb.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/tw.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/inst.svg" alt="social link">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img src="images/icon/youtube.svg" alt="social link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              help
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Help</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Information
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Privacy Policy
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Shipping Details</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Support
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="about.html" class="footer__list-link">About us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Careers
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Deliveries
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Refund Requests
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="contact.html" class="footer__list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__title title">
+              Information
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Search Terms</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Advanced Search
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">FAQ & Help Docs
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Orders & Returns
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Store Location</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            Copyright © 2021 Lolli. All Rights Reserved
+          </p>
+          <ul class="footer__cart-list">
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-1.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-2.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-3.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-4.svg" alt="cart">
+              </a>
+            </li>
+            <li class="footer__cart-item">
+              <a class="footer__cart-link" href="#">
+                <img src="images/icon/cart-5.svg" alt="cart">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

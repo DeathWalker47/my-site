@@ -1,0 +1,33 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "mixins";
+
+
+//Большие компоненты страницы
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/skills";
+@import "./components/priorities";
+@import "./components/portfolio";
+@import "./components/contact";
+@import "./components/footer";
+// @import "./components/";
+
+
+//Маленькие компоненты
+@import "./components/menu";
+@import "./components/custom-scroll";
+@import "./components/social";
+@import "./components/modal";
+@import "./components/to-top";
+@import "./components/preloader";
+@import "./components/light-theme";
+
+//color theme
+
+
+@import "media";

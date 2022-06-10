@@ -1,0 +1,123 @@
+.light-theme {
+  --bg-main: #c4c4c4;
+  --bg-second: #e2e2e2;
+  --bg-img: #cecece;
+  --bg-fill: #a6a6a6;
+
+  --default: #1b1b1b;
+  --title: #323232;
+  --accent: #fe206f;
+  --dark-gray: #616161;
+  --white-color: #f0f0f0;
+
+
+  .hero__inner {
+    background-image: url('../img/i-am-light.png');
+
+  }
+
+  .hero__subtitle {
+    color: $bg-fill;
+  }
+
+  .hero__title-name {
+    color: $title;
+  }
+
+  .hero-themes {
+    background-color: $dark-gray;
+  }
+
+  .hero-themes__btn {
+    color: #bfbfbf;
+  }
+
+  .hero-themes__btn--active {
+    background-color: $title;
+  }
+
+  .about__img {
+    filter: grayscale(0) contrast(100%) brightness(100%);
+  }
+
+  .about__img-box::before {
+    background-color: $bg-img;
+  }
+
+  .priorities {
+    position: relative;
+    background-image: url('../img/bg-img-light.jpg');
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color: #1d1d1d, $alpha: .1);
+      z-index: -1;
+    }
+  }
+
+  .portfolio-work__link::after {
+    background-color: rgba(15, 15, 15, .4);
+  }
+
+  .portfolio-work__title,
+  .portfolio-work__descr {
+    color: $bg-img;
+  }
+
+  .contact {
+    position: relative;
+    background-image: url('../img/bg-img-light.jpg');
+
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   background-color: rgba($color: #0f0f0f, $alpha: .6);
+    // }
+  }
+
+  .contact {
+    * {
+      color: #f0f0f0;
+    }
+  }
+
+  .contact__write-me {
+    color: #f0f0f0;
+  }
+
+  .checkbox__content--checked {
+    background-color: $bg-img;
+    background-color: rgba($color: #a6a6a6, $alpha: .6)
+  }
+
+  .form .just-validate-error-label {
+    @extend %open-400;
+  }
+
+  .form__input {
+    color: #f0f0f0;
+    border-color: $bg-img;
+
+    &::placeholder {
+      color: $bg-img;
+    }
+
+    &:focus {
+      border-color: $accent;
+    }
+  }
+
+  .blockquote__qute-img {
+    filter: grayscale(0) contrast(100%) brightness(100%);
+  }
+}
