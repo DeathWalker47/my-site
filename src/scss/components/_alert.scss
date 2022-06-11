@@ -1,0 +1,26 @@
+.alert {
+  z-index: 1000;
+
+  &__content {
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 50px;
+    &::before {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    padding: 10px 16px 14px;
+  }
+}

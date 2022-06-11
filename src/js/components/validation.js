@@ -1,5 +1,5 @@
 import { validateForms } from "../functions/validate-forms.js";
-
+import vars from "../_vars";
 const rules = [
   {
     ruleSelector: ".input-services",
@@ -58,6 +58,15 @@ const rules = [
 
 const afterForm = () => {
   console.log("Произошла отправка, тут можно писать любые действия");
+  vars.alertOverlay.classList.add('modal-overlay--visible');
+  vars.alertBox.classList.add('modal--visible');
 };
 
+
 validateForms(".form", rules, afterForm);
+
+vars.alertCloseBtn.addEventListener('click', () => {
+  vars.alertOverlay.classList.remove('modal-overlay--visible');
+  vars.alertBox.classList.remove('modal--visible');
+
+})
