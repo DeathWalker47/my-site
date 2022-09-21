@@ -138,7 +138,6 @@ html {
   font-size: 25px;
   line-height: 100%;
   border-radius: 50px;
-  // transition: all .3s ease-in-out;
 
   &:focus {
     outline: 1px solid $accent;
@@ -151,10 +150,12 @@ html {
   border: 1px solid transparent;
   color: $default;
   background-color: $bg-fill;
-  transition: border .3s ease-in-out!important;
+  // transition: all .3s ease-in-out!important;
+  transition: border-color .3s ease-in-out, color .3s ease-in-out;
 
   &:hover {
-    border: 1px solid $accent;
+    // border: 1px solid $accent;
+    border-color: $accent;
     color: $title;
   }
 

@@ -1,7 +1,7 @@
 .contact {
   position: relative;
   padding: 80px 0;
-  background-image: url('../img/bg-img.jpg');
+  background-image: url("../img/bg-img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,13 +14,13 @@
     height: 100%;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba($color: #000000, $alpha: .5);
+      background-color: rgba($color: #000000, $alpha: 0.85);
     }
   }
 
@@ -105,11 +105,11 @@
     padding-bottom: 20px;
     padding-right: 20px;
     color: $title;
-    transition: border-bottom-color .3s ease-in-out;
+    transition: border-bottom-color 0.3s ease-in-out;
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 0;
       left: 0;
       width: 100%;
@@ -118,7 +118,6 @@
     }
 
     &:focus {
-
       border-bottom-color: $accent;
       outline: none;
     }
@@ -142,6 +141,26 @@
     }
   }
 
+  &__btn {
+
+    // border: 1px solid transparent;
+    // border-color: transparent;
+    // color: $default;
+    // background-color: $bg-fill;
+
+    //   &:hover {
+    //     border: 1px solid $accent;
+    //     border-color: $accent;
+    //     color: $title;
+    //   }
+
+    // &:active {
+    //   border: 1px solid $accent;
+    //   border-color: $accent;
+    //   color: $title;
+    // }
+  }
+
   .just-validate-error-label {
     @extend %open-300;
     margin-bottom: 5px;
@@ -163,7 +182,7 @@
     padding-left: 45px;
     padding-right: 45px;
     cursor: pointer;
-    transition: background-color .1s linear;
+    transition: background-color 0.1s linear;
 
     &--checked {
       background-color: $bg-img;
@@ -185,7 +204,7 @@
   border-radius: 30px;
   color: $title;
   @extend %open-300;
-  background-color: rgba($color: #cecece, $alpha: .4);
+  background-color: rgba($color: #cecece, $alpha: 0.4);
 
   &__qute-img {
     position: absolute;
@@ -205,6 +224,6 @@
     height: 0;
     border-top: 35px solid #cecece;
     border-left: 44px solid transparent;
-    opacity: .4;
+    opacity: 0.4;
   }
 }
