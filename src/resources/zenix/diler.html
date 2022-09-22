@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Besley&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,100&family=Reem+Kufi&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./fovicon.png" rel="icon" type="image/png">
+  <title>Поставщики</title>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" id="top">
+  <div class="wrapper">
+    <header class="header header--page">
+  <div class="container">
+    <div class="header__inner ">
+      <a href="index.html" class="logo">
+        <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+      </a>
+      <nav class="nav" title="Навигация по сайту" data-menu>
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link"> Главная </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--drop">
+              Товары
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="catalog.html" class="menu-dropdown__link">
+                  Каталог с товарами
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="cart-product.html" class="menu-dropdown__link">
+                  Посмотрет товар
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы о товаре
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Дополнительная информация
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              О нас
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="about.html" class="menu-dropdown__link">
+                  О нас
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Как оформить заказ
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              Клиенты
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы клиентов
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Информация о товарах
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Лучшие товары
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="diler.html" class="nav__link"> Поставщикам </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link"> Контакты </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <button class="btn-reset btn-fill btn-call header__btn-call btn-tel" data-graph-path="modal">Заказать
+        звонок</button>
+    </div>
+    <div class="header__right">
+      <form action="#" class="form-searh">
+        <input type="search" class="form-searh__input input-reset" placeholder="Поиск" />
+        <button class="form-searh__reset btn-reset " aria-label="Закрыть форму поиска">
+          <svg class="">
+            <use xlink:href="./img/sprite.svg#search-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+    <main class="main">
+    <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list list-reset">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">
+          О компании
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    <section class="about-page">
+  <div class="container">
+    <h1 class="about-content__title title-page">
+      Дилерам
+    </h1>
+    <div class="about-page__container">
+      <div class="about-content about-page__content">
+        <p class="about-content__info-text about-content__info">
+          Компания «Hookaif» — это сеть магазинов кальянов, которая всего за 5 лет стала лидером в кальянной индустрии и один из первых профессиональных кальянных магазинов. В марте 2017 года мы доказали это своей победой в номинации «Самый эффективный проект» по версии самой масштабной кальянной выставки в мире — Hookah Club Show. Спустя 5 лет успешной работы, мы открыли возможность для действующих и начинающих предпринимателей запустить свой магазин «Hookaif», стать нашим партнером и частью большой и стремительно растущей сети магазинов.
+        </p>
+       <div class="about-content__form">
+         <h3 class="about-content__form-title  title--main">
+          Оставите заявку для того, чтобы стать нашим портнером.
+         </h3>
+           <form action="#" class="form" method="POST" enctype="multipart/form-data">
+             <div class="form__box">
+               <label class="form__label">
+                 <input type="text" data-validate-field="name" name="Имя" class="form__elem input-name input-reset form__input" required placeholder="ФИО полностью *">
+                 <span class="form__error"></span>
+               </label>
+               <label class="form__label">
+                 <input type="tel" name="Номер" data-validate-field="tel" class="input-tel form__elem input-reset form__input" required placeholder="Номер телефона *">
+                 <span class="form__error"></span>
+               </label>
+               <label class="form__label">
+                 <input type="email" name="Email" data-validate-field="email" class="input-email form__elem input-reset form__input" required placeholder="Email *">
+                 <span class="form__error"></span>
+               </label>
+               <label class="form__label">
+                 <input type="text" name="Город" data-validate-field="city" class="input-city form__elem input-reset form__input" required placeholder="Город проживания *">
+                 <span class="form__error"></span>
+               </label>
+             </div>
+             <label class="form__label">
+               <textarea class="textarea form__elem form__textarea input-reset" name="Информация" placeholder="Краткая информация о Вашей фирме"></textarea>
+             </label>
+             <button class="btn-reset form__btn btn-fill">Оставить заявку</button>
+         </form>
+       </div>
+        <a href="#" class="btn-fill about-content__link">Перейти в товары</a>
+      </div>
+      <aside class="aside about-page__aside">
+        <div class="aside-catalog aside__catalog">
+          <h2 class="aside-catalog__title">
+            Каталог
+            «Hookaif
+          </h2>
+          <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=16GYwTK5YtV6RaYzP6ghdUumGJ2rujry6" class="aside-catalog__link btn-fill">Скачать каталог PDF</a>
+        </div>
+        <div class="aside-info">
+          <h2 class="aside-info__title">
+            Нужна
+            консультация?
+          </h2>
+          <p class="aside-info__text">
+            Телефон:
+            <a href="tel:89000001234" class="aside-info__link"> 8 (900) 000-12-34</a>
+          </p>
+          <p class="aside-info__text">
+            E-mail:
+            <a href="mailto:hookaif@mail.ru" class="aside-info__link">hookaif@mail.ru</a>
+          </p>
+          <p class="aside-info__text aside-info__address">
+            г. Чебоксары,
+            ул. Калинина, 101
+          </p>
+          <p class="aside-info__text">
+            <a href="#" class="aside-info__contant-link">Контакты</a>
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo footer__logo">
+      <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+    </a>
+    <nav class="nav footer__nav" title="Навигация по сайту">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link"> Главная </a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">
+            Товары
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">
+            О нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="vacancies.html" class="nav__link">
+            Клиенты
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="diler.html" class="nav__link"> Поставщикам </a>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link"> Контакты </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="tel:89000001234" class="header__content-tel header__content-link footer__tel">
+      8 (900) 000-12-34
+    </a>
+    <button class="btn-reset btn-fill btn-call footer__btn-call btn-tel" data-graph-path="modal">Заказать звонок</button>
+    <a href="#top" class="to-top" data-scroll>
+      <svg class="">
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+    <div class="cookie-block">
+  <div class="cookie-block__container">
+    <p class="cookie-block__text">
+      Этот сайт использует cookie для хранения данных. Продолжая исопльзовать сайт, Вы даете согласие на работу с этими файлами
+    </p>
+    <button class="cookie-block__btn btn-reset btn-fill">Принять</button>
+  </div>
+</div>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <svg class="">
+        <use xlink:href="img/sprite.svg#search-close"></use>
+      </svg>
+    </button>
+    <div class="graph-modal__content modal-content">
+      <h2 class="modal-content__title">Оставьте заявку</h2>
+      <p class="modal-content__text">
+        И наш менеджер свяжется с Вами
+        в ближайшее время
+      </p>
+      <form action="#" class="modal-content__form">
+        <input type="tel" class="modal-content__input input-reset form__elem" placeholder="Номер телефона *" inputmode="text">
+        <button class="btn-reset btn-fill modal-content__btn" type="submit">Жду звонка</button>
+      </form>
+      <p class="modal-content__descr">Нажимая на кнопку «Жду звонка» вы даете свое согласие на обработку <a href="#" class="modal-content__descr-link">персональных данных</a></p>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>

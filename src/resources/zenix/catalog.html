@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Besley&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,100&family=Reem+Kufi&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./fovicon.png" rel="icon" type="image/png">
+  <title>Каталог</title>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" id="top">
+  <div class="wrapper">
+    <header class="header header--page">
+  <div class="container">
+    <div class="header__inner ">
+      <a href="index.html" class="logo">
+        <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+      </a>
+      <nav class="nav" title="Навигация по сайту" data-menu>
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link"> Главная </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--drop">
+              Товары
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="catalog.html" class="menu-dropdown__link">
+                  Каталог с товарами
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="cart-product.html" class="menu-dropdown__link">
+                  Посмотрет товар
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы о товаре
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Дополнительная информация
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              О нас
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="about.html" class="menu-dropdown__link">
+                  О нас
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Как оформить заказ
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              Клиенты
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы клиентов
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Информация о товарах
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Лучшие товары
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="diler.html" class="nav__link"> Поставщикам </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link"> Контакты </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <button class="btn-reset btn-fill btn-call header__btn-call btn-tel" data-graph-path="modal">Заказать
+        звонок</button>
+    </div>
+    <div class="header__right">
+      <form action="#" class="form-searh">
+        <input type="search" class="form-searh__input input-reset" placeholder="Поиск" />
+        <button class="form-searh__reset btn-reset " aria-label="Закрыть форму поиска">
+          <svg class="">
+            <use xlink:href="./img/sprite.svg#search-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+    <main class="main">
+    <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list list-reset">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">
+          О компании
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    <section class="catalog-page">
+  <div class="container">
+    <h2 class="catalog-page__title title-page">Каталог</h2>
+    <div class="catalog-page__inner grid">
+      <div class="catalog-page__left">
+        <button class="btn btn-reset btn-fill catalog-page__menu">
+          Открыть меню
+        </button>
+        <ul class="catalog-menu list-reset fixed-block">
+          <li class="catalog-menu__item">
+            <a href="#" aria-expanded="false" class="catalog-menu__link catalog-menu__link--dropdown">
+              Кальяны
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Alpha Hookah
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Fabula Temple 45
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Khalil Mamoon
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" aria-expanded="false" class="catalog-menu__link catalog-menu__link--dropdown">
+              Комплектующие для кальянов
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Чаши
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Шланги
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Щипцы
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Колбы
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" aria-expanded="false" class="catalog-menu__link catalog-menu__link--dropdown">
+              Угли
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Кокосовый
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Лимонный
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Саморазжигающийся
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" aria-expanded="false" class="catalog-menu__link catalog-menu__link--dropdown">
+              Аксессуары
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Вилки
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Защитные сетки
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Индивидуальные мундштуки
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Калауд
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Кейсы и сумки
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Колпаки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link catalog-menu__link--dropdown" aria-expanded="false">
+              Табак для кальяна
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Apache Freeze
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Adalya
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Alchemist Blend
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Al Fakher
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  B3 (Be Free)
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Banger
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Brazzers
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Daly Code
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link catalog-menu__link--dropdown" aria-expanded="false">
+              Смеси
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Паста Plazma
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Паста для кальяна Space Smoke
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              Распродажа
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              Оптом
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              Переходник для кальяна
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              Мундштуки
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link catalog-menu__link--dropdown" aria-expanded="false">
+              Различные материалы
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <ul class="catalog-dropdown list-reset accordion" aria-hidden="true">
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Расходные материалы
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Расходные материалы системы по собственному размеру
+                </a>
+              </li>
+              <li class="catalog-dropdown">
+                <a href="#" class="catalog-dropdown__link catalog-menu__link">
+                  Наименование раздела если оно длинное и в две строки
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              Горелка Multi Purpose Torch 915
+            </a>
+          </li>
+          <li class="catalog-menu__item">
+            <a href="#" class="catalog-menu__link">
+              Тарелка для кальяна
+            </a>
+          </li>
+        </ul>
+        <aside class="aside">
+          <div class="aside-catalog aside__catalog">
+            <h2 class="aside-catalog__title">Каталог «Hookaif»</h2>
+            <a href="https://drive.google.com/uc?export=download&amp;confirm=no_antivirus&amp;id=16GYwTK5YtV6RaYzP6ghdUumGJ2rujry6"
+              class="aside-catalog__link btn-fill">Скачать каталог PDF</a>
+          </div>
+          <div class="aside-info">
+            <h2 class="aside-info__title">
+              Нужна
+              консультация?
+            </h2>
+            <p class="aside-info__text">
+              Телефон:
+              <a href="tel:89000001234" class="aside-info__link"> 8 (900) 000-12-34</a>
+            </p>
+            <p class="aside-info__text">
+              E-mail:
+              <a href="mailto:hookaif@mail.ru" class="aside-info__link">hookaif@mail.ru</a>
+            </p>
+            <p class="aside-info__text aside-info__address">
+              г. Чебоксары,
+              ул. Калинина, 101
+            </p>
+            <p class="aside-info__text">
+              <a href="#" class="aside-info__contant-link">Контакты</a>
+            </p>
+          </div>
+        </aside>
+      </div>
+      <div class="catalog-page__right">
+        <ul class="list-products catalog-page__list list-reset">
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-1.avif" type="image/avif" />
+              <source srcset="./img/product-1.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-1.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">
+              Шахта для кальяна Khalil Mamoon Beast Blue
+            </h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-2.avif" type="image/avif" />
+              <source srcset="./img/product-2.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-2.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Переходник для кальяна на 2 шланга (black)</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-3.avif" type="image/avif" />
+              <source srcset="./img/product-3.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-3.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Чаша силиконовая для кальяна</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-4.avif" type="image/avif" />
+              <source srcset="./img/product-4.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-4.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">
+              Шланг для кальяна Soft-Touch с капсулой
+            </h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-5.avif" type="image/avif" />
+              <source srcset="./img/product-5.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-5.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Мундштук индивидуальный Sphinx</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-6.avif" type="image/avif" />
+              <source srcset="./img/product-6.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-6.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Колба для кальяна Sphinx Diona</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-7.avif" type="image/avif" />
+              <source srcset="./img/product-7.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-7.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">
+              Электроплитка для розжига угля
+            </h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-8.avif" type="image/avif" />
+              <source srcset="./img/product-8.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-8.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Щипцы Арт-Кальян НА-138</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-9.avif" type="image/avif" />
+              <source srcset="./img/product-9.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-9.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Клапан для кальяна Mya с покрытием «под серебро»</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-10.avif" type="image/avif" />
+              <source srcset="./img/product-10.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-10.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">
+              Тарелка для кальяна
+            </h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-11.avif" type="image/avif" />
+              <source srcset="./img/product-11.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-11.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Горелка Multi Purpose Torch 915</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-12.avif" type="image/avif" />
+              <source srcset="./img/product-12.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-12.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Средство для чистки Bioneat</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-8.avif" type="image/avif" />
+              <source srcset="./img/product-8.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-8.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Щипцы Арт-Кальян НА-138</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-9.avif" type="image/avif" />
+              <source srcset="./img/product-9.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-9.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Клапан для кальяна Mya с покрытием «под серебро»</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+          <li class="list-products__item">
+            <picture>
+              <source srcset="./img/product-5.avif" type="image/avif" />
+              <source srcset="./img/product-5.webp" type="image/webp" />
+              <img loading="lazy" src="./img/product-5.jpg" class="image list-products__img" width="" height=""
+                alt="producr" />
+            </picture>
+            <h3 class="list-products__title">Мундштук индивидуальный Sphinx</h3>
+            <a href="cart-product.html" class="list-products__link btn-fill">Подробнее</a>
+          </li>
+        </ul>
+        <div class="pagination">
+          <ul class="pagination__list list-reset">
+            <li class="pagination__item">
+              <a href="#" class="pagination__prev">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link pagination__link--active">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link"> 2 </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link"> 3 </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">… </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link"> 10 </a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__next">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo footer__logo">
+      <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+    </a>
+    <nav class="nav footer__nav" title="Навигация по сайту">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link"> Главная </a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">
+            Товары
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">
+            О нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="vacancies.html" class="nav__link">
+            Клиенты
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="diler.html" class="nav__link"> Поставщикам </a>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link"> Контакты </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="tel:89000001234" class="header__content-tel header__content-link footer__tel">
+      8 (900) 000-12-34
+    </a>
+    <button class="btn-reset btn-fill btn-call footer__btn-call btn-tel" data-graph-path="modal">Заказать звонок</button>
+    <a href="#top" class="to-top" data-scroll>
+      <svg class="">
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+    <div class="cookie-block">
+  <div class="cookie-block__container">
+    <p class="cookie-block__text">
+      Этот сайт использует cookie для хранения данных. Продолжая исопльзовать сайт, Вы даете согласие на работу с этими файлами
+    </p>
+    <button class="cookie-block__btn btn-reset btn-fill">Принять</button>
+  </div>
+</div>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <svg class="">
+        <use xlink:href="img/sprite.svg#search-close"></use>
+      </svg>
+    </button>
+    <div class="graph-modal__content modal-content">
+      <h2 class="modal-content__title">Оставьте заявку</h2>
+      <p class="modal-content__text">
+        И наш менеджер свяжется с Вами
+        в ближайшее время
+      </p>
+      <form action="#" class="modal-content__form">
+        <input type="tel" class="modal-content__input input-reset form__elem" placeholder="Номер телефона *" inputmode="text">
+        <button class="btn-reset btn-fill modal-content__btn" type="submit">Жду звонка</button>
+      </form>
+      <p class="modal-content__descr">Нажимая на кнопку «Жду звонка» вы даете свое согласие на обработку <a href="#" class="modal-content__descr-link">персональных данных</a></p>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>

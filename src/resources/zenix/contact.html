@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Besley&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,100&family=Reem+Kufi&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./fovicon.png" rel="icon" type="image/png">
+  <title>Контакты</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" id="top">
+  <div class="wrapper">
+    <header class="header header--page">
+  <div class="container">
+    <div class="header__inner ">
+      <a href="index.html" class="logo">
+        <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+      </a>
+      <nav class="nav" title="Навигация по сайту" data-menu>
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link"> Главная </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--drop">
+              Товары
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="catalog.html" class="menu-dropdown__link">
+                  Каталог с товарами
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="cart-product.html" class="menu-dropdown__link">
+                  Посмотрет товар
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы о товаре
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Дополнительная информация
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              О нас
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="about.html" class="menu-dropdown__link">
+                  О нас
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Как оформить заказ
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              Клиенты
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы клиентов
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Информация о товарах
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Лучшие товары
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="diler.html" class="nav__link"> Поставщикам </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link"> Контакты </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <button class="btn-reset btn-fill btn-call header__btn-call btn-tel" data-graph-path="modal">Заказать
+        звонок</button>
+    </div>
+    <div class="header__right">
+      <form action="#" class="form-searh">
+        <input type="search" class="form-searh__input input-reset" placeholder="Поиск" />
+        <button class="form-searh__reset btn-reset " aria-label="Закрыть форму поиска">
+          <svg class="">
+            <use xlink:href="./img/sprite.svg#search-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+    <main class="main">
+    <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list list-reset">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">
+          О компании
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    <section class="contact">
+  <div class="container">
+    <h2 class="title contact__title">Контакты</h2>
+    <div class="contact__inner grid">
+      <div class="contact__info">
+        <ul class="contact__info-list list-reset">
+          <li class="contact__info-item">
+            <address class="contact__info-text contact__info-address">
+              Адрес: <span>323456, г. Чебоксары, ул. Калинина, 101</span>
+            </address>
+          </li>
+          <li class="contact__info-item">
+            <p class="contact__info-text">
+              Телефон/факс:
+              <a href="tel:89000001234" class="contact__link">
+                8 (900) 000-12-34
+              </a>
+            </p>
+          </li>
+          <li class="contact__info-item">
+            <p class="contact__info-text">
+              Email:
+              <a href="mailto:hookaif@mail.ru" class="contact__link">
+                hookaif@mail.ru
+              </a>
+            </p>
+          </li>
+          <li class="contact__info-item">
+            <p class="contact__info-text">
+              Instagramm
+              <a href="#" class="contact__link">
+                hookaif
+              </a>
+            </p>
+          </li>
+          <li class="contact__info-item">
+            <p class="contact__info-text">
+              Телефон:
+              <a href="tel:89000001234" class="contact__link">
+                8 (900) 000-12-34
+              </a>
+            </p>
+          </li>
+
+        </ul>
+
+        <form action="#" class="aside-support  contact__form">
+          <h3 class="aside-support__title">
+            Необходимо перезвонить?
+          </h3>
+          <input type="tel" class="aside-support__input input-reset form__elem" placeholder="Номер телефона *">
+          <button class="aside-support__btn btn-reset btn-tel btn-fill">Жду звонка</button>
+        </form>
+        <a href="#" class="btn-fill contact__link-catalog">Перейти в каталог</a>
+      </div>
+      <div class="contact__map map" id="map">
+
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo footer__logo">
+      <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+    </a>
+    <nav class="nav footer__nav" title="Навигация по сайту">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link"> Главная </a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">
+            Товары
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">
+            О нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="vacancies.html" class="nav__link">
+            Клиенты
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="diler.html" class="nav__link"> Поставщикам </a>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link"> Контакты </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="tel:89000001234" class="header__content-tel header__content-link footer__tel">
+      8 (900) 000-12-34
+    </a>
+    <button class="btn-reset btn-fill btn-call footer__btn-call btn-tel" data-graph-path="modal">Заказать звонок</button>
+    <a href="#top" class="to-top" data-scroll>
+      <svg class="">
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+    <div class="cookie-block">
+  <div class="cookie-block__container">
+    <p class="cookie-block__text">
+      Этот сайт использует cookie для хранения данных. Продолжая исопльзовать сайт, Вы даете согласие на работу с этими файлами
+    </p>
+    <button class="cookie-block__btn btn-reset btn-fill">Принять</button>
+  </div>
+</div>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <svg class="">
+        <use xlink:href="img/sprite.svg#search-close"></use>
+      </svg>
+    </button>
+    <div class="graph-modal__content modal-content">
+      <h2 class="modal-content__title">Оставьте заявку</h2>
+      <p class="modal-content__text">
+        И наш менеджер свяжется с Вами
+        в ближайшее время
+      </p>
+      <form action="#" class="modal-content__form">
+        <input type="tel" class="modal-content__input input-reset form__elem" placeholder="Номер телефона *" inputmode="text">
+        <button class="btn-reset btn-fill modal-content__btn" type="submit">Жду звонка</button>
+      </form>
+      <p class="modal-content__descr">Нажимая на кнопку «Жду звонка» вы даете свое согласие на обработку <a href="#" class="modal-content__descr-link">персональных данных</a></p>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>

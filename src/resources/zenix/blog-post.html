@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Besley&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,100&family=Reem+Kufi&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./fovicon.png" rel="icon" type="image/png">
+  <title>Блог</title>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body" id="top">
+  <div class="wrapper">
+    <header class="header header--page">
+  <div class="container">
+    <div class="header__inner ">
+      <a href="index.html" class="logo">
+        <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+      </a>
+      <nav class="nav" title="Навигация по сайту" data-menu>
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link"> Главная </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--drop">
+              Товары
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="catalog.html" class="menu-dropdown__link">
+                  Каталог с товарами
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a href="cart-product.html" class="menu-dropdown__link">
+                  Посмотрет товар
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы о товаре
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Дополнительная информация
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              О нас
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a href="about.html" class="menu-dropdown__link">
+                  О нас
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Доставка и оплата
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Как оформить заказ
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Возврат товара
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Гарантийное обслуживание
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Техническая поддержка
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item ">
+            <a href="#" class="nav__link nav__link--drop">
+              Клиенты
+              <span class="nav__link-arr">
+                <svg>
+                  <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="menu-dropdown  list-reset">
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Отзывы клиентов
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Информация о товарах
+                </a>
+              </li>
+              <li class="menu-dropdown__item">
+                <a class="menu-dropdown__link">
+                  Лучшие товары
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="diler.html" class="nav__link"> Поставщикам </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link"> Контакты </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <button class="btn-reset btn-fill btn-call header__btn-call btn-tel" data-graph-path="modal">Заказать
+        звонок</button>
+    </div>
+    <div class="header__right">
+      <form action="#" class="form-searh">
+        <input type="search" class="form-searh__input input-reset" placeholder="Поиск" />
+        <button class="form-searh__reset btn-reset " aria-label="Закрыть форму поиска">
+          <svg class="">
+            <use xlink:href="./img/sprite.svg#search-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list list-reset">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="breadcrumbs__link">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">
+          О компании
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+      <section class="post">
+  <div class="container">
+    <h1 class="title-page post__title">
+      Новый вкус DarkSide. И снова вишня?
+    </h1>
+    <div class="post__content">
+      <div class="post__box">
+        <picture>
+          <source srcset="img/post-img.avif" type="image/avif">
+          <source srcset="img/post-img.webp" type="image/webp">
+          <img loading="lazy" src="img/post-img.jpg" class="image post__img" width="645" height="300"
+            alt="Картинка людей">
+        </picture>
+        <div class="post__descr">
+          <p class="post__text">
+            <span class="post__text-subtitle">Один вкус, но разные оттенки</span>
+            DarkSide, ну, наконец-то! С тех пор, как компания объявила медиа молчание, у нас было не так много поводов
+            вспомнить великую и ужасную, а на самом деле хотелось. Всё-таки, на рынке не так много брендов, которые
+            способны вызвать бурное обсуждение анонсом всего лишь одного вкуса.
+            К слову, мы тут с вами как раз из-за такого события. У DarkSide появилась вишня, да, ещё одна — CHERRY
+            ROCKS:
+          </p>
+          <ul class="post__text-list list-reset">
+            <li class="post__text-item">— яркий конфетный вкус вишнёвых леденцов с заметным кислым послевкусием</li>
+            <li class="post__text-item">— новинка будет доступна в линейке крепости CORE в упаковках по 30, 100, 250г.
+            </li>
+            <li class="post__text-item">— мелкая нарезка</li>
+            <li class="post__text-item">— крепость: крепкий</li>
+          </ul>
+        </div>
+      </div>
+      <p class="post__text">
+        В прошлой статье мы немного затронули тему изобилия вкусов. Кажется, что все выпущено и все создано, но это не
+        так. В целом, индустрия пошла по пути наименьшего сопротивления, то есть в миксы, коктейли и так далее. Однако,
+        не стоит забывать о сложном варианте. Это как раз работа с оттенками. Даже классический вкус можно представить
+        совершенно по разному. Та же вишня может быть коктейльной, кислой, напиточной, с косточкой или без. Приходя в
+        магазин, на прилавке вы увидите как минимум 3 разных сорта яблок, и у каждого будет свой вкус, при этом название
+        сохранится одинаковое. Теперь перенесите выше сказанное на кальянное поле, думаем, решение с изобилием вкусов
+        придёт к вам само собой. Сегодня особенно интересно наблюдать за тем, как в рамках одного производителя могут
+        существовать похожие, но при этом разные ароматы. Например, у Satyr есть два граната, теперь у DarkSide две
+        вишни. Для ценителей вкуса поиск оттенков, различий и едва уловимых нот — это отдельное удовольствие.
+      </p>
+    </div>
+    <div class="swiper post-gallery">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a data-fslightbox href="img/post-gallery-1.jpg" class="post-gallery__img">
+            <img class="post-gallery__images" src="img/post-gallery-1.jpg" alt="3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a data-fslightbox href="img/post-gallery-2.jpg" class="post-gallery__img">
+            <img class="post-gallery__images" src="img/post-gallery-2.jpg" alt="3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a data-fslightbox href="img/post-gallery-3.jpg" class="post-gallery__img">
+            <img class="post-gallery__images" src="img/post-gallery-3.jpg" alt="3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a data-fslightbox href="img/post-gallery-1.jpg" class="post-gallery__img">
+            <img src="img/post-gallery-1.jpg" alt="3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a data-fslightbox href="img/post-gallery-2.jpg" class="post-gallery__img">
+            <img src="img/post-gallery-2.jpg" alt="3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a data-fslightbox href="img/post-gallery-3.jpg" class="post-gallery__img">
+            <img src="img/post-gallery-3.jpg" alt="3">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-prev post-gallery__prev">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#prev-arr"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next post-gallery__next">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#next-arr"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="post__bottom">
+      <a href="#" class="post__link btn-fill">Вернуться к списку новостей</a>
+      <div class="post__social">
+        <span class="post__social-text">Поделиться:</span>
+        <ul class="social list-reset" title="Социальыне сети">
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Наша страничка в Фейсбуке">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--tg" aria-label="Наша страничка в Телеграме">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--inst"
+              aria-label="Наша страничка в Инстаграме">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--tw" aria-label="Наша страничка в Твиттере">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#tw"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--odn"
+              aria-label="Наша страничка в Одноклассниках">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#od"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link social__link--vk" aria-label="Наша страничка во Вконтакте">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo footer__logo">
+      <img src="./img/logo.png" alt="logo" aria-label="Логотип" />
+    </a>
+    <nav class="nav footer__nav" title="Навигация по сайту">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link"> Главная </a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">
+            Товары
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">
+            О нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="vacancies.html" class="nav__link">
+            Клиенты
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="diler.html" class="nav__link"> Поставщикам </a>
+        </li>
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link"> Контакты </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="tel:89000001234" class="header__content-tel header__content-link footer__tel">
+      8 (900) 000-12-34
+    </a>
+    <button class="btn-reset btn-fill btn-call footer__btn-call btn-tel" data-graph-path="modal">Заказать звонок</button>
+    <a href="#top" class="to-top" data-scroll>
+      <svg class="">
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+    <div class="cookie-block">
+  <div class="cookie-block__container">
+    <p class="cookie-block__text">
+      Этот сайт использует cookie для хранения данных. Продолжая исопльзовать сайт, Вы даете согласие на работу с этими файлами
+    </p>
+    <button class="cookie-block__btn btn-reset btn-fill">Принять</button>
+  </div>
+</div>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <svg class="">
+        <use xlink:href="img/sprite.svg#search-close"></use>
+      </svg>
+    </button>
+    <div class="graph-modal__content modal-content">
+      <h2 class="modal-content__title">Оставьте заявку</h2>
+      <p class="modal-content__text">
+        И наш менеджер свяжется с Вами
+        в ближайшее время
+      </p>
+      <form action="#" class="modal-content__form">
+        <input type="tel" class="modal-content__input input-reset form__elem" placeholder="Номер телефона *" inputmode="text">
+        <button class="btn-reset btn-fill modal-content__btn" type="submit">Жду звонка</button>
+      </form>
+      <p class="modal-content__descr">Нажимая на кнопку «Жду звонка» вы даете свое согласие на обработку <a href="#" class="modal-content__descr-link">персональных данных</a></p>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>
