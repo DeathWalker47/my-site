@@ -46,6 +46,12 @@
       color: $default;
     }
   }
+  // &--animation{
+  //   padding: 20px 0;
+  // }
+  &__anim-container {
+    position: relative;
+  }
 }
 
 

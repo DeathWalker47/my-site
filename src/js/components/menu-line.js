@@ -1,5 +1,7 @@
+
 const navLine = document.querySelector('.nav__line'),
       navItem = document.querySelectorAll('.nav__link');
+
 
 navLine.style.width = `${navItem[0].offsetWidth}px`;
 
