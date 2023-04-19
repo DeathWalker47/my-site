@@ -1,12 +1,40 @@
-<header class="header  header--animation fixed-block">
-    <div class="container header__inner">
-      <div class="header__anim-container">
-          <span class="nav__line"></span>
-              <a class="nav__link " aria-label="hidden">
-              </a>
-              <a href="index.html" class="nav__link">
-                На главную страницу
-              </a>
-      </div>
+<header class="header anim-header fixed-block">
+  <div class="container header__inner">
+    <div class="header__langs">
+      <a class="header__langs-link header__langs-link--active" aria-label="Русскоязычная страица">Ru</a>
     </div>
+    <nav class="nav" title="Навигация по сайту" data-menu>
+      <span class="nav__line"></span>
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="/#top" class="nav__link nav__link--active">
+            Главная
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/#about" class="nav__link" >
+            Обо мне
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/#skills" class="nav__link">
+            Навыки
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/#portfolio" class="nav__link" >
+            Портфолио
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="/#contact" class="nav__link" >
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+    </button>
+  </div>
 </header>

@@ -7,6 +7,7 @@ menuLink.forEach((el) => {
   el.addEventListener("click", (e) => {
     enableScroll();
     document.querySelector(".nav ").classList.remove("menu--active");
+    // document.querySelector(".amin-nav ").classList.remove("menu--active");
     document.querySelector(".burger ").classList.remove("burger--active");
   });
 });

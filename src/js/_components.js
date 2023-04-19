@@ -9,3 +9,4 @@ import "./components/preloader.js";
 import "./components/animation.js";
 import "./components/form.js";
 import "./components/cite-theme.js";
+import "./components/anim-page.js";
