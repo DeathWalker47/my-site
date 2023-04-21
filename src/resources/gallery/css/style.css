@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #070707;
+  --index: calc(1vw + 1vh);
+  --transitiom: .5s cubic-bezier(0.110, 0.5, 0.540, 1.090);
+}
+
+@font-face {
+  font-family: raleway-m;
+  src: url('../fonts/raleway-v22-cyrillic-300.woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: raleway-m;
+  src: url('../fonts/raleway-v22-cyrillic-900.woff2');
+  font-weight: 900;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+  color: #fff;
+  font-family: raleway-m, sans-serif;
+
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  transform: rotate(15deg);
+  overflow: visible;
+  top: 10vh;
+}
+
+.slider__wrapper {
+  transition: var(--transitiom)!important;
+  will-change: transform;
+}
+
+.slider__item {
+  position: relative;
+  max-height: 75vh;
+  overflow: hidden;
+  transition: transform var(--transitiom), box-shadow var(--transitiom);
+
+  cursor: pointer;
+}
+
+.slider__img {
+  width: 300%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -100%;
+
+  transition: var(--transitiom)!important;
+  will-change: transform;
+
+  position: absolute;
+}
+
+.slider_bg {
+  z-index: 0;
+  transform: rotate(-20deg)!important;
+  top: -90vh;
+  left: -8vh;
+  opacity: .2;
+  filter:blur(120px) saturate(10) ;
+}
+
+.slider_bg .slider__item {
+  max-height: 100vh;
+}
+
+.slider__item.open {
+  z-index: 10;
+  transform: rotate(-15deg) scale(1.3);
+  box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
+}
+
+.descr {
+  position: absolute;
+  font-size: calc( var(--index) * .7);
+  top: 20vh;
+  max-width: 22vw;
+  left: 4vw;
+  transition: opacity var(--transitiom), transform var(--transitiom);
+}
+
+.logo{
+  font-size: calc(var(--index) * 2.5);
+  font-weight: 900;
+  display: inline-block;
+  background: linear-gradient(-35deg, #9966ff, #b259f2, #db45de,   #fa36cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text{
+  opacity: .9;
+  transition: transform var(--transitiom);
+  transition-duration: 3s;
+}
+
+.descr.hidden {
+  opacity: 0;
+  transform: translateY(3vh);
+}
+
+.descr.hidden .text{
+  transform: translateY(2vh);
+}
