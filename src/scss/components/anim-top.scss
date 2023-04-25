@@ -1,11 +1,23 @@
 .amin-top {
-  padding: 120px 160px 80px;
+  // padding: 120px 160px 80px;
+  padding: 60px 0;
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  background-image: url('../img/anim-top.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 930px;
   &__content {
+    // width: 100%;
     display: flex;
     align-items: center;
+    min-height: 100vh;
+  }
+  &__container {
+    max-width: 1630px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
   &__title {
     max-width: 900px;

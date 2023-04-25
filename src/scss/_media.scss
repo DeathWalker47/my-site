@@ -1,4 +1,18 @@
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+  .amin-top {
+    background-size: 730px;
+    // padding: 60px 80px 30px;
+  }
+  .anim-gallery {
+    padding: 60px 40px 140px;
+  }
+  .amin-top__title {
+    max-width: 500px;
+    width: 100%;
+    font-size: 70px;
+    line-height: 100px;
+  }
+}
 
 @media (max-width: 1200px) {
   .about__left {
@@ -28,6 +42,8 @@
   .portfolio-list {
     gap: 40px;
   }
+
+
 }
 
 @media (max-width: 1024px) {
@@ -126,6 +142,15 @@
 
   .blockquote {
     margin-top: 40px;
+  }
+
+  .amin-top__title {
+    max-width: 380px;
+    font-size: 52px;
+    line-height: 67px;
+  }
+  .amin-top {
+    background-size: 530px;
   }
 }
 
@@ -256,6 +281,16 @@
       width: 350px;
       height: 550px;
     }
+  }
+
+
+  .amin-top {
+    background-size: 430px  }
+
+  .amin-top__title {
+    max-width: 280px;
+    font-size: 38px;
+    line-height: 48px;
   }
 }
 
@@ -567,6 +602,26 @@
   .modal-content .image {
     width: 300px;
     height: 435px;
+  }
+
+  .amin-top {
+    background-size: 330px;
+    padding: 120px 0 120px;
+    min-height: auto;
+  }
+  .amin-top__content {
+    min-height: auto;
+  }
+  .amin-top__title.title {
+    padding-left: 0;
+    font-size: 32px;
+    line-height: 46px;
+    max-width: 240px;
+    padding-top: 150px;
+    text-shadow: 3px 3px 8px #000;
+  }
+  .anim-header .menu--active {
+    background-color: rgba($color: #000000, $alpha: .7)
   }
 }
 
