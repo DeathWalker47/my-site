@@ -42,8 +42,12 @@
   .portfolio-list {
     gap: 40px;
   }
-
-
+  .anim-gallery__inner {
+    column-gap: 80px;
+  }
+  .anim-gallery__item:not(:last-child) {
+    margin-bottom: 90px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -111,7 +115,7 @@
   }
 
   .skills__item {
-    grid-column: 3 span;
+    grid-column: 4 span;
   }
 
   .footer__inner {
@@ -154,6 +158,41 @@
   }
   // https://mob.24video.one/movie/soblaznitelnyy-krempay-dlya-lyubimoy-v-domashnem-porno-video
   // https://mob.24video.one/movie/mamka-reshila-vospolzovatsya-chlenom-syna-v-otsutstvii-muzha
+
+  .anim-gallery__descr {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .anim-gallery__mobile {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .anim-gallery__inner {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .anim-gallery__left {
+    margin-bottom: 90px;
+  }
+
+  .anim-gallery__left,
+  .anim-gallery__right {
+    grid-column: 1 span;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .anim-gallery__link {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -294,6 +333,8 @@
     font-size: 38px;
     line-height: 48px;
   }
+
+
 }
 
 @media (max-width: 576px) {
@@ -434,7 +475,7 @@
   }
 
   .skills__item {
-    grid-column: 5 span;
+    grid-column: 6 span;
     padding: 127px 0 0;
   }
 
@@ -624,6 +665,38 @@
   }
   .anim-header .menu--active {
     background-color: rgba($color: #000000, $alpha: .7)
+  }
+
+  .anim-gallery__title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+
+  .anim-gallery {
+    padding: 0;
+  }
+  .anim-gallery__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .anim-gallery__item:not(:last-child) {
+    margin-bottom: 55px;
+  }
+  .anim-gallery__left{
+    margin-bottom: 55px;
+  }
+  .anim-gallery__right {
+    margin-bottom: 80px;
+  }
+  .anim-gallery__link {
+    // margin-bottom: 25px;
+    margin: 0 auto 25px;
+    max-width: 320px;
+  }
+
+  .anim-gallery__title {
+    margin-bottom: 15px;
   }
 }
 

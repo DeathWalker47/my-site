@@ -71,17 +71,18 @@
       margin-bottom: 160px;
     }
   }
-  &__descr {
-
+  &__mobile {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
+
   &__title {
-    @extend %oswald-400;
     font-size: 38px;
     line-height: 56px;
     margin-bottom: 30px;
   }
   &__text {
-    @extend %open-400;
     font-size: 22px;
     line-height: 32px;
   }
@@ -93,3 +94,8 @@
   }
 }
 
+.anim-back {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(-90deg);
+}

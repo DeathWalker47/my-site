@@ -5,7 +5,7 @@
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 40px;
   }
   &__item {
@@ -40,7 +40,9 @@
   }
   &__item--gulp {
     background-image: url('../img/gulp.svg');
-
+  }
+  &__item--wp {
+    background-image: url('../img/wp.svg');
   }
 }
 
