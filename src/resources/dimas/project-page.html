@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./favicon.svg" rel="icon" type="image/svg">
+  <title>Project details</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header header__page">
+  <div class="container-content header__content-container">
+    <a href="./index.html" class="logo header__logo">
+      <img src="./img/logo.svg" alt="logo">
+    </a>
+    <div class="container header__container">
+       <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav" title="navigation">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="./index.html" class="nav__link" data-text="home">
+            Home
+          </a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link" data-text="about">
+            About
+          </a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link" data-text="project">
+            Project
+          </a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link"  data-text="services">
+            Services
+          </a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link"  data-text="testimonials">
+            Testimonials
+          </a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link"  data-text="blog">
+            Blog
+          </a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link" data-text="contact">
+            Contact
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+    <ul class="social list-reset" title="Social">
+      <li class="social__item"><a href="#" target="_blank" class="social__link social__link--fb"
+          aria-label="I'm on Facebook">
+          <svg>
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a></li>
+      <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tw"
+          aria-label="I'm on Twitter">
+          <svg>
+            <use xlink:href="img/sprite.svg#tw"></use>
+          </svg>
+        </a></li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--br" aria-label="I'm on Dr">
+        <svg>
+          <use xlink:href="img/sprite.svg#dr"></use>
+        </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <main class="main project-page" data-descr="project">
+
+      <div class="swiper-page swiper">
+        <!-- <div class="swiper-page__arrow">
+          <div class="swiper-button-prev swiper-page__prev">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next swiper-page__next">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow-next"></use>
+            </svg>
+          </div>
+        </div> -->
+        <div class="swiper-wrapper">
+
+           <div class="swiper-slide" data-swiper-parallax="40%">
+            <div class="proj section-page">
+              <div class="proj__content">
+                <div class="proj__content-image">
+                  <picture>
+                    <source srcset="./img/project-1.avif" type="image/avif">
+                    <source srcset="./img/project-1.webp" type="image/webp">
+                    <img loading="lazy" src="./img/project-1.jpg" class="proj__content-img"  alt="img">
+                  </picture>
+                </div>
+                <div class="proj__content-descr proj-descr proj-container  container">
+                  <h2 class="proj-descr__title title">
+                    Renex Museum
+                  </h2>
+                  <p class="proj-descr__text">
+                    Donec a iaculis odio. Mauris tincidunt, ligula ut congue tempor, augue nibh condimentum ipsum, ullamcorper congue felis nibh egestas risus. Aliquam sed pretium dui, in malesuada velit. Pellentesque at enim placerat risus.
+                  </p>
+
+                  <ul class=" list-reset proj-descr__list">
+                    <li class=" proj-descr__list-item">
+                      <h3 class="proj-descr__list-title">
+                        Services
+                      </h3>
+                      <p class="proj-descr__list-text">
+                        Design, Branding, Artwork
+                      </p>
+                    </li>
+                    <li class="proj-descr__list-item">
+                      <h3 class="proj-descr__list-title">
+                        Manager
+                      </h3>
+                      <p class="proj-descr__list-text">
+                        John Doe
+                      </p>
+                    </li>
+                    <li class="proj-descr__list-item">
+                      <h3 class="proj-descr__list-title">
+                        Date
+                      </h3>
+                      <p class="proj-descr__list-text">
+                        January 23, 2022
+                      </p>
+                    </li>
+                    <li class="proj-descr__list-item">
+                      <h3 class="proj-descr__list-title">
+                        Client
+                      </h3>
+                      <p class="proj-descr__list-text">
+                        ABC Group
+                      </p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <div class="swiper-slide" data-swiper-parallax="45%">
+            <div class="proj section-page">
+              <div class="proj__content">
+                <div class="proj__content-image">
+                  <picture>
+                    <source srcset="./img/project-2.avif" type="image/avif">
+                    <source srcset="./img/project-2.webp" type="image/webp">
+                    <img loading="lazy" src="./img/project-2.jpg" class="proj__content-img"  alt="img">
+                  </picture>
+                </div>
+                <div class="proj__content-descr proj-descr proj-container container ">
+                  <h2 class="proj-descr__title title">
+                    Solution
+                  </h2>
+                  <p class="proj-descr__text">
+                    Donec a iaculis odio. Mauris tincidunt, ligula ut congue tempor, augue nibh condimentum ipsum, ullamcorper congue felis nibh egestas risus. Aliquam sed pretium dui, in malesuada velit. Pellentesque at enim placerat risus.
+                  </p>
+                  <p class="proj-descr__text proj-descr__text-arrow">
+                    <svg class="proj-descr__arrow" width="86" height="163" viewBox="0 0 86 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M62.031 81H61.031H62.031ZM13.0309 100.5H12.0309H13.0309ZM84.7794 155.163C85.1457 154.75 85.1075 154.118 84.6942 153.752L77.9585 147.783C77.5451 147.416 76.9131 147.454 76.5468 147.868C76.1805 148.281 76.2187 148.913 76.632 149.279L82.6193 154.585L77.3135 160.573C76.9472 160.986 76.9853 161.618 77.3987 161.984C77.812 162.35 78.444 162.312 78.8103 161.899L84.7794 155.163ZM7.03746 0.0471478C6.73575 0.641165 6.4442 1.24541 6.16273 1.85925L7.98072 2.69286C8.25136 2.10263 8.53132 1.52245 8.82063 0.952852L7.03746 0.0471478ZM4.61704 5.59111C4.15299 6.8354 3.72517 8.1109 3.33303 9.41336L5.24811 9.98995C5.62843 8.72678 6.04262 7.49214 6.49096 6.28998L4.61704 5.59111ZM2.28621 13.3003C1.97791 14.5897 1.70152 15.9002 1.4566 17.2282L3.42343 17.591C3.66225 16.296 3.93147 15.0196 4.23138 13.7654L2.28621 13.3003ZM0.825468 21.1895C0.647791 22.5053 0.499178 23.8344 0.379262 25.1735L2.37129 25.3519C2.4886 24.0418 2.63391 22.7425 2.80748 21.4572L0.825468 21.1895ZM0.107406 29.1713C0.045124 30.5003 0.0100536 31.8361 0.00186938 33.1755L2.00183 33.1877C2.00985 31.875 2.04422 30.5664 2.10521 29.2649L0.107406 29.1713ZM0.0569049 37.1798C0.101515 38.5128 0.172268 39.8466 0.268863 41.1783L2.26362 41.0336C2.1689 39.7277 2.09952 38.4198 2.05579 37.1129L0.0569049 37.1798ZM0.636075 45.1656C0.784658 46.4951 0.958997 47.8196 1.1588 49.136L3.13616 48.8359C2.94031 47.5456 2.76939 46.2471 2.6237 44.9434L0.636075 45.1656ZM1.83927 53.0836C2.09416 54.4019 2.37508 55.7089 2.68175 57.0015L4.62773 56.5398C4.32763 55.2749 4.05258 53.9953 3.80291 52.7039L1.83927 53.0836ZM3.69273 60.8818C4.06191 62.1791 4.45815 63.4579 4.88114 64.7146L6.77665 64.0766C6.36403 62.8507 5.97714 61.6022 5.61636 60.3344L3.69273 60.8818ZM6.2586 68.4874C6.75681 69.7485 7.28396 70.982 7.83978 72.1839L9.65507 71.3444C9.11583 70.1784 8.60355 68.9798 8.11871 67.7526L6.2586 68.4874ZM9.6426 75.7825C10.2929 76.9815 10.9753 78.1409 11.6894 79.2558L13.3735 78.1771C12.6869 77.1051 12.0291 75.9876 11.4006 74.8289L9.6426 75.7825ZM14.0151 82.5781C14.8531 83.6715 15.7278 84.7081 16.6389 85.6818L18.0992 84.3152C17.2356 83.3923 16.4031 82.4061 15.6025 81.3615L14.0151 82.5781ZM19.5844 88.4949C20.6395 89.3896 21.7363 90.205 22.8743 90.9327L23.9518 89.2478C22.8936 88.5711 21.8687 87.8097 20.8779 86.9695L19.5844 88.4949ZM26.4963 92.8828C27.7539 93.4386 29.0534 93.8922 30.3936 94.2348L30.8891 92.2972C29.659 91.9827 28.4641 91.5658 27.3048 91.0535L26.4963 92.8828ZM34.4575 94.9154C35.14 94.9715 35.831 95 36.5305 95V93C35.8854 93 35.249 92.9737 34.6214 92.9221L34.4575 94.9154ZM36.5305 95C37.2178 95 37.8881 94.9926 38.5418 94.978L38.4972 92.9785C37.8589 92.9927 37.2034 93 36.5305 93V95ZM42.5729 94.7839C44.0047 94.6745 45.342 94.5252 46.5906 94.3396L46.2966 92.3614C45.0989 92.5394 43.809 92.6836 42.4205 92.7897L42.5729 94.7839ZM50.5873 93.5527C52.0423 93.1857 53.3428 92.7564 54.5027 92.2733L53.7338 90.427C52.6749 90.868 51.4691 91.2677 50.0981 91.6135L50.5873 93.5527ZM58.1814 90.2553C59.4717 89.323 60.4625 88.2899 61.2021 87.1936L59.5442 86.075C58.9446 86.9637 58.1228 87.8302 57.0101 88.6342L58.1814 90.2553ZM62.8408 83.156C62.9737 82.4273 63.031 81.7046 63.031 81H61.031C61.031 81.5964 60.9825 82.1982 60.8732 82.7971L62.8408 83.156ZM63.031 81C63.031 80.1099 62.8532 79.2504 62.5173 78.434L60.6677 79.1948C60.9085 79.7801 61.031 80.3817 61.031 81H63.031ZM59.4046 74.5856C58.2558 73.6964 56.8691 72.9124 55.293 72.2433L54.5114 74.0842C55.9634 74.7007 57.1938 75.4035 58.1804 76.1672L59.4046 74.5856ZM50.8908 70.791C49.4768 70.4366 47.9662 70.1499 46.3747 69.9375L46.1102 71.92C47.6329 72.1231 49.069 72.3962 50.4045 72.731L50.8908 70.791ZM41.8153 69.5464C41.0665 69.5157 40.3046 69.5 39.531 69.5V71.5C40.2776 71.5 41.0121 71.5151 41.7333 71.5447L41.8153 69.5464ZM39.531 69.5C38.8714 69.5 38.2234 69.517 37.5871 69.5507L37.6928 71.5479C38.293 71.5161 38.9057 71.5 39.531 71.5V69.5ZM33.7139 69.9833C32.3883 70.2146 31.1224 70.5272 29.9163 70.9169L30.5311 72.82C31.6452 72.4601 32.8204 72.1694 34.0578 71.9535L33.7139 69.9833ZM26.2807 72.412C25.0883 73.0183 23.9712 73.7124 22.9293 74.4877L24.1233 76.0922C25.0742 75.3846 26.095 74.7501 27.1872 74.1948L26.2807 72.412ZM19.9794 77.103C19.0772 78.051 18.2541 79.074 17.5091 80.164L19.1604 81.2925C19.8469 80.288 20.6027 79.3492 21.4282 78.4817L19.9794 77.103ZM15.5433 83.5538C14.9804 84.7062 14.4869 85.9118 14.0616 87.1643L15.9554 87.8073C16.3549 86.6308 16.8165 85.5039 17.3403 84.4317L15.5433 83.5538ZM13.0216 90.9074C12.7482 92.1455 12.5322 93.4191 12.3725 94.7232L14.3577 94.9662C14.51 93.7221 14.7156 92.5115 14.9745 91.3386L13.0216 90.9074ZM12.0674 98.5718C12.0431 99.2089 12.0309 99.8518 12.0309 100.5H14.0309C14.0309 99.8767 14.0426 99.2592 14.0659 98.6481L12.0674 98.5718ZM12.0309 100.5C12.0309 101.113 12.0759 101.839 12.1684 102.658L14.1558 102.434C14.0695 101.669 14.0309 101.021 14.0309 100.5H12.0309ZM12.8959 106.83C13.18 108.086 13.5404 109.45 13.9861 110.897L15.8975 110.309C15.4665 108.909 15.1193 107.594 14.8466 106.389L12.8959 106.83ZM15.3574 114.869C15.8384 116.126 16.3792 117.423 16.9845 118.747L18.8034 117.916C18.2162 116.631 17.6917 115.373 17.2254 114.154L15.3574 114.869ZM18.8435 122.499C19.4881 123.703 20.1867 124.92 20.9425 126.139L22.6424 125.085C21.9097 123.903 21.2322 122.724 20.6069 121.555L18.8435 122.499ZM23.2646 129.628C24.0641 130.748 24.9149 131.864 25.8195 132.968L27.3664 131.7C26.4909 130.632 25.6671 129.552 24.8926 128.466L23.2646 129.628ZM28.5885 136.122C29.5324 137.125 30.5255 138.113 31.5697 139.078L32.9273 137.609C31.9181 136.676 30.9581 135.722 30.0452 134.751L28.5885 136.122ZM34.7565 141.821C35.8348 142.684 36.9602 143.523 38.1342 144.332L39.2695 142.686C38.1353 141.904 37.0482 141.093 36.0065 140.259L34.7565 141.821ZM41.6751 146.592C42.8602 147.29 44.0891 147.959 45.363 148.594L46.2554 146.805C45.0236 146.19 43.8358 145.544 42.6906 144.869L41.6751 146.592ZM49.1803 150.337C50.4481 150.865 51.7559 151.36 53.1048 151.82L53.75 149.927C52.4426 149.481 51.1759 149.001 49.9487 148.491L49.1803 150.337ZM57.1145 153.046C58.4366 153.406 59.7948 153.732 61.1896 154.024L61.5985 152.066C60.2423 151.783 58.9229 151.465 57.6394 151.116L57.1145 153.046ZM65.3132 154.764C66.6673 154.968 68.0533 155.14 69.4719 155.278L69.6657 153.287C68.2816 153.153 66.9304 152.985 65.6116 152.786L65.3132 154.764ZM73.6561 155.58C75.0144 155.645 76.4005 155.68 77.8151 155.684L77.8198 153.684C76.435 153.68 75.0792 153.646 73.7517 153.583L73.6561 155.58ZM81.975 155.604C82.6738 155.577 83.3792 155.541 84.0912 155.498L83.9707 153.502C83.2722 153.544 82.5803 153.579 81.8952 153.606L81.975 155.604Z" fill="#F21967"/>
+                      </svg>
+
+                    Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit. Quisque accumsan pretium orci, quis facilisis ex elementum sed. Curabitur porta scelerisque tincidunt. Nunc velit magna, condimentum in metus sed, rutrum ultricies nunc. Nulla pretium imperdiet dolor sit amet imperdiet. Maecenas accumsan fringilla lectus id tempor. Phasellus a convallis sapien. Suspendisse scelerisque, urna vitae aliquam tristique, mauris tortor blandit ex, eu efficitur ex sapien a sem. Praesent ut vehicula mauris. Proin fringilla ornare sagittis.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-parallax="45%">
+            <div class="proj section-page">
+        <div class="proj__content">
+          <div class="proj__content-image">
+            <picture>
+              <source srcset="./img/project-3.avif" type="image/avif">
+              <source srcset="./img/project-3.webp" type="image/webp">
+              <img loading="lazy" src="./img/project-3.jpg" class="proj__content-img"  alt="img">
+            </picture>
+
+            <span class="tooltip">
+
+              <div class="tooltip__content-1">
+                <button class="tooltip__btn tooltip__btn--1 btn-reset" aria-describedby="tooltip-1"></button>
+                <span class="tooltip__txt tooltip__txt--1" role="tooltip" id="tooltip-1">
+                  <span class="visually-hidden">Тултип: </span>
+                  <span class="tooltip__subtitle">
+                    The symbol of Museum
+                  </span>
+                  <span class="tooltip__descr">
+                    Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit. Quisque accumsan pretium orci, quis facilisis ex elementum sed. Curabitur porta scelerisque tincidunt. Nunc velit magna, condimentum in metus sed, rutrum ultricies nunc.
+                  </span>
+                </span>
+              </div>
+
+              <div class="tooltip__content-2">
+                <button class="tooltip__btn tooltip__btn--2 btn-reset" aria-describedby="tooltip-2"></button>
+                <span class="tooltip__txt tooltip__txt--2" role="tooltip" id="tooltip-2">
+                  <span class="visually-hidden">Тултип: </span>
+                  <span class="tooltip__subtitle">
+                    The main thing about the museum
+                  </span>
+                  <span class="tooltip__descr">
+                    Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit.
+                  </span>
+                </span>
+              </div>
+
+              <div class="tooltip__content-3">
+                <button class="tooltip__btn tooltip__btn--3 btn-reset" aria-describedby="tooltip-3"></button>
+                <span class="tooltip__txt tooltip__txt--3" role="tooltip" id="tooltip-3">
+                  <span class="visually-hidden">Тултип: </span>
+                  <span class="tooltip__subtitle">
+                    Museum Plan
+                  </span>
+                  <span class="tooltip__descr">
+                    Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit. Quisque accumsan pretium orci, quis facilisis ex elementum sed.
+                  </span>
+                </span>
+              </div>
+
+            </span>
+
+          </div>
+          <div class="proj__content-descr proj-descr proj-container container ">
+            <h2 class="proj-descr__title title">
+              Ideas…
+            </h2>
+            <p class="proj-descr__text">
+              Donec a iaculis odio. Mauris tincidunt, ligula ut congue tempor, augue nibh condimentum ipsum, ullamcorper congue felis nibh egestas risus. Aliquam sed pretium dui, in malesuada velit. Pellentesque at enim placerat risus.
+             </p>
+             <blockquote class="proj-descr__quote quote">
+              In ullamcorper ac erat ac egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+             </blockquote>
+
+          </div>
+        </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-parallax="40%">
+            <div class="proj section-page">
+        <div class="proj__content">
+          <div class="proj__content-image proj__content-video">
+            <a href="./video.mp4" muted data-fancybox class="video-link" title="Play video">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#play-button"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="proj__content-descr proj-descr proj-container container ">
+            <h2 class="proj-descr__title title">
+              Final result
+            </h2>
+            <p class="proj-descr__text">
+              Cras vel hendrerit nisl. In magna quam, sodales eget vestibulum accumsan, gravida ac velit. Quisque accumsan pretium orci, quis facilisis ex elementum sed. Curabitur porta scelerisque tincidunt. Nunc velit magna, condimentum in metus sed, rutrum ultricies nunc. Nulla pretium imperdiet dolor sit amet imperdiet. Maecenas accumsan fringilla lectus id tempor. Phasellus a convallis sapien. Suspendisse scelerisque, urna vitae aliquam tristique, mauris tortor blandit ex, eu efficitur ex sapien a sem. Praesent ut vehicula mauris. Proin fringilla ornare sagittis.
+             </p>
+             <p class="proj-descr__thank">
+              <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.25C13.9725 0.25 18 4.19875 18 9.07C18 4.19875 22.0275 0.25 27 0.25C31.9725 0.25 36 4.19875 36 9.07C36 16.4118 28.7235 19.0015 18.882 30.688C18.7736 30.8164 18.6386 30.9195 18.4863 30.9903C18.3339 31.061 18.168 31.0977 18 31.0977C17.832 31.0977 17.6661 31.061 17.5137 30.9903C17.3614 30.9195 17.2264 30.8164 17.118 30.688C7.2765 19.0015 0 16.4118 0 9.07C0 4.19875 4.0275 0.25 9 0.25Z" fill="#F21967"/>
+                </svg>
+
+              Thank for watching!
+             </p>
+          </div>
+        </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="swiper-page__paginations"> -->
+          <div class="swiper-pagination swiper-page__pagination"></div>
+        <!-- </div> -->
+
+          <div class="swiper-button-prev swiper-page__prev">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next swiper-page__next">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow-next"></use>
+            </svg>
+          </div>
+
+      </div>
+
+    </main>
+    <footer class="footer">
+  <div class="container-content footer__container-content">
+    <a href="mailto:dimas@domain.com" class="footer__link">
+      dimas@domain.com
+    </a>
+    <a href="tel:3476587344" class="footer__link">Tell: (+34) 765 87 34 54</a>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>

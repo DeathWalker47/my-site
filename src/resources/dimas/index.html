@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="./favicon.svg" rel="icon" type="image/svg">
+  <title>UX/UI design</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header">
+  <div class="container-content header__content-container">
+    <a href="./index.html" class="logo header__logo">
+      <img src="./img/logo.svg" alt="logo">
+    </a>
+    <div class="container header__container">
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="nav" title="navigation">
+        <ul class="nav__list list-reset">
+          <div class="swiper nav-swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#" class="nav__link" data-text="home">
+                  Home
+                </a></li>
+               </div>
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#" class="nav__link" data-text="about">
+                  About
+                </a></li>
+               </div>
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#" class="nav__link" data-text="project">
+                  Project
+                </a></li>
+               </div>
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#" class="nav__link"  data-text="services">
+                  Services
+                </a></li>
+               </div>
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#" class="nav__link"  data-text="testimonials">
+                  Testimonials
+                </a></li>
+               </div>
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#" class="nav__link"  data-text="blog">
+                  Blog
+                </a></li>
+               </div>
+               <div class="swiper-slide">
+                <li class="nav__item"><a href="#slide7" class="nav__link" data-text="contact">
+                  Contact
+                </a></li>
+               </div>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <ul class="social list-reset" title="Social">
+      <li class="social__item"><a href="#" target="_blank" class="social__link social__link--fb"
+          aria-label="I'm on Facebook">
+          <svg>
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a></li>
+      <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tw"
+          aria-label="I'm on Twitter">
+          <svg>
+            <use xlink:href="img/sprite.svg#tw"></use>
+          </svg>
+        </a></li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--br" aria-label="I'm on Dr">
+        <svg>
+          <use xlink:href="img/sprite.svg#dr"></use>
+        </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <main class="main home-page" >
+
+      <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+
+           <div class="swiper-slide" data-descr="top" data-hash="slide1" >
+            <section class="top section-page active">
+  <div class="container top__container">
+    <div class="top__content">
+      <span class="subtitle">
+        Hello!
+      </span>
+      <h1 class="top__title title">
+        <span class="top__title-name">
+          I’m Dimas.
+        </span>
+        UX/UI design
+      </h1>
+    </div>
+    <div class="top__info">
+      <span class="top__year">
+        12
+      </span>
+    </div>
+  </div>
+</section>
+
+           </div>
+
+           <div class="swiper-slide"  data-descr="about" data-hash="slide2">
+            <section class="about section-page">
+  <div class="container about__container">
+    <div class="about__descr">
+      <h2 class="about__title title title-board">
+        Work hard, play hard
+      </h2>
+      <p class="about__text">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, which don’t look even slightly believable.
+      </p>
+    </div>
+    <div class="skills">
+      <div class="skills__item skills__item--ph">
+        <div class="skills__top">
+          <span class="skills__descr">photoshop</span>
+          <span class="skills__percent">95%</span>
+        </div>
+        <div class="skills__line">
+          <span style="width: 95%;"></span>
+        </div>
+      </div>
+      <div class="skills__item skills__item--fig">
+        <div class="skills__top">
+          <span class="skills__descr">Figma</span>
+          <span class="skills__percent">80%</span>
+        </div>
+        <div class="skills__line">
+          <span style="width: 80%;"></span>
+        </div>
+      </div>
+      <div class="skills__item skills__item--sk">
+        <div class="skills__top">
+          <span class="skills__descr">Sketch</span>
+          <span class="skills__percent">90%</span>
+        </div>
+        <div class="skills__line">
+          <span style="width: 90%;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+           </div>
+
+           <div class="swiper-slide" data-descr="project" data-hash="slide3">
+<section class="project page-overlay section-page" id="project" style="background-image: url('./img/proj-1.jpg')">
+  <div class="container">
+    <ol class="project-list ">
+      <li class="project-list__item project-list__item--active" data-src="background-image: url('./img/proj-1.jpg')" >
+        <a href="./project-page.html" class="project-list__link">
+          <span class="project-list__subtitle">Interior</span>
+          <h2 class="project-list__title">
+            Renex Museum
+          </h2>
+        </a>
+      </li>
+      <li class="project-list__item" data-src="background-image: url('./img/proj-2.jpg')" >
+        <a href="./project-page.html" class="project-list__link">
+          <span class="project-list__subtitle">Branding</span>
+          <h2 class="project-list__title">
+            Suchai Restaurant
+          </h2>
+        </a>
+      </li>
+      <li class="project-list__item" data-src="background-image: url('./img/proj-3.jpg')" >
+        <a href="./project-page.html" class="project-list__link">
+          <span class="project-list__subtitle">Graphic design</span>
+          <h2 class="project-list__title">
+            Sparta Hotel
+          </h2>
+        </a>
+      </li>
+      <li class="project-list__item" data-src="background-image: url('./img/proj-4.jpg')" >
+        <a href="./project-page.html" class="project-list__link">
+          <span class="project-list__subtitle">Branding</span>
+          <h2 class="project-list__title">
+            Haloo Coffee
+          </h2>
+        </a>
+      </li>
+      <li class="project-list__item" data-src="background-image: url('./img/proj-5.jpg')" >
+        <a href="./project-page.html" class="project-list__link">
+          <span class="project-list__subtitle">branding</span>
+          <h2 class="project-list__title">
+            Skyline Tower
+          </h2>
+        </a>
+      </li>
+      <li class="project-list__item" data-src="background-image: url('./img/proj-6.jpg')" >
+        <a href="./project-page.html" class="project-list__link">
+          <span class="project-list__subtitle">Visual design</span>
+          <h2 class="project-list__title">
+            ABC group
+          </h2>
+        </a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+           </div>
+
+           <div class="swiper-slide" data-descr="services" data-hash="slide4">
+            <section class="services section-page" id="services">
+  <h2 class="visually-hidden">Services</h2>
+  <div class="container services__container">
+    <ul class="services-list list-reset">
+      <li class="services-list__item">
+        <h3 class="services-list__title title">
+          Branding
+        </h3>
+        <p class="services-list__descr">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+        </p>
+      </li>
+      <li class="services-list__item">
+        <h3 class="services-list__title title">
+          Design
+        </h3>
+        <p class="services-list__descr">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+        </p>
+      </li>
+      <li class="services-list__item">
+        <h3 class="services-list__title title">
+          Artwork
+        </h3>
+        <p class="services-list__descr">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+        </p>
+      </li>
+    </ul>
+    <div class="services__img">
+      <picture>
+        <source srcset="./img/services.avif" type="image/avif">
+        <source srcset="./img/services.webp" type="image/webp">
+        <img loading="lazy" src="./img/services.jpg" class="image" alt="services">
+      </picture>
+    </div>
+  </div>
+</section>
+
+           </div>
+
+           <div class="swiper-slide" data-descr="testimonials" data-hash="slide5">
+            <section class="testimonials section-page page-overlay" id="testimonials" >
+  <div class="container testimonials__container">
+    <div class="testimonials__left">
+      <h2 class="testimonials__title title title-board">
+        Testimonials
+      </h2>
+      <p class="testimonials__descr">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+        some form, by injected humour, which don’t look even slightly believable.
+      </p>
+      <div class="testimonials__clients">
+        <span class="testimonials__number">
+          100<sup>+</sup>
+        </span>
+        <span class="testimonials__happy">
+          Happy clients
+        </span>
+      </div>
+    </div>
+    <div class="testimonials__right">
+      <div class="tabs" data-tabs="tabs">
+        <div class="tabs__content">
+          <div class="tabs__panel">
+            <p class="tabs__text">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, which don’t look even slightly believable.
+            </p>
+            <p class="tabs__post">
+              John Doe — CEO Fantasy Company
+            </p>
+          </div>
+          <div class="tabs__panel">
+            <p class="tabs__text">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, which don’t look even slightly.
+            </p>
+            <p class="tabs__post">
+              Mark White — CEO Fantasy Company
+            </p>
+          </div>
+          <div class="tabs__panel">
+            <p class="tabs__text">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour.
+            </p>
+            <p class="tabs__post">
+              Franc Diks — CEO Fantasy Company
+            </p>
+          </div>
+        </div>
+        <ul class="tabs__nav list-reset">
+          <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">
+            <picture>
+              <source srcset="./img/man-1.avif" type="image/avif">
+              <source srcset="./img/man-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/man-1.jpg" class="image" alt="man">
+            </picture>
+            </button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">
+            <picture>
+              <source srcset="./img/man-2.avif" type="image/avif">
+              <source srcset="./img/man-2.webp" type="image/webp">
+              <img loading="lazy" src="./img/man-2.jpg" class="image" alt="man">
+            </picture>
+            </button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">
+            <picture>
+              <source srcset="./img/man-3.avif" type="image/avif">
+              <source srcset="./img/man-3.webp" type="image/webp">
+              <img loading="lazy" src="./img/man-3.jpg" class="image" alt="man">
+            </picture>
+            </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+           </div>
+
+           <div class="swiper-slide" data-descr="blog" data-hash="slide6">
+            <section class="blog section-page" id="blog">
+  <div class="container">
+    <ul class="blog-list list-reset">
+      <li class="blog-list__item">
+        <h2 class="blog__title title">
+          Blog
+        </h2>
+        <a href="#" class="blog__link">
+          All post
+        </a>
+      </li>
+      <li class="blog-list__item">
+        <article class="blog-list__post">
+            <a href="./blog-page.html" class="blog-list__post-link blog-list__post-link--one">
+              <time class="blog-list__time" datetime="2022-06-23 19:00">
+                jan 23, 2022
+              </time>
+              <h3 class="blog-list__title">
+                The Lasso Is a Recycling Robot for Your Home
+              </h3>
+              <p class="blog-list__descr">
+                There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form…
+              </p>
+            </a>
+        </article>
+      </li>
+      <li class="blog-list__item">
+        <article class="blog-list__post">
+          <a href="./blog-page.html" class="blog-list__post-link blog-list__post-link--two">
+            <time class="blog-list__time" datetime="2022-06-23 19:00">
+              jan 23, 2022
+            </time>
+            <h3 class="blog-list__title">
+              The Lasso Is a Recycling Robot for Your Home
+            </h3>
+            <p class="blog-list__descr">
+              There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form…
+            </p>
+          </a>
+        </article>
+      </li>
+      <li class="blog-list__item">
+        <article class="blog-list__post">
+          <a href="./blog-page.html" class="blog-list__post-link blog-list__post-link--three">
+            <time class="blog-list__time" datetime="2022-06-23 19:00">
+              jan 23, 2022
+            </time>
+            <h3 class="blog-list__title">
+              The Lasso Is a Recycling Robot for Your Home
+            </h3>
+            <p class="blog-list__descr">
+              There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form…
+            </p>
+          </a>
+        </article>
+      </li>
+      <li class="blog-list__item">
+        <article class="blog-list__post">
+          <a href="./blog-page.html" class="blog-list__post-link blog-list__post-link--foure">
+            <time class="blog-list__time" datetime="2022-06-23 19:00">
+              jan 23, 2022
+            </time>
+            <h3 class="blog-list__title">
+              The Lasso Is a Recycling Robot for Your Home
+            </h3>
+            <p class="blog-list__descr">
+              There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form…
+            </p>
+          </a>
+        </article>
+      </li>
+      <li class="blog-list__item">
+        <article class="blog-list__post">
+          <a href="./blog-page.html" class="blog-list__post-link blog-list__post-link--five">
+            <time class="blog-list__time" datetime="2022-06-23 19:00">
+              jan 23, 2022
+            </time>
+            <h3 class="blog-list__title">
+              The Lasso Is a Recycling Robot for Your Home
+            </h3>
+            <p class="blog-list__descr">
+              There are many variations of passages of Lorem Ipsum ava ilable, but the majority have suffered alteration in some form…
+            </p>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+           </div>
+
+           <div class="swiper-slide" data-descr="contact" data-hash="slide7">
+            <section class="contact section-page page-overlay" id="contact">
+  <div class="container contact__container">
+    <div class="contact__info">
+      <h2 class="title title-board contact__title">
+        Contact me
+      </h2>
+      <a href="tel:34765873454" class="contact__link contact__link--tel">
+        <svg>
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        (+34) 765 87 34 54
+      </a>
+      <a href="mailto:dimas@domain.com" class="contact__link contact__link--mess">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#message"></use>
+        </svg>
+        dimas@domain.com
+      </a>
+      <ul class="social list-reset contact__social" title="Social">
+        <li class="social__item">
+          <a href="#" target="_blank" class="social__link social__link--fb"
+            aria-label="I'm on Facebook">
+            <svg>
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+        <li class="social__item"><a href="#" target="_blank" class="social__link social__link--tw"
+            aria-label="I'm on Twitter">
+            <svg>
+              <use xlink:href="img/sprite.svg#tw"></use>
+            </svg>
+          </a></li>
+        <li class="social__item">
+          <a href="#" target="_blank" class="social__link social__link--br" aria-label="I'm on Dr">
+            <svg>
+              <use xlink:href="img/sprite.svg#dr"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <form action="#" class="contact__form form">
+      <div class="contact__form-box">
+        <input type="text" class="contact__form-input input-reset form__input" placeholder="Name">
+        <input type="email" class="contact__form-input input-reset form__input" required placeholder="Email *">
+      </div>
+      <input type="text" class="contact__form-input form__input input-reset" placeholder="Subject">
+      <textarea class="contact__form-textarea form__input input-reset" name="Message" required placeholder="Message *"></textarea>
+      <button class="contact__form-btn  form__btn btn-reset" type="submit">Send request</button>
+    </form>
+  </div>
+</section>
+
+           </div>
+
+        </div>
+
+        <div class="home-swipre__container">
+          <div class="swiper-button-prev  home-swiper__prev">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-pagination home-swiper__pagination"></div>
+          <div class="swiper-button-next  home-swiper__next">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow-next"></use>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+    <footer class="footer">
+  <div class="container-content footer__container-content">
+    <a href="mailto:dimas@domain.com" class="footer__link">
+      dimas@domain.com
+    </a>
+    <a href="tel:3476587344" class="footer__link">Tell: (+34) 765 87 34 54</a>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
