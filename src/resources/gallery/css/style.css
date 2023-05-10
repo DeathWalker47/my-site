@@ -92,6 +92,7 @@ body, html {
   top: 20vh;
   max-width: 22vw;
   left: 4vw;
+  z-index: 3;
   transition: opacity var(--transitiom), transform var(--transitiom);
 }
 

@@ -1,0 +1,218 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--black: #141414;
+	/* --index: calc(1vw + 1vh); */
+	--transition: 1.25s cubic-bezier(.2, .5, 0, 1);
+	--transition-cursor: 2s cubic-bezier(.05, .5, 0, 1);
+}
+@font-face {
+	font-family: arsenal_f;
+	src: url(../fonts/arsenal-regular.woff2);
+}
+body {
+	background-color: #e3e3e3;
+}
+.wrapper {
+	position: relative;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	border-bottom: 1.5px solid var(--black);
+	padding: 40px 0;
+}
+
+
+.header::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #424242;
+	opacity: 0.3;
+}
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	display: block;
+  z-index: 3;
+}
+
+.burger-btn {
+	display: block;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.burger-btn svg {
+	height: 30px;
+	transition: all 0.3s linear;
+	transform: translateY(4px);
+}
+.burger-btn__line-top {
+	transition: all 0.3s linear;
+}
+.burger-btn__line-bottom {
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.burger-btn.active .burger-btn__line-top {
+	transform: rotate(35deg) translate(0px, -6px);
+}
+.burger-btn.active .burger-btn__line-bottom {
+	transform: rotate(-35deg) translate(-5px, 3px);
+}
+
+
+.top {
+	height: 100vh;
+	background-image: url('../img/top.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	display: flex;
+	flex-direction: column;
+}
+
+.top::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #161616;
+	opacity: 0.45;
+}
+
+.title {
+	font-family: arsenal_f, sans-serif;
+	font-size: 120px;
+	color: #ffffff;
+	margin: auto;
+	z-index: 1;
+	text-shadow: 1px 1px 8px #e1e1e1;
+	text-align: center;
+
+}
+.menu-items {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: transform .5s linear, border-bottom-left-radius .5s linear;
+	/* transform: translateY(-100%); */
+	transform: translate(100%, -100%);
+	background-color: #dddddd;
+	z-index: 3;
+	min-height: 100vh;
+	font-family: arsenal_f, sans-serif;
+	font-size: 70px;
+	line-height: 75px;
+	padding: 120px 80px;
+
+	border-bottom-left-radius: 68%;
+	overflow: hidden;
+}
+
+.menu-items.active {
+	transform: translate(0%, 0%);
+	border-bottom-left-radius: 0%;
+	border-top-left-radius: 0%;
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+	transition: transform .5s linear, border-bottom-left-radius 1s linear;
+}
+.menu-items__item {
+	cursor: none;
+	color: var(--black);
+	text-decoration: none;
+	display: block;
+	line-height: .9;
+	padding: 50px 110px;
+	border-bottom: 1px solid rgb(0 0 0 / .09);
+	counter-increment: my-counter;
+}
+
+.menu-items__title {
+	max-width: 300px;
+	transition: transform var(--transition);
+	will-change: transform;
+}
+.menu-items__item::before {
+	content: '(0' counter(my-counter) ')';
+	position: absolute;
+	font-size: 40px;
+	margin-left: -80px;
+	margin-top: 5px;
+	letter-spacing: .5px;
+	transition: transform var(--transition);
+	transition-delay: .025s;
+	will-change: transform;
+}
+.menu-items__item:hover .menu-items__title,
+.menu-items__item:hover::before {
+	transform: translate3d(-80px, 0, 0);
+}
+.cursor {
+	--width: 640px;
+	--height: 410px;
+	position: fixed;
+	width: var(--width);
+	height: 0;
+	top: calc(var(--height) * -.3);
+	left: calc(var(--width) * -.3);
+	overflow: hidden;
+	transform: translate3d(var(--move-x), var(--move-y), 0);
+	transition: transform var(--transition-cursor), height 1s ease;
+	z-index: -1;
+	will-change: transform;
+}
+.menu-items__item:hover .cursor {
+	height: var(--height);
+}
+.cursor__image {
+	--cursor-transform: translate3d(calc(var(--move-x) / -5), calc(var(--move-y) / -5), 0);
+	position: relative;
+	/* width: calc(var(--width) * 2); */
+	/* height: calc(var(--height) * 2); */
+	width: calc(var(--width) * 1.5);
+	height: calc(var(--height) * 1.5);
+	/* top: calc(var(--height) * -.4); */
+	/* left: calc(var(--width) * -.25); */
+	background-size: cover;
+	background-position: center;
+	transform: var(--cursor-transform) scale(1.2);
+	transition: transform var(--transition-cursor);
+}
+.menu-items__item:hover .cursor__image {
+	transform: var(--cursor-transform) scale(1);
+}

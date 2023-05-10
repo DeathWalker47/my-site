@@ -172,6 +172,7 @@
     pointer-events: none;
     transition: opacity 0.4s linear 0.3s, bottom 0.4s linear 0.3s, visibility 0.4s linear 0.3s;
     transform-style: preserve-3d;
+    will-change: transform;
 
     img {
       width: 100%;
@@ -192,6 +193,7 @@
     visibility: hidden;
     pointer-events: none;
     transform: translateX(-50%) translateZ(20px);
+    will-change: transform;
     transition: opacity 0.4s linear 0.1s, visibility 0.4s linear 0.1s, bottom 0.4s linear 0.1s;
   }
 

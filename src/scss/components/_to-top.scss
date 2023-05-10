@@ -18,6 +18,7 @@
     height: 30px;
     fill: $accent;
     transform: rotate(-90deg);
+    will-change: transform;
   }
   &--active {
     bottom: 40px;

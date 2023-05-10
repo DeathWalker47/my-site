@@ -16,6 +16,8 @@
     color: #242424;
 
     transform: translateX(-50%);
+    will-change: transform;
+
   }
 
   &__inner {
@@ -76,6 +78,7 @@
   border-radius: 30px;
   background-color: $bg-fill;
   transform: rotate(90deg) translateY(-40px);
+  will-change: transform;
 
   &__btn {
     border-radius: 30px;

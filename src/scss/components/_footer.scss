@@ -23,6 +23,7 @@
       content: '';
       top: 50%;
       transform: translateY(-50%);
+      will-change: transform;
     }
 
     &::before {

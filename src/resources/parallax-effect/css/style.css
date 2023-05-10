@@ -109,6 +109,18 @@ body {
   align-items: center;
   color: var(--main-color);
   justify-content: center;
+  position: relative;
+
+}
+
+.main-section::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .45);
 }
 
 .main-section__content {
@@ -140,4 +152,12 @@ body {
 
 .container-page {
   will-change: transform;
+}
+
+.main-section__link {
+  display: block;
+  text-shadow: 0 0 15px #738c8b;
+  text-decoration: none;
+  color: var(--main-color);
+  margin-bottom: 30px;
 }

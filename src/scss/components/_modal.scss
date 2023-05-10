@@ -27,6 +27,7 @@
   height: 100vh;
   overflow-y: auto;
   transform: translate(-50%, -50%);
+  will-change: transform;
   width: 100%;
   display: none;
 }
