@@ -148,12 +148,5 @@
       "</div>"
     ],
     "description": "Snippet for basic tabs structure"
-  },
-  "favicon": {
-		"prefix": "favicon",
-		"body": [
-			 "<link href=\"images/favicon.png\" sizes=\"16x16\" rel=\"icon\" type=\"image/png\">"
-		],
-		"description": "Подключение фавикона"
- }
+  }
 }
