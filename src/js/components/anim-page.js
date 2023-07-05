@@ -1,9 +1,10 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 if(ScrollTrigger.isTouch === 0) {
+
 
   gsap.fromTo('.amin-top', {opacity: 1}, {
     opacity:0,
@@ -26,7 +27,6 @@ if(ScrollTrigger.isTouch === 0) {
   })
 
   let itemsLeft = gsap.utils.toArray('.anim-gallery__left .anim-gallery__item');
-  // console.log(itemsL);
 
   itemsLeft.forEach(elem => {
     gsap.fromTo(elem, {opacity:0, x: -70, y: 90}, {
@@ -42,7 +42,6 @@ if(ScrollTrigger.isTouch === 0) {
     })
   })
   let itemsRight = gsap.utils.toArray('.anim-gallery__right .anim-gallery__item');
-  // console.log(itemsL);
 
   itemsRight.forEach(elem => {
     gsap.fromTo(elem, {opacity:0, x: 50, y: 100}, {

@@ -5,26 +5,28 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   &__video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
     &::before {
-      content: "";
+      content: " ";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba($color: #000000, $alpha: 0.85);
+      backdrop-filter: brightness(30%);
     }
   }
 
   &__video-media {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -204,7 +206,7 @@
   border-radius: 30px;
   color: $title;
   @extend %open-300;
-  background-color: rgba($color: #cecece, $alpha: 0.4);
+  background-color: rgba(#cecece, 0.4);
 
   &__qute-img {
     position: absolute;
