@@ -1,0 +1,19 @@
+<svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M85.9322 71.7901L21.2132 7.07107C17.3079 3.16582 10.9763 3.16582 7.07102 7.07107V7.07107C3.16578 10.9763 3.16577 17.308 7.07102 21.2132L71.7901 85.9323" stroke="#FFAC30"/>
+<path d="M85.8225 71.6323L93.0621 93.062L71.6324 85.8225" stroke="#FFAC30"/>
+<path d="M7.07102 7.07107C10.9763 3.16583 17.3079 3.16583 21.2132 7.07107L26.7481 12.606L12.606 26.7481L7.07102 21.2132C3.16578 17.308 3.16578 10.9763 7.07102 7.07107Z" fill="#FFAC30"/>
+<line x1="16.6464" y1="30.6464" x2="30.6464" y2="16.6464" stroke="#FFAC30"/>
+<line x1="24.7071" y1="24" x2="30" y2="29.2929" stroke="#FFAC30" stroke-linecap="round"/>
+<line x1="34.7071" y1="34" x2="79" y2="78.2929" stroke="#FFAC30" stroke-linecap="round"/>
+<path d="M48.5 34.6758L77.7623 5.41348C80.1055 3.07033 83.9044 3.07034 86.2476 5.41348L91.9044 11.0703C94.2476 13.4135 94.2476 17.2125 91.9044 19.5556L62.9601 48.5M48.5 62.9601L19.3848 92.0753C17.0416 94.4184 13.2426 94.4184 10.8995 92.0753L5.24264 86.4184C2.8995 84.0753 2.8995 80.2763 5.24264 77.9331L34.6758 48.5" stroke="#FFAC30"/>
+<line x1="72.435" y1="37.4558" x2="64.6568" y2="29.6776" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="89.4057" y1="20.4854" x2="81.6275" y2="12.7072" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="78.092" y1="31.7991" x2="75.2635" y2="28.9706" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="66.7782" y1="43.1128" x2="63.9498" y2="40.2844" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="83.7487" y1="26.1421" x2="80.9203" y2="23.3137" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="37.4349" y1="73.1924" x2="29.6567" y2="65.4142" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="19.7781" y1="89.9292" x2="11.9999" y2="82.151" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="43.0918" y1="67.5356" x2="40.2634" y2="64.7072" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="25.4351" y1="84.2725" x2="22.6067" y2="81.444" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="31.7781" y1="78.8494" x2="28.9497" y2="76.0209" stroke="#FFAC30" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
