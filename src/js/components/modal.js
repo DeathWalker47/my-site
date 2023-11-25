@@ -1,4 +1,4 @@
-if(document.querySelector('.modals')) {
+if(document.querySelectorAll('.modals')) {
 
   const modalOverlay = document.querySelector(".modal-overlay"),
     modalWindow = document.querySelector(".modal"),
@@ -33,11 +33,13 @@ if(document.querySelector('.modals')) {
       closeModalWindow();
     }
   });
-
-
-
-
-
 }
+
+const notFinished = document.querySelector('.portfolio-work__link--not-finished');
+ notFinished.addEventListener('click', (e) => {
+  e.preventDefault();
+  openModalWindow();
+
+ })
 
 

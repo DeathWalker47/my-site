@@ -4,6 +4,7 @@
 
   &__inner {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(12, 1fr);
     row-gap: $gap * 2;
   }
@@ -166,4 +167,8 @@
     display: none;
   }
 
+}
+
+.accent-text {
+  color: $accent;
 }
