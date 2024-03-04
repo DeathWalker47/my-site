@@ -1,10 +1,15 @@
+import GraphModal from 'graph-modal';
+const modal = new GraphModal();
+
+
 if(document.querySelectorAll('.modals')) {
 
   const modalOverlay = document.querySelector(".modal-overlay"),
     modalWindow = document.querySelector(".modal"),
     modalConent = document.querySelector(".modal-content"),
     modalBtnClose = document.querySelector(".modal-content__btn"),
-    modalOpenLink = document.querySelector(".modal-link");
+    modalOpenLink = document.querySelector(".modal-link"),
+    notFinished = document.querySelector('.portfolio-work__link--not-finished')
 
   // Функции для открытия  модакли
   const openModalWindow = () => {
@@ -43,3 +48,6 @@ const notFinished = document.querySelector('.portfolio-work__link--not-finished'
  })
 
 
+ notFinished.addEventListener('click', (e)=> {
+  e.preventDefault();
+ })

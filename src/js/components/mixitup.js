@@ -35,6 +35,13 @@ if(document.querySelector('.portfolio-list')) {
           btnMore.classList.remove("btn-more--hidden");
         }
       }
+      portfolioWorks.forEach(el => {
+        el.classList.add('portfolio-list__item--visually')
+      })
+      btnMore.classList.add("btn-more--hidden");
+      setTimeout(() => {
+        btnMore.remove();
+      }, 200);
     });
   });
 

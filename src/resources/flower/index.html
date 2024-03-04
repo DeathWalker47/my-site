@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Lover Flower</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header fixed-block" id="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.png" alt="Логотип">
+      </a>
+      <nav class="nav" title="Навигация по сайту">
+        <ul class="list-reset nav__list">
+          <li class="nav__item nav__item--dropdown"><a href="./catalog.html" class="nav__link">
+            Каталог
+          </a>
+          <ul class="dropdown-menu list-reset">
+            <li class="dropdown-menu__item">
+              <a href="./error-404.html" class="dropdown-menu__link  nav__link" style="filter: blur(0px);">
+                Ошибка 404
+            </a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="./corporate.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Корпоративным клиентам
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./payment-error.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оплата не прошла
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./placing.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оформление заказа
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./successfully.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оплата прошла успешно
+            </a>
+            </li>
+          </ul>
+        </li>
+          <li class="nav__item"><a href="./payment.html" class="nav__link">
+            Доставка и оплата
+          </a></li>
+          <li class="nav__item"><a href="./about-us.html" class="nav__link">
+            О нас
+          </a></li>
+          <li class="nav__item"><a href="./contact.html" class="nav__link">
+            Контакты
+          </a></li>
+          <li class="nav__item"><a href="./faq.html" class="nav__link">
+            Faq
+          </a></li>
+          <li class="nav__item">
+           <div class="nav__searach searach-box">
+              <input type="search" class=" searach-box__input " placeholder="Введите свой запрос">
+              <button class="btn-reset searach-box__btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4294 4.06152L13.9385 4.57056L4.57056 13.9378L4.06152 13.4291L13.4294 4.06152Z" fill="#7C7C7C"/>
+                  <path d="M4.57056 4.06152L13.9385 13.4287L13.4294 13.9381L4.06152 4.57092L4.57056 4.06152Z" fill="#7C7C7C"/>
+                </svg>
+              </button>
+              <button class="btn-reset nav__link searach-box__link">
+                Поиск
+              </button>
+           </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right info-box">
+        <div class="info-box__hero">
+          <div class="header__right-item info-box__item">
+            <a href="mailto:zakaz@loverflower.by" class="header__right-info info-box__text">
+              zakaz@loverflower.by
+            </a>
+            <span>
+              Доставка 24/7 по договоренности с оператором
+            </span>
+          </div>
+          <div class="header__right-item info-box__item">
+            <address class="header__right-info info-box__text">
+              ул. Тимирязева 67
+            </address>
+            <span>
+              10:00 до 21:00 <br>
+              без выходных
+            </span>
+          </div>
+        </div>
+        <div class="info-box__second">
+          <div class="better-call">
+            <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+          </div>
+            <div class="bag">
+  <span class="bag__num">0</span>
+  <button class="btn-reset bag__btn">
+    <svg class="">
+      <use xlink:href="img/sprite.svg#bag"></use>
+    </svg>
+  </button>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+    <section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+        <h1 class="title">
+          Lover Flower
+        </h1>
+        <div class="hero__content">
+          <div class="hero__text">
+            <span class="hero__content-text">
+              Создаём для тех, кто ценит свежесть и изящество цветка
+            </span>
+            <a href="./catalog.html" class="hero__content-link btn-link">
+              Смотреть каталог
+            </a>
+          </div>
+        </div>
+        <aside class="hero-aside">
+          <div class="hero-aside__social">
+            <ul class="list-reset social social" title="Социальные сети">
+              <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#inst"></use>
+                </svg>
+              </a></li>
+              <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#whats"></use>
+                </svg>
+              </a></li>
+              <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#viber"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+          <div class="better-call">
+            <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+            <button class="btn-reset better-call__btn" data-graph-path="modal-tell">Заказать звонок</button>
+          </div>
+          <div class="bag">
+  <span class="bag__num">0</span>
+  <button class="btn-reset bag__btn">
+    <svg class="">
+      <use xlink:href="img/sprite.svg#bag"></use>
+    </svg>
+  </button>
+</div>
+
+        </aside>
+    </div>
+  </div>
+  <span class="bottom-text"><span>lover</span><span>flower</span></span>
+</section>
+
+    <section class="catalog">
+  <div class="container">
+    <h2 class="section-title">каталог</h2>
+    <div class="catalog__inner">
+      <div class="catalog__items">
+        <div class="catalog__descr">
+          <p class="catalog__text">
+            У нас самый большой выбор цветов, букетов, открыток и подарков. Мы
+            всегда поможем вам подобрать букет для вашего события, наш менеджер
+            вас проконсультирует и поможет определиться с выбором
+          </p>
+          <p class="catalog__text">Ознакомьтесь с нашими разделами каталога</p>
+        </div>
+        <div class="catalog__item catalog__item--one">
+          <h4 class="catalog__item-subtitle">букеты</h4>
+          <p class="catalog__item-title">готовые букеты из сухоцветов</p>
+          <ul class="catalog__item-list list-reset">
+            <li class="catalog__item-link"><a href="#"> Букеты </a></li>
+            <li class="catalog__item-link"><a href="#"> Для Интерьера </a></li>
+            <li class="catalog__item-link"><a href="#"> Композиции </a></li>
+          </ul>
+          <a href="./catalog.html" class="link-watch">Смотреть каталог</a>
+        </div>
+        <div class="catalog__item catalog__item--two">
+          <h4 class="catalog__item-subtitle">Цветы</h4>
+          <p class="catalog__item-title">Цветы</p>
+          <ul class="catalog__item-list list-reset">
+            <li class="catalog__item-link"><a href="#"> Сборные Букеты </a></li>
+            <li class="catalog__item-link"><a href="#"> Монобукеты </a></li>
+            <li class="catalog__item-link">
+              <a href="#"> Композиции из цветов </a>
+            </li>
+            <li class="catalog__item-link"><a href="#"> Розы </a></li>
+            <li class="catalog__item-link"><a href="#"> Свадебные </a></li>
+          </ul>
+          <a href="./catalog.html" class="link-watch">Смотреть каталог</a>
+        </div>
+        <div class="catalog__item catalog__item--three">
+          <h4 class="catalog__item-subtitle">Допонительно</h4>
+          <p class="catalog__item-title">Допонительно</p>
+          <ul class="catalog__item-list list-reset">
+            <li class="catalog__item-link"><a href="#"> Шары </a></li>
+            <li class="catalog__item-link"><a href="#"> Игрушки </a></li>
+            <li class="catalog__item-link"><a href="#"> Открытки </a></li>
+            <li class="catalog__item-link"><a href="#"> Упаковка </a></li>
+          </ul>
+          <a href="./catalog.html" class="link-watch">Смотреть каталог</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="popular">
+  <div class="container">
+    <div class="popular__top">
+      <h2 class="popular__title section-title">
+        Популярные
+        <span>Букеты</span>
+      </h2>
+      <span class="popular__subtitle">Самые любимые композиции наших клиентов</span>
+    </div>
+    <div class="popular__inner">
+      <div class="popular__flows popular-flows">
+        <article class="product">
+          <div class="product__position">
+            <span class="product__position-offers product__position-offers--new">new</span>
+            <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+          </div>
+          <a href="./card.html" class="product__link-img">
+            <img src="./img/pop-img-1.jpg" alt="Картинка букета" class="product__img">
+          </a>
+          <h3 class="product__title">
+            <a href="./card.html">
+              лучший день
+            </a>
+          </h3>
+          <div class="product__price product-price">
+            <span class="product-price__current price-current">
+              1990
+            </span>
+
+          </div>
+          <button class="product__btn btn-reset btn-bag">
+            В корзину
+          </button>
+        </article>
+        <article class="product">
+          <a href="./card.html" class="product__link-img">
+            <img src="./img/pop-img-2.jpg" alt="Картинка букета" class="product__img">
+          </a>
+          <h3 class="product__title">
+            <a href="./card.html">
+              лучший день
+            </a>
+          </h3>
+          <div class="product__price product-price">
+            <span class="product-price__current price-current">
+              2300
+            </span>
+            <span class="product-price__old price-old">
+              2 870
+            </span>
+          </div>
+          <button class="product__btn btn-reset btn-bag">
+            В корзину
+          </button>
+        </article>
+        <article class="product">
+          <div class="product__position">
+            <span class="product__position-offers product__position-offers--sale">sale</span>
+          </div>
+          <a href="./card.html" class="product__link-img">
+            <img src="./img/pop-img-3.jpg" alt="Картинка букета" class="product__img">
+          </a>
+          <h3 class="product__title">
+            <a href="./card.html">
+              лучший день
+            </a>
+          </h3>
+          <div class="product__price product-price">
+            <span class="product-price__current price-current">
+              1 550
+            </span>
+            <span class="product-price__old price-old">
+              1 870
+            </span>
+          </div>
+          <button class="product__btn btn-reset btn-bag">
+            В корзину
+          </button>
+        </article>
+      </div>
+      <a href="./catalog.html" class="link-watch popular__link-watch">
+        смотреть весь каталог
+        <svg class="">
+          <use xlink:href="img/sprite.svg#link-arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <sertion class="order">
+  <div class="container">
+    <h2 class="order__title section-title">
+      Как сделать заказ
+    </h2>
+  </div>
+    <div class=" order__container">
+      <div class="order__inner">
+        <div class="order__image">
+          <img src="./img/faq-img-back.png" alt="" class="order__img">
+        </div>
+        <ul class="order__list order-list list-reset">
+          <li class="order-list__item">
+            <h3 class="order-list__title">
+              1 шаг
+            </h3>
+            <p class="order-list__text">
+              Выберите какие цветы или подарки вы хотите купить
+            </p>
+          </li>
+          <li class="order-list__item">
+            <h3 class="order-list__title">
+              2 шаг
+            </h3>
+            <p class="order-list__text">
+              Оформите заказ, и мы отправим вам подтверждение на электронную почту, а так же менеджер свяжется с вами по телефону или в WhatsAppz
+            </p>
+          </li>
+          <li class="order-list__item">
+            <h3 class="order-list__title">
+              3 шаг
+            </h3>
+            <p class="order-list__text">
+              Наши флористы бережно подойдут к созданию букета цветов в самом начале дня или накануне
+            </p>
+          </li>
+          <li class="order-list__item">
+            <h3 class="order-list__title">
+              4 шаг
+            </h3>
+            <p class="order-list__text">
+              Один из наших курьеров или партнёров доставит ваш заказ по указанному адресу. Мы отправим вам сообщение в Whats App как только заказ будет доставлен
+            </p>
+          </li>
+          <li class="order-list__item">
+            <h3 class="order-list__title">
+              5 шаг
+            </h3>
+            <p class="order-list__text">
+              Наслаждайтесь цветами , если вы заказали их для дома или любовью, которой поделились, если вы заказали для друга
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <span class="bottom-text order__bottom-text"><span>lover</span><span>flower</span></span></div>
+    </div>
+
+</sertion>
+
+    <section class="reason">
+  <div class="container">
+    <div class="reason__top">
+      <h2 class="reason__title section-title">
+        особенный
+        <span>
+          повод?
+        </span>
+      </h2>
+      <div class="reason__top-img">
+        <picture>
+          <source srcset="./img/reason-img-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/reason-img-1.jpg" class="image"alt="Картинка">
+        </picture>
+      </div>
+    </div>
+    <div class="reason__inner">
+      <div class="reason__left">
+        <p class="reason__descr">
+          Мы готовы прийти на помощь и собрать уникальный букет, на любой вкус, бюджет и для любого события по вашему индивидуальному заказу.
+        </p>
+        <ul class="reason__list list-reset reason-list">
+          <li class="reason-list__item">
+            учтем даже самые изысканные пожелания;
+          </li>
+          <li class="reason-list__item">
+            подберем свежайшие цветы и сделаем уникальный букет или композицию;
+          </li>
+          <li class="reason-list__item">
+            оплатить можно при получении или онлайн на сайте
+          </li>
+        </ul>
+        <a href="./catalog.html" class="reason__link btn-link">Собрать индивидуальный букет</a>
+      </div>
+      <div class="reason__right">
+        <div class="reason__images">
+          <div class="reason__img">
+            <picture>
+              <source srcset="./img/reason-img-2.webp" type="image/webp">
+              <img loading="lazy" src="./img/reason-img-2.jpg." class="image" alt="Картинка">
+            </picture>
+          </div>
+          <div class="reason__img">
+            <picture>
+              <source srcset="./img/reason-img-3.webp" type="image/webp">
+              <img loading="lazy" src="./img/reason-img-3.jpg." class="image" alt="Картинка">
+            </picture>
+          </div>
+          <div class="reason__img">
+            <picture>
+              <source srcset="./img/reason-img-4.webp" type="image/webp">
+              <img loading="lazy" src="./img/reason-img-4.jpg." class="image" alt="Картинка">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="contact">
+  <div class="container">
+    <div class="contact__top">
+      <h2 class="contact__title section-title">
+        остались
+        <span>вопросы?</span>
+      </h2>
+      <div class="contact__descr">
+        Отправьте ваш вопрос, заказ, предложение или жалобу через форму обратной связи, и наш специалист свяжется с вами в течение 15 минут.
+      </div>
+    </div>
+    <div class="contact__inner">
+      <span class="contact__text bottom-text">
+        <span>have any </span>
+        <span>questions?</span>
+      </span>
+      <form action="#" class="contact__form form">
+        <input type="text" class="form__input form__el" name="Имя" placeholder="Ваше имя">
+        <input type="tel" class="form__input form__el" name="Номер телефона" placeholder="+7 (977) 777-77-77">
+        <textarea name="" class="form__input form__el form__textarea" name="Комментарий" placeholder="Ваш комментарий"></textarea>
+        <button class="form__btn btn-reset btn-link">Отправить</button>
+        <span class="form__info">
+          Нажимая  на кнопку «Отправить», я даю свое согласие на обработку персональных данных, в соответствии с <a href="#" class="form__info-link">Политикой конфиденциальности</a>
+        </span>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <section class="insta">
+  <h2 class="insta__title">
+    instagram
+  </h2>
+  <div class="container">
+    <div class="insta__inner">
+      <div class="insta__images">
+        <img src="../img/inst-img-1.jpg" alt="Картинка из инсты" class="insta__img">
+        <img src="../img/inst-img-2.jpg" alt="Картинка из инсты" class="insta__img">
+        <img src="../img/inst-img-3.jpg" alt="Картинка из инсты" class="insta__img">
+        <img src="../img/inst-img-4.jpg" alt="Картинка из инсты" class="insta__img">
+      </div>
+      <div class="insta__right">
+        <span class="insta__text">
+          our social <br> networks
+        </span>
+        <div class="insta__social">
+          <ul class="list-reset social social" title="Социальные сети">
+            <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#whats"></use>
+              </svg>
+            </a></li>
+            <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#viber"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer-items list-reset">
+        <li class="footer-items__item">
+          <a href="#" class="logo">
+            <img src="./img/logo.png" alt="Логотип">
+          </a>
+          <h3 class="footer-items__title">
+            реквизиты
+          </h3>
+          <p class="footer-items__text">
+            ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112 (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007, г. Минск, улица Толстого
+          </p>
+        </li>
+        <li class="footer-items__item">
+          <h3 class="footer-items__title">
+            Каталог
+          </h3>
+          <ul class="footer-items__list list-reset">
+            <li><a href="#" class="footer-items__list-link">Популярное</a></li>
+            <li><a href="#" class="footer-items__list-link">Сухофрукты</a></li>
+            <li><a href="#" class="footer-items__list-link">БУкеты из роз</a></li>
+            <li><a href="#" class="footer-items__list-link">Композиции из цветов</a></li>
+            <li><a href="#" class="footer-items__list-link">Индивидуальный букет</a></li>
+            <li><a href="#" class="footer-items__list-link">Букет на праздник</a></li>
+            <li><a href="#" class="footer-items__list-link">Упаковка подарков</a></li>
+            <li><a href="#" class="footer-items__list-link">Шары</a></li>
+            <li><a href="#" class="footer-items__list-link">Открытки</a></li>
+            <li><a href="#" class="footer-items__list-link">Конверты</a></li>
+          </ul>
+        </li>
+        <li class="footer-items__item">
+          <h3 class="footer-items__title">
+            Букет
+          </h3>
+          <ul class="footer-items__list list-reset">
+            <li><a href="#" class="footer-items__list-link">Для девушек</a></li>
+            <li><a href="#" class="footer-items__list-link">Для мужчин</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Жены</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Мамы</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Коллеги</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Начальника</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Дочки</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Детей</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Женщины</a></li>
+          </ul>
+        </li>
+        <li class="footer-items__item">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list list-reset">
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Доставка и оплата</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">О нас</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">FAQ</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Контакты</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Для коорпоративных клиентов</a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="footer-items__item">
+          <div class=" info-box">
+            <div class=" info-box__item">
+              <a href="mailto:zakaz@loverflower.by" class="info-box__text">
+                zakaz@loverflower.by
+              </a>
+              <span>
+                Доставка 24/7 по договоренности с оператором
+              </span>
+            </div>
+            <div class=" info-box__item">
+              <address class=" info-box__text">
+                ул. Тимирязева 67
+              </address>
+              <span>
+                10:00 до 21:00 <br>
+                без выходных
+              </span>
+            </div>
+            <div class="info-box__item">
+              <a href="tel:375291136969" class="info-box__text">+375 (29) 113-69-69</a>
+              <span>прием звонков круглосуточно</span>
+            </div>
+            <div class="info-box__item">
+              <ul class="list-reset social social" title="Социальные сети">
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#inst"></use>
+                  </svg>
+                </a></li>
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#whats"></use>
+                  </svg>
+                </a></li>
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#viber"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div class="card-bag-overlay">
+  <div class="card-bag">
+    <div class="card-bag__top">
+      <h3 class="card-bag__title">
+        Ваша корзина
+      </h3>
+      <button class="card-bag__close btn-reset">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.3822 6.76953L23.2306 7.61793L7.61744 23.2299L6.76904 22.3821L22.3822 6.76953Z" fill="#43FFD2"/>
+          <path d="M7.61744 6.76953L23.2306 22.3815L22.3822 23.2305L6.76904 7.61853L7.61744 6.76953Z" fill="#43FFD2"/>
+          </svg>
+      </button>
+    </div>
+      <div class="card-bag__content">
+        <ul class="card-bag__items card-list list-reset">
+     
+        </ul>
+      </div>
+      <div class="card-bag__bottom">
+        <div class="card-bag__descr">
+          Предварительный итог <span class="card-bag__fullprice">0</span>
+        </div>
+        <p class="card-bag__text">
+          Чтобы узнать стоимость доставки, перейдите к оформлению заказа.
+        </p>
+        <button class="card-bag__btn btn-reset btn-bag">
+          Оформить заказ
+        </button>
+      </div>
+  </div>
+</div>
+
+  <div class="graph-modal fixed-block">
+  <div class="graph-modal__container better-tell" role="dialog" aria-modal="true" data-graph-target="modal-tell">
+    <button class="btn-reset js-modal-close graph-modal__close better-tell__close" aria-label="Закрыть модальное окно">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.3822 6.76953L23.2306 7.61793L7.61744 23.2299L6.76904 22.3821L22.3822 6.76953Z" fill="#43FFD2"></path>
+        <path d="M7.61744 6.76953L23.2306 22.3815L22.3822 23.2305L6.76904 7.61853L7.61744 6.76953Z" fill="#43FFD2"></path>
+        </svg>
+    </button>
+    <div class="graph-modal__content better-tell__content">
+      <h2 class="better-tell__title section-title">
+        Заказать звонок!
+      </h2>
+      <p class="better-tell__text">
+        Впишите свои данные, и мы свяжемся с Вами. Ваши данные ни при каких обстоятельствах не будут переданы третьим лицам.
+      </p>
+      <form action="#" class="better-tell__form">
+        <input type="text" class="input-reset better-tell__input" placeholder="Ваше имя">
+        <input type="tel" class="input-reset better-tell__input" placeholder="+7 (977) 777-77-77">
+        <button class="btn-reset btn-link better-tell__form-btn">Отправить</button>
+        <span class="better-tell__info">
+          Нажимая  на кнопку «К Оплате», я даю свое согласие на обработку персональных данных, в соответствии с <a href="better-tell__conf">Политикой конфиденциальности</a>, а так же ознакомлен с условиями оплаты и доставки
+         </span>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

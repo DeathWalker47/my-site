@@ -5,7 +5,7 @@
 }
 
 :root {
-  --index: calc(1vw+1vh);
+  --index: calc(1vw + 1vh);
   --gatter: 30px;
   --size-small: 30;
   --size-big:40;
@@ -27,7 +27,7 @@
 body {
 	scrollbar-width: none; /* Firefox */
 }
-body::-webkit-scrollbar { 
+body::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
 }
 
@@ -131,7 +131,8 @@ video.frame-madia_left {
 }
 
 .frame__subtitle {
-  font-size: calc(var(--index) * 2.5);
+  text-align: center;
+  font-size: calc(var(--index) * 1.5);
   margin-bottom: 3vh;
   width: 30vw;
 }

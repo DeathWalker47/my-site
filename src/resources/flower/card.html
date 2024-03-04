@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Рубиновые искры</title>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header header-page fixed-block">
+  <div class="container">
+    <div class="header__inner">
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.png" alt="Логотип">
+      </a>
+      <nav class="nav" title="Навигация по сайту">
+        <ul class="list-reset nav__list">
+          <li class="nav__item nav__item--dropdown">
+            <a href="./catalog.html" class="nav__link">
+            Каталог
+          </a>
+          <ul class="dropdown-menu list-reset">
+            <li class="dropdown-menu__item">
+              <a href="./error-404.html" class="dropdown-menu__link  nav__link" style="filter: blur(0px);">
+                Ошибка 404
+            </a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="./corporate.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Корпоративным клиентам
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./payment-error.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оплата не прошла
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./placing.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оформление заказа
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./successfully.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оплата прошла успешно
+            </a>
+            </li>
+          </ul></li>
+          <li class="nav__item"><a href="./payment.html" class="nav__link">
+            Доставка и оплата
+          </a></li>
+          <li class="nav__item"><a href="./about-us.html" class="nav__link">
+            О нас
+          </a></li>
+          <li class="nav__item"><a href="./contact.html" class="nav__link">
+            Контакты
+          </a></li>
+          <li class="nav__item"><a href="./faq.html" class="nav__link">
+            Faq
+          </a></li>
+          <li class="nav__item">
+            <div class="nav__searach searach-box">
+              <input type="search" class=" searach-box__input " placeholder="Введите свой запрос">
+              <button class="btn-reset searach-box__btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4294 4.06152L13.9385 4.57056L4.57056 13.9378L4.06152 13.4291L13.4294 4.06152Z" fill="#7C7C7C"/>
+                  <path d="M4.57056 4.06152L13.9385 13.4287L13.4294 13.9381L4.06152 4.57092L4.57056 4.06152Z" fill="#7C7C7C"/>
+                </svg>
+              </button>
+              <button class="btn-reset nav__link searach-box__link">
+                Поиск
+              </button>
+           </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right info-box header-page__info-box">
+        <div class="info-box__hero">
+          <div class="header__right-item info-box__item">
+            <a href="mailto:zakaz@loverflower.by" class="header__right-info info-box__text">
+              zakaz@loverflower.by
+            </a>
+            <span>
+              Доставка 24/7 по договоренности с оператором
+            </span>
+          </div>
+          <div class="header__right-item info-box__item">
+            <address class="header__right-info info-box__text">
+              ул. Тимирязева 67
+            </address>
+            <span>
+              10:00 до 21:00 <br>
+              без выходных
+            </span>
+          </div>
+        </div>
+        <div class="info-box__second">
+          <div class="better-call">
+            <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+          </div>
+          <div class="bag">
+  <span class="bag__num">0</span>
+  <button class="btn-reset bag__btn">
+    <svg class="">
+      <use xlink:href="img/sprite.svg#bag"></use>
+    </svg>
+  </button>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs-list list-reset">
+      <li class="breadcrumbs-list__item">
+        <a href="./index.html" class="breadcrumbs-list__link">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs-list__item">
+        <a href="#" class="breadcrumbs-list__link breadcrumbs-list__link--current">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <main class="main ">
+      <section class="card-page">
+        <h2 class="visually-hidden">Рубиновые Искры</h2>
+        <div class="container">
+          <div class="card-page__top product">
+            <div class="product__link-img visually-hidden">
+              <img src="./img/card-slider-1.jpg" alt="Букет">
+            </div>
+            <div class="card-page__images card-images">
+              <!-- Большой слайдер -->
+              <div class="card-images__big slider-big swiper ">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture >
+                        <source srcset="./img/card-slider-1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-2.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-2.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-3.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-3.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-big__image">
+                      <picture>
+                        <source srcset="./img/card-slider-1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Маленький слайдер -->
+              <div class="card-images__small slider-small swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-small__image ">
+                        <picture >
+                          <source srcset="./img/card-slider-1.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-2.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-2.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-3.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-3.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-small__image">
+                        <picture>
+                          <source srcset="./img/card-slider-1.webp" type="image/webp">
+                          <img loading="lazy" src="./img/card-slider-1.jpg." class="image"  alt="букет">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                <div class="swiper-button-prev slider-img-left__prev">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
+                  </svg>
+                </div>
+                <div class="swiper-button-next slider-img-left__next">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="card-page__content card-content ">
+              <a href="./index.html" class="link-back card-page__link-back">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2713 12.1045L6.5 8.33316L10.2713 4.56183L10.7427 5.03316L7.44267 8.33316L10.7427 11.6332L10.2713 12.1045Z" />
+                  </svg>
+                Назад
+              </a>
+              <h3 class="card-content__title product__title">
+                <a >рубиновые искры</a>
+              </h3>
+              <div class="card-content__price">
+                <span class="card-content__price-current price-current product-price__current">1 670</span>
+                <span class="card-content__price-old price-old product-price__old">1 870</span>
+              </div>
+              <div class="card-content__info">
+                <span>Состав:</span> Гвоздика (Диантус), Леукодендрон, Леукоспермум (Нутан), Лотос, Роза
+              </div>
+              <div class="card-content__info">
+                Завораживающая глубина ваших чувств передана огненными красками этого букета
+              </div>
+              <div class="card-content__categories">
+                <p>
+                  Категории:
+                  <a href="#">8 марта</a>,
+                  <a href="#">Букет на 14 февраля</a>,
+                  <a href="#">Букет на праздник</a>,
+                  <a href="#">Букеты цветов на День рождения</a>,
+                  <a href="#">Композиции из цветов</a>,
+                  <a href="#">Композиции из цветов в коробке</a>
+                  <a href="#">Мужские букеты</a>
+                </p>
+                <p>
+                  Метки:
+                  <a href="#">Для начальника</a>,
+                  <a href="#">Мужские букеты</a>
+                </p>
+              </div>
+              <div class="card-content__bottom">
+                <button class="btn-reset card-content__btn btn-bag product__btn">В корзину</button>
+                <div class="card-content__stepper stepper">
+                  <button class="btn-reset stepper__btn stepper__btn--disable stepper__btn--minus" aria-label="Уменьшить количетсво">-</button>
+                  <input type="text" class="stepper__input input-reset" value="1" maxlength="3">
+                  <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="Увеличить количетсво">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-page__additional additional">
+            <h3 class="additional__title">
+              Дополнительно к заказу:
+            </h3>
+            <div class="additional__items">
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  Удобрения для срезанных цветов
+                </span>
+                <p class="additional__item-text">
+                  При указании об этом в пожеланиях к букету, мы приложим пакетик удобрения для вас
+                </p>
+              </div>
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  подпишем
+                  открытку
+                </span>
+                <p class="additional__item-text">
+                  В пожеланиях к букету укажите текст, какой хотите разместить и выберите на сайте саму открытку
+                </p>
+              </div>
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  Фото букета перед отправкой
+                </span>
+                <p class="additional__item-text">
+                  В примечании к заказу укажите
+                  об этом и мы отправим фото готового букета перед доставкой.
+                  В праздничные дни в связи
+                  с большой загруженностью такой возможности нет
+                </p>
+              </div>
+              <div class="additional__item">
+                <span class="additional__item-title">
+                  Букет-сюрприз
+                </span>
+                <p class="additional__item-text">
+                  Если хотите, чтобы получатель не знал, что ему вручат а также от кого, то укажите об этом
+в примечании к заказу
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs" data-tabs="tab">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">доставка и оплата</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">отзывы</button></li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__panel">
+                <div class="tabs__panel-box">
+                  <h3 class="tabs__panel-title">
+                    Способы оплаты:
+                  </h3>
+                  <ul class="tabs__panel-list">
+                    <li class="tabs__panel-item">
+                      БАНКОВСКОЙ КАРТОЙ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ЧЕРЕЗ САЙТ
+                    </li>
+                    <li class="tabs__panel-item">
+                      НАЛИЧНЫМИ ИЛИ БАНКОВСКОЙ КАРТОЙ ПРИ САМОВЫВОЗЕ
+                    </li>
+                    <li class="tabs__panel-item">
+                      НАЛИЧНЫМИ ПРИ ДОСТАВКЕ КУРЬЕРОМ
+                    </li>
+                    <li class="tabs__panel-item">
+                      КРИПТОВАЛЮТОЙ ОНЛАЙН
+                    </li>
+                  </ul>
+                </div>
+                <div class="tabs__panel-box">
+                  <h3 class="tabs__panel-title">
+                    стоимость доставки:
+                  </h3>
+                  <ul class="tabs__panel-list">
+                    <li class="tabs__panel-item">
+                      <b>Бесплатно</b> – при заказе на сумму <span class="text-accent">от 90 рублей</span>
+                    </li>
+                    <li class="tabs__panel-item">
+                      <b>10 рублей</b> – при заказе на сумму <span class="text-accent">менее 90 рублей</span>
+                    </li>
+                    <li class="tabs__panel-item">
+                      Возможность, сроки и стоимость доставки за пределы МКАД, доставки в ночное время, праздники <span class="text-accent">оговариваются с менеджером</span>
+                    </li>
+                    <li class="tabs__panel-item">
+                      Так же вы можете забрать ваш заказ самостоятельно по адресу:
+                      <span class="text-accent">г. Минск, ул. Тимирязева д. 67, комн. 112 ежедневно с 10.00 до 21.00</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tabs__panel-box">
+                  <h3 class="tabs__panel-title">
+                    Условия доставки:
+                  </h3>
+                  <p class="tabs__panel-text">
+                    Доставка осуществляется по городу Минску в пределах МКАД <span class="text-accent">в любой день с 09.00 до 22.00.</span> Доставка в ночное время осуществляется по договоренности с оператором
+                  </p>
+                </div>
+              </div>
+              <div class="tabs__panel">
+                <div class="reviews">
+                  <span class="reviews__text-info">
+                    Отзывов пока нет
+                  </span>
+                  <p class="reviews__subtitle text-accent">
+                    Будьте первым, кто оставил отзыв на “Рубиновые искры”
+                  </p>
+                  <span class="reviews__text">
+                    Ваш адрес email не будет опубликован. Обязательные поля помечены *
+                  </span>
+                  <p class="reviews__rating">
+                    Ваша оценка:
+                    <div class="reviews__stars">
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                      <button class="reviews__star-btn btn-reset">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="mdi-light:star">
+                          <path id="Vector" d="M12.86 10.442L11 6.06L9.13796 10.447L4.39496 10.862L7.99096 13.989L6.92096 18.629L11.006 16.174L15.086 18.626L14.015 13.982L17.608 10.859L12.86 10.443V10.442ZM16.591 20.695L11.006 17.339L5.41596 20.698L6.88196 14.348L1.95996 10.07L8.45096 9.503L11 3.5L13.546 9.498L20.042 10.067L15.124 14.342L16.591 20.695Z" fill="white"/>
+                          </g>
+                          </svg>
+                      </button>
+                    </div>
+                  </p>
+                  <form action="#" class="reviews__form form">
+                    <label class="reviews__label">
+                      Ваш отзыв*
+                      <textarea name="Комментарий" class="reviews__input reviews__textarea input-reset" placeholder="Введите Комментарий"></textarea>
+                    </label>
+                    <label  class="reviews__label">
+                      Имя*
+                      <input type="text" name="Имя" class="reviews__input input-reset" placeholder="Введите Ваше Имя">
+                    </label>
+                    <label  class="reviews__label">
+                      E-mail*
+                      <input type="email" name="Email" class="reviews__input input-reset" placeholder="Введите Вашу Почту">
+                    </label>
+                    <button class="form__btn reviews__btn btn-reset btn-link">Отправить</button>
+                    <span class="form__info">
+                      Нажимая  на кнопку «Отправить», я даю свое согласие на обработку персональных данных, в соответствии с <a href="#" class="form__info-link">Политикой конфиденциальности</a>
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer-items list-reset">
+        <li class="footer-items__item">
+          <a href="#" class="logo">
+            <img src="./img/logo.png" alt="Логотип">
+          </a>
+          <h3 class="footer-items__title">
+            реквизиты
+          </h3>
+          <p class="footer-items__text">
+            ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112 (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007, г. Минск, улица Толстого
+          </p>
+        </li>
+        <li class="footer-items__item">
+          <h3 class="footer-items__title">
+            Каталог
+          </h3>
+          <ul class="footer-items__list list-reset">
+            <li><a href="#" class="footer-items__list-link">Популярное</a></li>
+            <li><a href="#" class="footer-items__list-link">Сухофрукты</a></li>
+            <li><a href="#" class="footer-items__list-link">БУкеты из роз</a></li>
+            <li><a href="#" class="footer-items__list-link">Композиции из цветов</a></li>
+            <li><a href="#" class="footer-items__list-link">Индивидуальный букет</a></li>
+            <li><a href="#" class="footer-items__list-link">Букет на праздник</a></li>
+            <li><a href="#" class="footer-items__list-link">Упаковка подарков</a></li>
+            <li><a href="#" class="footer-items__list-link">Шары</a></li>
+            <li><a href="#" class="footer-items__list-link">Открытки</a></li>
+            <li><a href="#" class="footer-items__list-link">Конверты</a></li>
+          </ul>
+        </li>
+        <li class="footer-items__item">
+          <h3 class="footer-items__title">
+            Букет
+          </h3>
+          <ul class="footer-items__list list-reset">
+            <li><a href="#" class="footer-items__list-link">Для девушек</a></li>
+            <li><a href="#" class="footer-items__list-link">Для мужчин</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Жены</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Мамы</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Коллеги</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Начальника</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Дочки</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Детей</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Женщины</a></li>
+          </ul>
+        </li>
+        <li class="footer-items__item">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list list-reset">
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Доставка и оплата</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">О нас</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">FAQ</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Контакты</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Для коорпоративных клиентов</a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="footer-items__item">
+          <div class=" info-box">
+            <div class=" info-box__item">
+              <a href="mailto:zakaz@loverflower.by" class="info-box__text">
+                zakaz@loverflower.by
+              </a>
+              <span>
+                Доставка 24/7 по договоренности с оператором
+              </span>
+            </div>
+            <div class=" info-box__item">
+              <address class=" info-box__text">
+                ул. Тимирязева 67
+              </address>
+              <span>
+                10:00 до 21:00 <br>
+                без выходных
+              </span>
+            </div>
+            <div class="info-box__item">
+              <a href="tel:375291136969" class="info-box__text">+375 (29) 113-69-69</a>
+              <span>прием звонков круглосуточно</span>
+            </div>
+            <div class="info-box__item">
+              <ul class="list-reset social social" title="Социальные сети">
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#inst"></use>
+                  </svg>
+                </a></li>
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#whats"></use>
+                  </svg>
+                </a></li>
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#viber"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  <div class="card-bag-overlay">
+  <div class="card-bag">
+    <div class="card-bag__top">
+      <h3 class="card-bag__title">
+        Ваша корзина
+      </h3>
+      <button class="card-bag__close btn-reset">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.3822 6.76953L23.2306 7.61793L7.61744 23.2299L6.76904 22.3821L22.3822 6.76953Z" fill="#43FFD2"/>
+          <path d="M7.61744 6.76953L23.2306 22.3815L22.3822 23.2305L6.76904 7.61853L7.61744 6.76953Z" fill="#43FFD2"/>
+          </svg>
+      </button>
+    </div>
+      <div class="card-bag__content">
+        <ul class="card-bag__items card-list list-reset">
+     
+        </ul>
+      </div>
+      <div class="card-bag__bottom">
+        <div class="card-bag__descr">
+          Предварительный итог <span class="card-bag__fullprice">0</span>
+        </div>
+        <p class="card-bag__text">
+          Чтобы узнать стоимость доставки, перейдите к оформлению заказа.
+        </p>
+        <button class="card-bag__btn btn-reset btn-bag">
+          Оформить заказ
+        </button>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

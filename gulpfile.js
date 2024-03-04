@@ -331,7 +331,7 @@ exports.build = series(
 // deploy
 const deploy = () => {
   let conn = ftp.create({
-    host: "sfizer.ru",
+    host: "77.222.57.185",
     user: "fizer00mai",
     password: "Fgyewp223",
     parallel: 10,
@@ -344,8 +344,8 @@ const deploy = () => {
     base: "./app",
     buffer: false,
   })
-    .pipe(conn.newer("sfizer_ru/public_html/")) // only upload newer files
-    .pipe(conn.dest("sfizer_ru/public_html/"));
+    .pipe(conn.newer("/sfizer_ru/public_html/")) // only upload newer files
+    .pipe(conn.dest("/sfizer_ru/public_html/"));
 };
 
 

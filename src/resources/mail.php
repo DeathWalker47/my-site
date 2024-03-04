@@ -33,15 +33,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'sfizer981@gmail.com'; // Логин на почте
-  $mail->Password   = 'htinpdfvwzvbfbop'; // Пароль на почте
+  $mail->Username   = 'sfizer1861@gmail.com'; // Логин на почте
+  $mail->Password   = 'lvnf oouq qyxg ylkl'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
   $mail->setFrom('sfizer981@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('sfizer981@gmail.com');
+  $mail->addAddress('sfizer1861@gmail.com');
   $mail->addAddress('fizer_00@mail.ru');
 
   // Прикрипление файлов к письму

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./favicon.png" sizes="16x16" rel="icon" type="image/png">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Каталог</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="page__body catalog-box">
+  <div class="wrapper">
+    <header class="header fixed-block" id="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="./index.html" class="logo">
+        <img src="./img/logo.png" alt="Логотип">
+      </a>
+      <nav class="nav" title="Навигация по сайту">
+        <ul class="list-reset nav__list">
+          <li class="nav__item nav__item--dropdown"><a href="./catalog.html" class="nav__link">
+            Каталог
+          </a>
+          <ul class="dropdown-menu list-reset">
+            <li class="dropdown-menu__item">
+              <a href="./error-404.html" class="dropdown-menu__link  nav__link" style="filter: blur(0px);">
+                Ошибка 404
+            </a>
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="./corporate.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Корпоративным клиентам
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./payment-error.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оплата не прошла
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./placing.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оформление заказа
+            </a>
+            </li>
+            <li class="dropdown-menu__item dropdown-menu__item--hidden">
+              <a href="./successfully.html" class="dropdown-menu__link nav__link" style="filter: blur(0px);">
+                Оплата прошла успешно
+            </a>
+            </li>
+          </ul>
+        </li>
+          <li class="nav__item"><a href="./payment.html" class="nav__link">
+            Доставка и оплата
+          </a></li>
+          <li class="nav__item"><a href="./about-us.html" class="nav__link">
+            О нас
+          </a></li>
+          <li class="nav__item"><a href="./contact.html" class="nav__link">
+            Контакты
+          </a></li>
+          <li class="nav__item"><a href="./faq.html" class="nav__link">
+            Faq
+          </a></li>
+          <li class="nav__item">
+           <div class="nav__searach searach-box">
+              <input type="search" class=" searach-box__input " placeholder="Введите свой запрос">
+              <button class="btn-reset searach-box__btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4294 4.06152L13.9385 4.57056L4.57056 13.9378L4.06152 13.4291L13.4294 4.06152Z" fill="#7C7C7C"/>
+                  <path d="M4.57056 4.06152L13.9385 13.4287L13.4294 13.9381L4.06152 4.57092L4.57056 4.06152Z" fill="#7C7C7C"/>
+                </svg>
+              </button>
+              <button class="btn-reset nav__link searach-box__link">
+                Поиск
+              </button>
+           </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right info-box">
+        <div class="info-box__hero">
+          <div class="header__right-item info-box__item">
+            <a href="mailto:zakaz@loverflower.by" class="header__right-info info-box__text">
+              zakaz@loverflower.by
+            </a>
+            <span>
+              Доставка 24/7 по договоренности с оператором
+            </span>
+          </div>
+          <div class="header__right-item info-box__item">
+            <address class="header__right-info info-box__text">
+              ул. Тимирязева 67
+            </address>
+            <span>
+              10:00 до 21:00 <br>
+              без выходных
+            </span>
+          </div>
+        </div>
+        <div class="info-box__second">
+          <div class="better-call">
+            <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+          </div>
+            <div class="bag">
+  <span class="bag__num">0</span>
+  <button class="btn-reset bag__btn">
+    <svg class="">
+      <use xlink:href="img/sprite.svg#bag"></use>
+    </svg>
+  </button>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main main-catalog" id="catalog">
+      <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs-list list-reset">
+      <li class="breadcrumbs-list__item">
+        <a href="./index.html" class="breadcrumbs-list__link">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs-list__item">
+        <a href="#" class="breadcrumbs-list__link breadcrumbs-list__link--current">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <section class="catalog-page" >
+        <div class="container">
+          <div class="catalog-page__inner">
+            <div class="catalog-page__top">
+              <div class="catalog-page__descr">
+                <h1 class="catalog-page__title  section-title">
+                  каталог
+                  <span>
+                    букетов
+                    <span class="catalog-page__subtitle">
+                      В нашем магазине самый большой выбор букетов для любых событий:
+                    </span>
+                  </span>
+                </h1>
+              </div>
+              <div class="catalog-page__categories categories">
+                <button class="btn-reset categories__btn" data-text="Букеты из гипсофил">
+                  Букеты из гипсофил
+                </button>
+                <button class="btn-reset categories__btn" data-text="Букеты Из Ромашек">
+                  Букеты Из Ромашек
+                </button>
+                <button class="btn-reset categories__btn" data-text="Букеты из Хризантем">
+                  Букеты из Хризантем
+                </button>
+                <button class="btn-reset categories__btn" data-text="Комнатные цветы в горшках">
+                  Комнатные цветы в горшках
+                </button>
+                <button class="btn-reset categories__btn" data-text="Монобукеты">
+                  Монобукеты
+                </button>
+                <button class="btn-reset categories__btn" data-text="Сборные букеты">
+                  Сборные букеты
+                </button>
+                <button class="btn-reset categories__btn" data-text="Букеты на праздник">
+                  Букеты на праздник
+                </button>
+                <button class="btn-reset categories__btn" data-text="Композиции из цветов">
+                  Композиции из цветов
+                </button>
+                <button class="btn-reset categories__btn" data-text="Конверты">
+                  Конверты
+                </button>
+                <button class="btn-reset categories__btn" data-text="Открытки">
+                  Открытки
+                </button>
+                <button class="btn-reset categories__btn" data-text="Подарки">
+                  Подарки
+                </button>
+                <button class="btn-reset categories__btn" data-text="Букеты из сухофруктов">
+                  Букеты из сухофруктов
+                </button>
+                <button class="btn-reset categories__btn" data-text="Шары">
+                  Шары
+                </button>
+                <button class="btn-reset categories__btn" data-text="Популярное">
+                  Популярное
+                </button>
+                <button class="btn-reset categories__btn" data-text="Букеты Роз">
+                  Букеты Роз
+                </button>
+                <button class="btn-reset categories__btn" data-text="Цветы на похороны">
+                  Цветы на похороны
+                </button>
+                <button class="btn-reset categories__btn" data-text="Упаковка подарков">
+                  Упаковка подарков
+                </button>
+              </div>
+            </div>
+            <aside class="hero-aside">
+              <div class="hero-aside__social">
+                <ul class="list-reset social social" title="Социальные сети">
+                  <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#inst"></use>
+                    </svg>
+                  </a></li>
+                  <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#whats"></use>
+                    </svg>
+                  </a></li>
+                  <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#viber"></use>
+                    </svg>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="better-call">
+                <a href="tel:375291136969" class="better-call__tel">+375 (29) 113-69-69</a>
+                <button class="btn-reset better-call__btn" data-graph-path="modal-tell">Заказать звонок</button>
+              </div>
+              <div class="bag">
+  <span class="bag__num">0</span>
+  <button class="btn-reset bag__btn">
+    <svg class="">
+      <use xlink:href="img/sprite.svg#bag"></use>
+    </svg>
+  </button>
+</div>
+
+            </aside>
+          </div>
+          <div class="catalog-content" data-header="header">
+            <div class="catalog-content__select">
+              <div class="catalog-content__select-left">
+              </div>
+              <div class="catalog-content__select-right ">
+                <div class="btns-select catalog-content__btns-select">
+
+                </div>
+                <select select-multiple name="aafa" class="catalog-content__select js-choice default">
+                  <option value="По полулярноть">По полулярноть</option>
+                  <option value="По цвету">сначала дорогие</option>
+                  <option value="По стоимости">сначала дешевые</option>
+                </select>
+              </div>
+            </div>
+            <div class="catalog-content__inner">
+              <div class="catalog-content__filter filter-catalog">
+                <div class=" filter-catalog__item">
+                  <h3 class="filter-catalog__title">
+                    По свету
+                  </h3>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Нежные</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Яркие</span>
+                  </label>
+                </div>
+                <div class=" filter-catalog__item">
+                  <h3 class="filter-catalog__title">
+                    По цвету
+                  </h3>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">белый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">желтый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Зеленый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Красный</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Оранжевый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Розовый</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Синий</span>
+                  </label>
+                </div>
+                <div class=" filter-catalog__item">
+                  <h3 class="filter-catalog__title">
+                    по формату
+                  </h3>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">букет</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В вазе</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В конверте</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В корзине</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">В шляпной коробке</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">в ящике</span>
+                  </label>
+                </div>
+
+                <div class="filter-catalog__item filter-catalog__price">
+                  <h3 class="filter-catalog__title">
+                    Стоимость
+                  </h3>
+                  <div class="filter-catalog__slider" id="range-slider"></div>
+                  <div class="filter-catalog__prices">
+                    <span class="filter-catalog__price-text">Цена:</span>
+                    <label class="custom-checkbox__price-label">
+                      <input id="input-0" type="number" min="50" max="10000" placeholder="50" class="input-reset custom-checkbox__price-input">
+                      <span class="filter-catalog__price-text">₽</span>
+                    </label> -
+                    <label class="custom-checkbox__price-label">
+                      <input id="input-1" type="number" min="50" max="10000" placeholder="10000" class="input-reset custom-checkbox__price-input">
+                      <span class="filter-catalog__price-text"> ₽</span>
+                    </label>
+                  </div>
+                </div>
+
+
+                <div class=" filter-catalog__item filter-catalog__flower" >
+                  <h3 class="filter-catalog__title">
+                    по цветку
+                  </h3>
+                  <div class="filter-catalog__box" data-simplebar>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Альстромерия (2)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Антуриум (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Аспарагус (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Астильба (7)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Астранция (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Рооза (2)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Хризантемы (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Одуванчик (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Фикус (7)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Кактус (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Альстромерия (2)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Антуриум (1)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input type="radio" name="1" class="custom-checkbox__field">
+                      <span class="custom-checkbox__content">Аспарагус (1)</span>
+                    </label>
+                  </div>
+                </div>
+                <button class="btn-reset btn-bag reset-filtr">
+                  Сбросить фильтр
+                </button>
+              </div>
+              <div class="catalog-content__cards catalog-cards">
+                <article class="product">
+
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-1.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      1 765
+                    </span>
+
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <span class="product__position-offers product__position-offers--new">new</span>
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-2.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      1 250
+                    </span>
+
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-3.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current price-current">
+                      2 100
+                    </span>
+                    <span class="product-price__old price-old price-old">
+                      1 800
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-4.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      1 760
+                    </span>
+
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-5.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      1 670
+                    </span>
+                    <span class="product-price__old price-old">
+                      2500
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <span class="product__position-offers product__position-offers--new">new</span>
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-6.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      2 300
+                    </span>
+                    <span class="product-price__old price-old">
+                      2570
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-7.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      3 150
+                    </span>
+                    <span class="product-price__old price-old">
+                       4 257
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-8.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      900
+                    </span>
+                    <span class="product-price__old price-old">
+                      1 257
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-9.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      2 167
+                    </span>
+                    <span class="product-price__old price-old">
+                      3 257
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-10.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      1 220
+                    </span>
+                    <span class="product-price__old price-old">
+                      2 257
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <span class="product__position-offers product__position-offers--sale">sale</span>
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-11.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      1 167
+                    </span>
+
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+
+                <article class="product">
+                  <div class="product__position">
+                    <!-- <span class="product__position-offers product__position-offers--new">new</span> -->
+                    <!-- <span class="product__position-offers product__position-offers--sale">sale</span> -->
+                  </div>
+                  <a href="./card.html" class="product__link-img">
+                    <img src="./img/cataog-img-12.jpg" alt="Картинка букета" class="product__img">
+                  </a>
+                  <h3 class="product__title">
+                    <a href="./card.html">
+                      лучший день
+                    </a>
+                  </h3>
+                  <div class="product__price product-price">
+                    <span class="product-price__current  price-current">
+                      2 677
+                    </span>
+                    <span class="product-price__old price-old">
+                       3 257
+                    </span>
+                  </div>
+                  <button class="product__btn btn-reset btn-bag">
+                    В&nbsp;корзину
+                  </button>
+                </article>
+              </div>
+            </div>
+
+            <a href="#catalog" class="to-top" data-scroll>
+              <svg width="6" height="40" viewBox="0 0 6 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 0L0.113249 5H5.88675L3 0ZM3.5 40L3.5 4.5H2.5L2.5 40H3.5Z" fill="#43FFD2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer-items list-reset">
+        <li class="footer-items__item">
+          <a href="#" class="logo">
+            <img src="./img/logo.png" alt="Логотип">
+          </a>
+          <h3 class="footer-items__title">
+            реквизиты
+          </h3>
+          <p class="footer-items__text">
+            ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112 (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007, г. Минск, улица Толстого
+          </p>
+        </li>
+        <li class="footer-items__item">
+          <h3 class="footer-items__title">
+            Каталог
+          </h3>
+          <ul class="footer-items__list list-reset">
+            <li><a href="#" class="footer-items__list-link">Популярное</a></li>
+            <li><a href="#" class="footer-items__list-link">Сухофрукты</a></li>
+            <li><a href="#" class="footer-items__list-link">БУкеты из роз</a></li>
+            <li><a href="#" class="footer-items__list-link">Композиции из цветов</a></li>
+            <li><a href="#" class="footer-items__list-link">Индивидуальный букет</a></li>
+            <li><a href="#" class="footer-items__list-link">Букет на праздник</a></li>
+            <li><a href="#" class="footer-items__list-link">Упаковка подарков</a></li>
+            <li><a href="#" class="footer-items__list-link">Шары</a></li>
+            <li><a href="#" class="footer-items__list-link">Открытки</a></li>
+            <li><a href="#" class="footer-items__list-link">Конверты</a></li>
+          </ul>
+        </li>
+        <li class="footer-items__item">
+          <h3 class="footer-items__title">
+            Букет
+          </h3>
+          <ul class="footer-items__list list-reset">
+            <li><a href="#" class="footer-items__list-link">Для девушек</a></li>
+            <li><a href="#" class="footer-items__list-link">Для мужчин</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Жены</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Мамы</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Коллеги</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Начальника</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Дочки</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Детей</a></li>
+            <li><a href="#" class="footer-items__list-link">Для Женщины</a></li>
+          </ul>
+        </li>
+        <li class="footer-items__item">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list list-reset">
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Доставка и оплата</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">О нас</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">FAQ</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Контакты</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a href="#" class="footer-nav__list-link">Для коорпоративных клиентов</a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+        <li class="footer-items__item">
+          <div class=" info-box">
+            <div class=" info-box__item">
+              <a href="mailto:zakaz@loverflower.by" class="info-box__text">
+                zakaz@loverflower.by
+              </a>
+              <span>
+                Доставка 24/7 по договоренности с оператором
+              </span>
+            </div>
+            <div class=" info-box__item">
+              <address class=" info-box__text">
+                ул. Тимирязева 67
+              </address>
+              <span>
+                10:00 до 21:00 <br>
+                без выходных
+              </span>
+            </div>
+            <div class="info-box__item">
+              <a href="tel:375291136969" class="info-box__text">+375 (29) 113-69-69</a>
+              <span>прием звонков круглосуточно</span>
+            </div>
+            <div class="info-box__item">
+              <ul class="list-reset social social" title="Социальные сети">
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в Инстаграм">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#inst"></use>
+                  </svg>
+                </a></li>
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка во WathsApp">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#whats"></use>
+                  </svg>
+                </a></li>
+                <li class="social__item"><a href="#" target="_blank" class="social__link social__link--viber" aria-label="Наша страничка в Viber">
+                  <svg class="">
+                    <use xlink:href="img/sprite.svg#viber"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+  <div class="card-bag-overlay">
+  <div class="card-bag">
+    <div class="card-bag__top">
+      <h3 class="card-bag__title">
+        Ваша корзина
+      </h3>
+      <button class="card-bag__close btn-reset">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.3822 6.76953L23.2306 7.61793L7.61744 23.2299L6.76904 22.3821L22.3822 6.76953Z" fill="#43FFD2"/>
+          <path d="M7.61744 6.76953L23.2306 22.3815L22.3822 23.2305L6.76904 7.61853L7.61744 6.76953Z" fill="#43FFD2"/>
+          </svg>
+      </button>
+    </div>
+      <div class="card-bag__content">
+        <ul class="card-bag__items card-list list-reset">
+     
+        </ul>
+      </div>
+      <div class="card-bag__bottom">
+        <div class="card-bag__descr">
+          Предварительный итог <span class="card-bag__fullprice">0</span>
+        </div>
+        <p class="card-bag__text">
+          Чтобы узнать стоимость доставки, перейдите к оформлению заказа.
+        </p>
+        <button class="card-bag__btn btn-reset btn-bag">
+          Оформить заказ
+        </button>
+      </div>
+  </div>
+</div>
+
+  <div class="graph-modal fixed-block">
+  <div class="graph-modal__container better-tell" role="dialog" aria-modal="true" data-graph-target="modal-tell">
+    <button class="btn-reset js-modal-close graph-modal__close better-tell__close" aria-label="Закрыть модальное окно">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.3822 6.76953L23.2306 7.61793L7.61744 23.2299L6.76904 22.3821L22.3822 6.76953Z" fill="#43FFD2"></path>
+        <path d="M7.61744 6.76953L23.2306 22.3815L22.3822 23.2305L6.76904 7.61853L7.61744 6.76953Z" fill="#43FFD2"></path>
+        </svg>
+    </button>
+    <div class="graph-modal__content better-tell__content">
+      <h2 class="better-tell__title section-title">
+        Заказать звонок!
+      </h2>
+      <p class="better-tell__text">
+        Впишите свои данные, и мы свяжемся с Вами. Ваши данные ни при каких обстоятельствах не будут переданы третьим лицам.
+      </p>
+      <form action="#" class="better-tell__form">
+        <input type="text" class="input-reset better-tell__input" placeholder="Ваше имя">
+        <input type="tel" class="input-reset better-tell__input" placeholder="+7 (977) 777-77-77">
+        <button class="btn-reset btn-link better-tell__form-btn">Отправить</button>
+        <span class="better-tell__info">
+          Нажимая  на кнопку «К Оплате», я даю свое согласие на обработку персональных данных, в соответствии с <a href="better-tell__conf">Политикой конфиденциальности</a>, а так же ознакомлен с условиями оплаты и доставки
+         </span>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

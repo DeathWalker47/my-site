@@ -80,3 +80,46 @@
     transition: fill 0.3s ease-in-out;
   }
 }
+
+
+.graph-modal__container {
+  background-color: #333;
+  color: var(--default);
+}
+.graph-modal__close {
+  width: 30px;
+  height: 30px;
+  color: var(--default);
+  &:hover {
+    color: var(--accent)
+  }
+  svg {
+    path {
+      transition: color .3s ease-in-out;
+      fill:currentColor;
+    }
+  }
+}
+.not-finished {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  &__title {
+    align-self: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--title);
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  &__link {
+    align-self: center;
+    color: var(--accent);
+  }
+}
