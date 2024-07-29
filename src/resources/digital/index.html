@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link href="./favicon.svg" rel="icon" type="image/svg" />
+    <title>Business Solution by Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body class="page__body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container-page">
+          <div class="header__inner flex items-center">
+            <a href="#" class="logo header__logo">
+              <img src="./img/logo.png" alt="logo" />
+            </a>
+            <nav class="menu" data-menu>
+              <ul class="list-reset menu__list flex">
+                <li class="menu__item">
+                  <a
+                    href="#top"
+                    class="menu__link menu__link--active uppercase flex items-center"
+                    >home
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#partners"
+                    class="menu__link uppercase flex items-center"
+                    >partners
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#about"
+                    class="menu__link uppercase flex items-center"
+                    >ABOUT US
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#our-value"
+                    class="menu__link uppercase flex items-center"
+                    >OUR VALUE
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#portfolio"
+                    class="menu__link uppercase flex items-center"
+                    >PORTFOLIO
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#blog" class="menu__link uppercase flex items-center"
+                    >blog</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div
+              class="box-burger flex justify-center items-center rounded-full"
+            >
+              <button
+                class="btn-reset burger"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+                data-burger
+              >
+                <span class="burger__line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section
+          id="top"
+          class="hero bg-center bg-no-repeat bg-cover"
+          style="background-image: url('./img/hero.jpg')"
+        >
+          <div
+            class="container-page hero__container-page flex justify-center flex-col"
+          >
+            <h1 class="title hero__title text-align">
+              Business Solution by Digital
+              <span class="title__word">Agency</span>
+            </h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="hero-bottom flex justify-between">
+              <div class="hero-bottom__slider">
+                <div class="hero-slider">
+                  <div class="hero-slider__img">
+                    <img src="./img/hero-slider-1.jpg" alt="slider img" />
+                  </div>
+                </div>
+              </div>
+              <div class="hero-bottom__right">
+                <a href="#" class="hero-bottom__link link-circle uppercase"
+                  >get in touch</a
+                >
+                <div class="hero-bottom__peoples peoples flex items-center">
+                  <div class="peoples__images flex">
+                    <div class="peoples__img rounded-full overflow-hidden">
+                      <img src="./img/hero-people-1.jpg" alt="people" />
+                    </div>
+                    <div class="peoples__img rounded-full overflow-hidden">
+                      <img src="./img/hero-people-2.jpg" alt="people" />
+                    </div>
+                    <div class="peoples__img rounded-full overflow-hidden">
+                      <img src="./img/hero-people-3.jpg" alt="people" />
+                    </div>
+                  </div>
+                  <div class="peoples__descr">
+                    <span class="peoples__subtitle">
+                      240 Business Peoples
+                    </span>
+                    <span class="peoples__text">Already registered</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#partners"
+              class="scroll-btn uppercase flex items-center justify-center"
+              >SCROLL</a
+            >
+          </div>
+        </section>
+
+        <section class="partners" id="partners">
+          <h2 class="visually-hidden">Partners</h2>
+          <div class="container-page">
+            <div class="partners__inner flex items-center">
+              <p class="partners__text uppercase">
+                OVER 2K+ SOFTWARE BUSINESSE GROWING WITH OUR BUSINESS
+              </p>
+              <ul
+                class="partners-list partners__list list-reset flex items-center"
+              >
+                <li class="partners-list__item">
+                  <img
+                    src="./img/partners-1.png"
+                    alt="1"
+                    class="partners-list__item-img"
+                  />
+                </li>
+                <li class="partners-list__item">
+                  <img
+                    src="./img/partners-2.png"
+                    alt="1"
+                    class="partners-list__item-img"
+                  />
+                </li>
+                <li class="partners-list__item">
+                  <img
+                    src="./img/partners-3.png"
+                    alt="1"
+                    class="partners-list__item-img"
+                  />
+                </li>
+                <li class="partners-list__item">
+                  <img
+                    src="./img/partners-4.png"
+                    alt="1"
+                    class="partners-list__item-img"
+                  />
+                </li>
+                <li class="partners-list__item">
+                  <img
+                    src="./img/partners-5.png"
+                    alt="1"
+                    class="partners-list__item-img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="container-page">
+            <div class="features__top flex justify-between">
+              <div class="features__top-left">
+                <span class="features__subtitle subtitle">FEATURES</span>
+                <h2 class="features__title title-section">
+                  Follow&nbsp;These&nbsp;Steps&nbsp;to <br />
+                  Expand&nbsp;Your&nbsp;Business
+                </h2>
+              </div>
+              <div class="features__right">
+                <span class="features__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore .
+                </span>
+                <a href="#" class="link-circle features__link uppercase"
+                  >VIEW ALL FEATURES</a
+                >
+              </div>
+            </div>
+            <ul class="steps-list list-reset flex">
+              <li class="steps-list__item">
+                <a href="#" class="steps-list__link">
+                  <div class="steps-list__image">
+                    <img
+                      src="./img/follow-img-1.jpg"
+                      alt="follow"
+                      class="steps-list__img"
+                    />
+                  </div>
+                  <h3 class="steps-list__title">Digital Agency</h3>
+                </a>
+              </li>
+              <li class="steps-list__item">
+                <a href="#" class="steps-list__link">
+                  <div class="steps-list__image">
+                    <img
+                      src="./img/follow-img-2.jpg"
+                      alt="follow"
+                      class="steps-list__img"
+                    />
+                  </div>
+                  <h3 class="steps-list__title">Web Development</h3>
+                </a>
+              </li>
+              <li class="steps-list__item">
+                <a href="#" class="steps-list__link">
+                  <div class="steps-list__image">
+                    <img
+                      src="./img/follow-img-3.jpg"
+                      alt="follow"
+                      class="steps-list__img"
+                    />
+                    <span class="steps-list__box"> </span>
+                  </div>
+                  <h3 class="steps-list__title">Custom Solutions</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="container-page">
+            <div class="about__inner flex">
+              <div class="about__left">
+                <div class="about__image">
+                  <img
+                    src="./img/about-img.jpg"
+                    alt="about"
+                    class="about__img"
+                  />
+                </div>
+                <div class="about__video">
+                  <video class="video" poster="./img/about-video.jpg">
+                    <source src="./video.mp4" type="video/mp4" />
+                  </video>
+                  <button
+                    aria-label="play"
+                    class="about__video-btn btn-reset flex items-center justify-center"
+                  >
+                    <img
+                      src="./img/play.svg"
+                      alt="pause"
+                      class="about__video-play"
+                    />
+                    <img
+                      src="./img/payse.svg"
+                      alt="play"
+                      class="about__video-pause"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="about__content about-content">
+                <span class="about-content__subtitle uppercase subtitle">
+                  ABOUT US
+                </span>
+                <h2 class="about-content__title title-section">
+                  We Are Creative Digital Marketing Agency
+                </h2>
+                <p class="about-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur.
+                </p>
+                <ul class="about-content__list list-reset">
+                  <li
+                    class="about-content__list-item bg-left bg-no-repeat bg-auto"
+                  >
+                    Sed ut perspiciatis unde omnis iste natus error
+                  </li>
+                  <li
+                    class="about-content__list-item bg-left bg-no-repeat bg-auto"
+                  >
+                    Totam rem aperiam, eaque ipsa quae ab illo
+                  </li>
+                  <li
+                    class="about-content__list-item bg-left bg-no-repeat bg-auto"
+                  >
+                    But I must explain to you how all this mistaken idea
+                  </li>
+                  <li
+                    class="about-content__list-item bg-left bg-no-repeat bg-auto"
+                  >
+                    At vero eos et accusamus et iusto odio dignissimos
+                  </li>
+                </ul>
+                <div class="about-content__info info-numb flex items-center">
+                  <div class="info-numb__item">
+                    <span class="info-numb__number"> 120% </span>
+                    <span class="info-numb__desr"> Increase in sales </span>
+                  </div>
+                  <div class="info-numb__item">
+                    <span class="info-numb__number"> 250% </span>
+                    <span class="info-numb__desr"> Customer Engagement </span>
+                  </div>
+                  <div class="info-numb__item">
+                    <span class="info-numb__number"> 100% </span>
+                    <span class="info-numb__desr"> Customer Support </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="value" id="our-value">
+          <div class="container-page">
+            <h2 class="subtitle uppercase value__subtitle">OUR VALUE</h2>
+            <div class="value__inner flex">
+              <div class="value__left">
+                <div class="value__left-items">
+                  <div class="value__left-item flex items-center">
+                    <div class="value__left-num">100+</div>
+                    <div class="value__left-descr">
+                      <span class="value__left-title"> Project Complete </span>
+                      <p class="value__left-text">
+                        On the other hand, we denounce with righteous
+                        indignation and dislike men who
+                      </p>
+                    </div>
+                  </div>
+                  <div class="value__left-item flex items-center">
+                    <div class="value__left-num">3290</div>
+                    <div class="value__left-descr">
+                      <span class="value__left-title"> Creative Ideas </span>
+                      <p class="value__left-text">
+                        On the other hand, we denounce with righteous
+                        indignation and dislike men who
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="value__right value-content">
+                <h3 class="value-content__title title-section">
+                  Successful Experience Project Matters
+                </h3>
+                <p class="value-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do az tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam
+                </p>
+                <div class="value-content__links flex items-center">
+                  <a href="/" class="value-content__link link-circle uppercase"
+                    >VIEW ALL VALUE</a
+                  >
+                  <a
+                    href="/"
+                    class="value-content__link flex items-center uppercase value-content__link-video"
+                  >
+                    <span class="flex items-center justify-center"
+                      ><img src="./img/play.svg" alt="play"
+                    /></span>
+                    WATCH VIDEO</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+          <div class="container-page">
+            <div class="portfolio__inner flex">
+              <div class="portfolio__content portfolio-content">
+                <span class="portfolio-content__subtitle subtitle uppercase">
+                  pORTFOLIO
+                </span>
+                <h2
+                  class="portfolio-content portfolio-content__title title-section"
+                >
+                  We Work to Craft Solid Products and Services For You
+                </h2>
+                <p class="portfolio-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="portfolio-content__link link-circle">
+                  VIEW ALL PORTFOLIO
+                </a>
+              </div>
+              <ul class="accardeon list-reset">
+                <li class="accardeon__item">
+                  <button
+                    class="accardeon__control btn-reset flex items-center"
+                  >
+                    <span class="accardeon__num"> 01 </span>
+                    <h3 class="accardeon__title">
+                      Digital Agency <span>/ Brand - Consultation</span>
+                    </h3>
+                    <span class="accardeon__box"></span>
+                  </button>
+                  <p class="accardeon__content">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint
+                    occaecati cupiditate non provident.
+                  </p>
+                  <img
+                    src="./img/about-img.jpg"
+                    alt="img"
+                    class="accardeon__img"
+                  />
+                </li>
+                <li class="accardeon__item">
+                  <button
+                    class="accardeon__control btn-reset flex items-center"
+                  >
+                    <span class="accardeon__num"> 02 </span>
+                    <h3 class="accardeon__title">
+                      Business Idea <span>/ Consultation - Idea</span>
+                    </h3>
+                    <span class="accardeon__box"></span>
+                  </button>
+                  <p class="accardeon__content">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint
+                    occaecati cupiditate non provident.
+                  </p>
+                  <img
+                    src="./img/portfolio-img-1.jpg"
+                    alt="img"
+                    class="accardeon__img"
+                  />
+                </li>
+                <li class="accardeon__item">
+                  <button
+                    class="accardeon__control btn-reset flex items-center"
+                  >
+                    <span class="accardeon__num"> 03 </span>
+                    <h3 class="accardeon__title">
+                      Marketing Analysis <span>/ Design - Brand</span>
+                    </h3>
+                    <span class="accardeon__box"></span>
+                  </button>
+                  <p class="accardeon__content">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint
+                    occaecati cupiditate non provident.
+                  </p>
+                  <img
+                    src="./img/follow-img-3.jpg"
+                    alt="img"
+                    class="accardeon__img"
+                  />
+                </li>
+                <li class="accardeon__item">
+                  <button
+                    class="accardeon__control btn-reset flex items-center"
+                  >
+                    <span class="accardeon__num"> 04 </span>
+                    <h3 class="accardeon__title">
+                      Bisnext Business <span>/ Agency - Business</span>
+                    </h3>
+                    <span class="accardeon__box"></span>
+                  </button>
+                  <p class="accardeon__content">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium voluptatum deleniti atque
+                    corrupti quos dolores et quas molestias excepturi sint
+                    occaecati cupiditate non provident.
+                  </p>
+                  <img
+                    src="./img/follow-img-2.jpg"
+                    alt="img"
+                    class="accardeon__img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="quote">
+          <div class="container-page">
+            <div class="quote__inner flex">
+              <div class="quote__image">
+                <img
+                  src="./img/question-img.jpg"
+                  alt="img"
+                  class="quote__img"
+                />
+              </div>
+              <div class="quote__right">
+                <blockquote class="quote__text">
+                  "But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the system, and expound the actual
+                  teachings of the great explorer of the truth human happiness.
+                  No one rejects."
+                </blockquote>
+                <div class="quote__author flex items-center">
+                  <img
+                    src="./img/author-img.jpg"
+                    alt="img"
+                    class="quote__author-img"
+                  />
+                  <div class="quote__author-descr">
+                    <span class="quote__author-name"> Chester Feil </span>
+                    <span class="quote__author-prof uppercase"> customer </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="contact">
+          <div class="container-page">
+            <div class="contact__top flex items-center justify-between">
+              <h2 class="contact__title title-section">
+                Let’s Make Something Great Together!
+              </h2>
+              <a
+                href="#"
+                class="contact__top-link with-us flex items-center justify-center flex-col"
+              >
+                <span class="with-us__link uppercase"> Contact with us </span>
+                <span>
+                  <svg
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.19355 19.9485C5.86812 19.6231 5.841 19.1123 6.11219 18.756L6.19355 18.6629L19.0499 5.80653C19.4049 5.45151 19.9805 5.45151 20.3355 5.80653C20.6609 6.13196 20.6881 6.64274 20.4169 6.99907L20.3355 7.09216L7.47918 19.9485C7.12416 20.3035 6.54857 20.3035 6.19355 19.9485Z"
+                      fill="white"
+                      stroke="white"
+                    />
+                    <path
+                      d="M9.34601 7.38012C8.84394 7.3812 8.43605 6.97507 8.43497 6.473C8.43399 6.01658 8.76955 5.63799 9.20778 5.57211L9.34209 5.56197L19.6906 5.53968C20.1484 5.5387 20.5276 5.87619 20.592 6.3159L20.6016 6.45064L20.5802 16.8C20.5792 17.3021 20.1713 17.7082 19.6692 17.7072C19.2128 17.7062 18.8356 17.3691 18.7716 16.9306L18.762 16.7962L18.781 7.35976L9.34601 7.38012Z"
+                      fill="white"
+                      stroke="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div class="contact__inner flex justify-between">
+              <div class="contact__image">
+                <img src="./img/portfolio-img-2.jpg" alt="img" />
+              </div>
+              <div class="contact__content contact-content">
+                <span class="subtitle contact-content__subtitle">
+                  PORTFOLIO
+                </span>
+                <h3 class="contact-content__title title-section">
+                  Be Kind to Your Mind Question & Answer
+                </h3>
+                <p class="contact-content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="contact-content__link link-circle">
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog" id="blog">
+          <div class="container-page">
+            <div class="blog__top flex justify-between">
+              <div class="blog__top-left">
+                <span class="subtitle uppercase"> LATEST BLOG </span>
+                <h2 class="blog__title title-section">
+                  Check Some of Latest News & Articles
+                </h2>
+              </div>
+              <div class="blog__top-right">
+                <p class="blog__top-descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore .
+                </p>
+                <a href="#" class="blog__top-link link-circle">ViEW ALL BLOG</a>
+              </div>
+            </div>
+            <ul class="blog-list list-reset">
+              <li class="blog-list__item">
+                <article class="blog-post">
+                  <div class="blog-post__content">
+                    <span class="blog-post__time">
+                      UI Design | 15 Dec 2022
+                    </span>
+                    <h2 class="blog-post__title">
+                      What is Digital Agency Marketing
+                    </h2>
+                    <p class="blog-post__text">
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising pain was born and I will
+                      give you a complete account of the system
+                    </p>
+                    <a href="#" class="blog-post__link"
+                      >READ MORE
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.8934 3.40815L3.40817 11.8934"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M5.06272 3.42258C5.06272 3.42258 10.3298 1.84488 11.8922 3.40731C13.4558 4.97086 11.8787 10.2385 11.8787 10.2385"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                    ></a>
+                  </div>
+                  <div class="blog-post__image">
+                    <img
+                      src="./img/blog-1.jpg"
+                      alt="img"
+                      class="blog-post__img"
+                    />
+                  </div>
+                </article>
+              </li>
+              <li class="blog-list__item">
+                <article class="blog-post">
+                  <div class="blog-post__image">
+                    <img
+                      src="./img/blog-2.jpg"
+                      alt="img"
+                      class="blog-post__img"
+                    />
+                  </div>
+                  <div class="blog-post__content">
+                    <span class="blog-post__time">
+                      UI Design | 15 Dec 2022
+                    </span>
+                    <h2 class="blog-post__title">
+                      What is Digital Agency Marketing
+                    </h2>
+                    <p class="blog-post__text">
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising pain was born and I will
+                      give you a complete account of the system
+                    </p>
+                    <a href="#" class="blog-post__link"
+                      >READ MORE
+                      <span
+                        ><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.8934 3.40815L3.40817 11.8934"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M5.06272 3.42258C5.06272 3.42258 10.3298 1.84488 11.8922 3.40731C13.4558 4.97086 11.8787 10.2385 11.8787 10.2385"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          /></svg></span
+                    ></a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container-page">
+          <div class="footer__inner flex items-center">
+            <div class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="./img/logo.png" alt="logo" class="footer__logo" />
+              </a>
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua tepo
+                the.
+              </p>
+              <a href="tel:89730682300" class="footer__tel"> (973) 068 2300 </a>
+            </div>
+            <div class="footer__item">
+              <h3 class="footer__item-title">Quick Links</h3>
+              <div class="footer__list flex">
+                <ul class="footer-list list-reset">
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link"> About Us </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link">
+                      Pricing Table
+                    </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link"> Contact Us </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link">
+                      Meet Our Team
+                    </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link"> Latest News </a>
+                  </li>
+                </ul>
+                <ul class="footer-list list-reset">
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link">
+                      Case Studies
+                    </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link"> FAQ’s </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link"> Services </a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#" class="footer-list__item-link">
+                      Customer Support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__item">
+              <ul class="list-reset social flex">
+                <li class="social__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="social__link social__link--fb"
+                    aria-label="Facebook"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="social__link social__link--tw"
+                    aria-label="Twitter"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="social__link social__link--db"
+                    aria-label="Dribbble"
+                  >
+                    Dribbble
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="social__link social__link--inst"
+                    aria-label="Instagram"
+                  >
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__social-descr">
+                <p>Let's work together.</p>
+                <p>
+                  Just drop me a line -
+                  <a href="#"> info@mail.com </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom flex justify-between">
+            <p class="footer__bottom-descr">
+              Copyright © 2022 BISNEXT. All Rights Reserved
+            </p>
+            <div class="footer__bottom-links">
+              <a href="#" class="footer__bottom-link"> Terms of Use </a>
+              <a href="#" class="footer__bottom-link"> Privacy Policy </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

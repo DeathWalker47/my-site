@@ -1,0 +1,73 @@
+{
+    "name": "Running Tracking",
+    "short_name": "Run Tracking",
+    "description": "Приложение для отслеживания мест, где ты проводил свою кардио тренировку. ",
+    "theme_color": "#0a151d",
+    "background_color": "#0a151d",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+          "src": "img/icon_72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_128.png",
+          "sizes": "128x128",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_152.png",
+          "sizes": "152x152",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_384.png",
+          "sizes": "384x384",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/icon_512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any"
+      },
+      {
+          "src": "img/maskable_192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "maskable"
+      },
+      {
+          "src": "img/maskable_512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+      }
+  ]
+}

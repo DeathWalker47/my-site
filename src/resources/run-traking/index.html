@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Кардио Тренировка</title>
+    <meta name="description" content="Description..." />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Кардио Тренировка" />
+    <meta property="og:description" content="Description..." />
+    <meta property="og:site_name" content="Running Tracking" />
+    <meta property="og:url" content="https://sfizer.ru/running/index.html" />
+    <meta property="og:image" content="" />
+    <link rel="preload" href="/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link href="./favicon.png" r rel="icon" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon_120.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon_180.png" />
+    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/serviceWorker.js').then((registration) => {
+            console.log('SW registration successful');
+          });
+        });
+      }
+    </script>
+    <script defer="" src="js/main.js"></script>
+    <title>Кардио - Карта Твоих Тренировок</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <span class="sidebar__top">
+          <span class="up-line"></span>
+        </span>
+        <img src="./img/icon.png" alt="icon" class="icon" />
+        <div class="sort-btns hidden">
+          <span class="sort-btns__text">
+            Сортировать по:
+          </span>
+          <div class="sort-btns__btns">
+            <button class="btn-reset btn-type btn-type-sort-distance">
+              дистанции
+            </button>
+            <button class="btn-reset btn-type btn-type-sort-time">
+              времени
+            </button>
+          </div>
+          <button class="btn-reset btn-type sort-btns__reset hidden">
+            Удалить тренировки
+          </button>
+        </div>
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">Тип</label>
+            <select class="form__input form__input--type">
+              <option value="running">Пробежка</option>
+              <option value="cycling">Велосипед</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label">Расстояние</label>
+            <input type="number" class="form__input form__input--distance" placeholder="km" />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Длительность</label>
+            <input type="number" class="form__input form__input--duration" placeholder="мин" />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Темп</label>
+            <input type="number" class="form__input form__input--temp" placeholder="шаг/мин" />
+          </div>
+          <div class="form__row form__row--hidden">
+            <label class="form__label">Подъём</label>
+            <input type="number" class="form__input form__input--climb" placeholder="метров" />
+          </div>
+          <div class="form__row form__row-btn">
+            <button type="submit" class="btn-reset form__btn">Сохранить</button>
+          </div>
+        </form>
+          <ul class="workouts">
+          </ul>
+        <div class="footer__copyright-block">
+          <p class="footer__copyright">Другие мои проекты ниже</p>
+          <p class="footer__copyright">
+            &copy;
+            <a class="footer__link masters-of-code-link" target="_blank" href="https://sfizer.ru">sfizer.ru</a>.
+          </p>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
